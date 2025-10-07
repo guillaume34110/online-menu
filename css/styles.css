@@ -33,7 +33,6 @@ body {
   background-image: var(--bg-image-set, var(--bg-image));
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .app-footer {
@@ -88,16 +87,30 @@ img {
 
 .controls {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
 }
 
-.contact-info {
+.controls-row {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.25rem;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-phone-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-phone-wrapper .contact-phone {
+  min-width: 220px;
+  text-align: center;
 }
 
 .contact-phone {
@@ -123,6 +136,22 @@ img {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  border-radius: var(--border-radius);
+  border: 6px solid transparent;
+  background:
+    linear-gradient(#ffffffb1, #ffffffad) padding-box,
+    image-set(
+      url('../assets/textureBois.webp') type('image/webp'),
+      url('../assets/textureBois.png') type('image/png')
+    ) border-box;
+  background-size: auto, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
 }
 
 /* Sélecteurs de langue et thème */
@@ -204,6 +233,7 @@ main {
 .btn-category {
   padding: 0.5rem 1rem;
   font-weight: 500;
+  font-size: 1.2rem;
   position: relative;
   z-index: 1;
   overflow: visible;
