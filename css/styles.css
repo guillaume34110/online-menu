@@ -103,26 +103,26 @@ img {
 .contact-phone {
   font-weight: 600;
   text-decoration: none;
-  color: var(--color-text);
-  padding: 0.4rem 0.8rem;
+  color: #fff;
+  padding: 0.45rem 0.95rem;
   border-radius: var(--border-radius);
-  background: rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
-  transition: transform var(--transition-speed), box-shadow var(--transition-speed), background-color var(--transition-speed);
+  background: linear-gradient(135deg, #34c759, #2aa94f);
+  box-shadow: 0 4px 10px rgba(46, 172, 75, 0.35);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed), background-color var(--transition-speed), filter var(--transition-speed);
 }
 
 .contact-phone:hover,
 .contact-phone:focus {
-  background: var(--color-accent);
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #2aa94f, #238f43);
+  box-shadow: 0 6px 16px rgba(34, 139, 60, 0.45);
   transform: translateY(-1px);
+  filter: brightness(1.05);
 }
 
 .opening-hours {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  color: var(--color-text-alt);
+  color: var(--color-text);
 }
 
 /* Sélecteurs de langue et thème */
