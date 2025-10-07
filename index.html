@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="app.title">Menu Restaurant</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/themes.css">
+</head>
+<body class="theme-day">
+  <main>
+    <div class="container">
+      <div class="top-bar">
+        <div class="controls">
+          <div class="language-selector">
+            <select id="language-select" class="language-select-dropdown" aria-label="Choisir une langue">
+              <option value="fr" aria-label="Français">&#x1F1EB;&#x1F1F7;</option>
+              <option value="en" aria-label="English">&#x1F1EC;&#x1F1E7;</option>
+              <option value="de" aria-label="Deutsch">&#x1F1E9;&#x1F1EA;</option>
+              <option value="ru" aria-label="Русский">&#x1F1F7;&#x1F1FA;</option>
+              <option value="zh" aria-label="中文">&#x1F1E8;&#x1F1F3;</option>
+              <option value="ko" aria-label="한국어">&#x1F1F0;&#x1F1F7;</option>
+              <option value="ja" aria-label="日本語">&#x1F1EF;&#x1F1F5;</option>
+              <option value="es" aria-label="Español">&#x1F1EA;&#x1F1F8;</option>
+              <option value="it" aria-label="Italiano">&#x1F1EE;&#x1F1F9;</option>
+              <option value="nl" aria-label="Nederlands">&#x1F1F3;&#x1F1F1;</option>
+              <option value="pt" aria-label="Português">&#x1F1F5;&#x1F1F9;</option>
+              <option value="th" aria-label="ไทย">&#x1F1F9;&#x1F1ED;</option>
+            </select>
+          </div>
+
+          <div class="contact-info">
+            <a class="contact-phone" href="tel:0802028896" data-i18n="header.phone" data-i18n-attr="aria-label:header.phone.aria" aria-label="Réserver : 08 02 02 88 96"></a>
+            <p class="opening-hours" data-i18n="header.openingHours">Horaires d'ouverture : 10 h - 21 h 30</p>
+          </div>
+        </div>
+
+      </div>
+
+      <nav class="categories" aria-label="Catégories de plats">
+        <h2 data-i18n="app.categories">Catégories</h2>
+        <div class="category-buttons">
+          <button class="btn-category active" data-category="all" type="button" data-i18n="category.all">Tous</button>
+        </div>
+      </nav>
+
+      <section class="dishes-container" aria-live="polite">
+        <div id="dishes-grid">
+          <div class="loading-indicator">
+            <span data-i18n="app.loading">Chargement du menu...</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <template id="dish-template">
+    <article class="dish-card">
+      <div class="dish-image">
+        <picture class="dish-picture">
+          <source data-dish-image-source type="image/webp">
+          <img src="" alt="" loading="lazy">
+        </picture>
+        <p class="dish-price"></p>
+      </div>
+      <div class="dish-content">
+        <h3 class="dish-name"></h3>
+        <div class="dish-ingredients"></div>
+        <div class="dish-supplements"></div>
+      </div>
+    </article>
+  </template>
+
+  <div id="dish-modal" class="dish-modal" role="dialog" aria-modal="true" aria-labelledby="dish-modal-title" hidden>
+    <div class="dish-modal-overlay" data-modal-close-trigger></div>
+    <div class="dish-modal-content">
+      <button type="button" class="dish-modal-close" data-modal-close-trigger data-i18n-attr="aria-label:dish.modal.close" aria-label="Fermer">
+        &times;
+      </button>
+      <div class="dish-modal-body">
+        <div class="dish-modal-image">
+          <picture id="dish-modal-picture">
+            <source id="dish-modal-image-source" type="image/webp">
+            <img id="dish-modal-image" src="" alt="">
+          </picture>
+          <p id="dish-modal-price" class="dish-modal-price"></p>
+        </div>
+        <div class="dish-modal-details">
+          <h2 id="dish-modal-title" class="dish-modal-name"></h2>
+          <p id="dish-modal-description" class="dish-modal-description"></p>
+          <div id="dish-modal-ingredients" class="dish-modal-section" hidden>
+            <h3 data-i18n="dish.modal.ingredientsTitle">Ingrédients</h3>
+            <ul class="dish-modal-ingredients-list"></ul>
+          </div>
+          <div id="dish-modal-supplements" class="dish-modal-section" hidden>
+            <h3 data-i18n="dish.modal.supplementsTitle">Suppléments</h3>
+            <ul class="dish-modal-supplements-list"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="qr-modal" class="qr-modal" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title" hidden>
+    <div class="qr-modal-content">
+      <div class="qr-modal-header">
+        <h2 id="qr-modal-title" data-i18n="qr.menu.title">QR Code Menu</h2>
+        <button id="qr-modal-close" class="qr-modal-close" type="button" aria-label="Fermer">&times;</button>
+      </div>
+      <div class="qr-modal-body">
+        <div class="qr-code-item">
+          <h3 data-i18n="qr.menu.heading">Scannez pour accéder au menu</h3>
+          <div id="qr-menu" class="qr-code-display">
+            <div class="qr-loading" data-i18n="qr.menu.loading">Chargement...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <p data-i18n="legend.crepeFormats">Formats de crêpes : Enfant 100 g | Normal 200 g | XL 300 g</p>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

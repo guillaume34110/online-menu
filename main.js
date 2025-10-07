@@ -1,0 +1,17 @@
+import { initI18n } from './i18n.js';
+import { initTheme } from './theme.js';
+import { initMenu } from './menu.js';
+import { initQRCode } from './qrcode.js';
+
+const bootApplication = () => {
+  initI18n();
+  initTheme();
+  initMenu();
+  initQRCode();
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bootApplication);
+} else {
+  bootApplication();
+}
