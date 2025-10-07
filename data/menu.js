@@ -168,7 +168,7 @@ export const menuItems = [
         amount: 20,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet", "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -211,7 +211,7 @@ export const menuItems = [
         amount: 25,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet", "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -254,7 +254,7 @@ export const menuItems = [
         amount: 15,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet", "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -297,7 +297,7 @@ export const menuItems = [
         amount: 20,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache", "oignon", "ail", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache",'fromage', "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -340,7 +340,7 @@ export const menuItems = [
         amount: 25,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache", "oignon", "ail", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache",'fromage', "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -383,7 +383,7 @@ export const menuItems = [
         amount: 15,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache", "oignon", "ail", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache",'fromage', "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -426,7 +426,7 @@ export const menuItems = [
         amount: 20,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "salade", "fromage", "vinaigrette", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
       supplements: []
     },
     {
@@ -469,7 +469,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "salade", "fromage", "vinaigrette", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
       supplements: []
     },
     {
@@ -512,13 +512,13 @@ export const menuItems = [
         amount: 15,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "salade", "fromage", "vinaigrette", "salade_composee"],
+      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
       supplements: []
     },
     {
       id: "crepechokaju",
       reference: "SU1",
-      price: 80,
+      price: 60,
       name: {
         fr: "Crêpe Chokaju",
         th: "เครปโชคาจู",
@@ -569,7 +569,7 @@ export const menuItems = [
     {
       id: "crepecaracoco",
       reference: "SU2",
-      price: 80,
+      price: 60,
       name: {
         fr: "Crêpe Caracoco",
         th: "เครปคาราโกโก",
@@ -620,7 +620,7 @@ export const menuItems = [
     {
       id: "crepeconfiturefraise",
       reference: "C1",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture de fraise",
         th: "เครปแยมสตรอเบอร์รี่",
@@ -663,7 +663,7 @@ export const menuItems = [
     {
       id: "crepeconfituremure",
       reference: "C2",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture de mûre",
         th: "เครปแยมแบล็คเบอร์รี่",
@@ -706,7 +706,7 @@ export const menuItems = [
     {
       id: "crepeconfituremulberry",
       reference: "C3",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture de mûre (mulberry)",
         th: "เครปแยมมัลเบอร์รี่",
@@ -749,7 +749,7 @@ export const menuItems = [
     {
       id: "crepeconfituregingembre",
       reference: "C4",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture de gingembre",
         th: "เครปแยมขิง",
@@ -792,7 +792,7 @@ export const menuItems = [
     {
       id: "crepeconfiturepapayepassion",
       reference: "C5",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture papaye passion",
         th: "เครปแยมมะละกอเสาวรส",
@@ -835,7 +835,7 @@ export const menuItems = [
     {
       id: "crepeconfitureananas",
       reference: "C6",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture d'ananas",
         th: "เครปแยมสับปะรด",
@@ -878,7 +878,7 @@ export const menuItems = [
     {
       id: "crepeconfitureananaspassion",
       reference: "C7",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture ananas passion",
         th: "เครปแยมสับปะรดเสาวรส",
@@ -921,7 +921,7 @@ export const menuItems = [
     {
       id: "crepeconfituremangue",
       reference: "C8",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture de mangue",
         th: "เครปแยมมะม่วง",
@@ -964,7 +964,7 @@ export const menuItems = [
     {
       id: "crepeconfituremanguepassion",
       reference: "C9",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture mangue passion",
         th: "เครปแยมมะม่วงเสาวรส",
@@ -1007,7 +1007,7 @@ export const menuItems = [
     {
       id: "crepeconfituremanguevertecitronvert",
       reference: "C10",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture mangue verte & citron vert",
         th: "เครปแยมมะม่วงดิบและมะนาว",
@@ -1050,7 +1050,7 @@ export const menuItems = [
     {
       id: "crepeconfiturepassion",
       reference: "C11",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture de fruit de la passion",
         th: "เครปแยมเสาวรส",
@@ -1093,7 +1093,7 @@ export const menuItems = [
     {
       id: "crepeconfiturecoco",
       reference: "C12",
-      price: 70,
+      price: 50,
       name: {
         fr: "Crêpe confiture de coco",
         th: "เครปแยมมะพร้าว",
