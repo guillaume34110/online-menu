@@ -38,7 +38,7 @@ body {
 
 .app-footer {
   margin-top: 2rem;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem;
   text-align: center;
   color: var(--color-text);
   background: rgba(0, 0, 0, 0.15);
