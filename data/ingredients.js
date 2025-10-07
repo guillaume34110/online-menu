@@ -68,6 +68,23 @@ export const ingredients = [
     }
   },
   {
+    id: "huile_de_coco",
+    name: {
+      fr: "Huile de coco",
+      th: "น้ำมันมะพร้าว",
+      en: "Coconut oil",
+      de: "Kokosöl",
+      ja: "ココナッツオイル",
+      zh: "椰子油",
+      ru: "Кокосовое масло",
+      ko: "코코넛 오일",
+      es: "Aceite de coco",
+      it: "Olio di cocco",
+      nl: "Kokosolie",
+      pt: "Óleo de coco"
+    }
+  },
+  {
     id: "sucre",
     name: {
       fr: "Sucre",
@@ -459,6 +476,23 @@ export const ingredients = [
     }
   },
   {
+    id: "pate_de_curry",
+    name: {
+      fr: "Pâte de curry",
+      th: "พริกแกง",
+      en: "Curry paste",
+      de: "Currypaste",
+      ja: "カレーペースト",
+      zh: "咖喱酱",
+      ru: "Паста карри",
+      ko: "카레 페이스트",
+      es: "Pasta de curry",
+      it: "Pasta di curry",
+      nl: "Currypasta",
+      pt: "Pasta de curry"
+    }
+  },
+  {
     id: "curry_massaman",
     name: {
       fr: "Curry Massaman",
@@ -524,6 +558,23 @@ export const ingredients = [
       it: "Insalata",
       nl: "Salade",
       pt: "Salada"
+    }
+  },
+  {
+    id: "salade_composee",
+    name: {
+      fr: "Salade composée",
+      th: "สลัดรวม",
+      en: "Mixed salad",
+      de: "Gemischter Salat",
+      ja: "ミックスサラダ",
+      zh: "什锦沙拉",
+      ru: "Смешанный салат",
+      ko: "믹스 샐러드",
+      es: "Ensalada mixta",
+      it: "Insalata mista",
+      nl: "Gemengde salade",
+      pt: "Salada mista"
     }
   },
   {

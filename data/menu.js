@@ -168,7 +168,7 @@ export const menuItems = [
         amount: 20,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "poulet", "curry_jaune", "lait_de_coco", "oignon", "ail"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet", "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -211,7 +211,7 @@ export const menuItems = [
         amount: 25,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "poulet", "curry_jaune", "lait_de_coco", "oignon", "ail"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet", "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -254,7 +254,7 @@ export const menuItems = [
         amount: 15,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "poulet", "curry_jaune", "lait_de_coco", "oignon", "ail"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet", "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -297,7 +297,7 @@ export const menuItems = [
         amount: 20,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "porc_hache", "sauce_soja", "oignon", "ail", "poivre"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -340,7 +340,7 @@ export const menuItems = [
         amount: 25,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "porc_hache", "sauce_soja", "oignon", "ail", "poivre"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -383,7 +383,7 @@ export const menuItems = [
         amount: 15,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "porc_hache", "sauce_soja", "oignon", "ail", "poivre"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache", "oignon", "ail", "salade_composee"],
       supplements: []
     },
     {
@@ -426,7 +426,7 @@ export const menuItems = [
         amount: 20,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "salade", "fromage", "vinaigrette", "salade_composee"],
       supplements: []
     },
     {
@@ -469,7 +469,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "salade", "fromage", "vinaigrette", "salade_composee"],
       supplements: []
     },
     {
@@ -512,7 +512,7 @@ export const menuItems = [
         amount: 15,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "salade", "fromage", "vinaigrette", "salade_composee"],
       supplements: []
     },
     {
