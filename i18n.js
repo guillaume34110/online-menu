@@ -5,7 +5,7 @@ import { getStoredData, storeData, EVENTS, STORAGE_KEYS, emitEvent } from './uti
 
 // Langues disponibles
 const AVAILABLE_LANGUAGES = ['fr', 'en', 'de', 'ru', 'zh', 'ko', 'ja', 'es', 'it', 'nl', 'pt', 'th'];
-const DEFAULT_LANGUAGE = 'fr';
+const DEFAULT_LANGUAGE = 'th';
 
 export const normalizeLanguage = (lang) => {
   if (!lang) {
