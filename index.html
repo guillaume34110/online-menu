@@ -105,7 +105,7 @@
   <div id="qr-modal" class="qr-modal" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title" hidden>
     <div class="qr-modal-content">
       <div class="qr-modal-header">
-        <h2 id="qr-modal-title" data-i18n="qr.menu.title">QR Code Menu</h2>
+        <h2 id="qr-modal-title" data-i18n="qr.menu.title">Mia farang noi</h2>
         <button id="qr-modal-close" class="qr-modal-close" type="button" aria-label="Fermer">&times;</button>
       </div>
       <div class="qr-modal-body">
@@ -121,6 +121,23 @@
 
   <footer class="app-footer">
     <p data-i18n="legend.crepeFormats">Formats de crêpes : Enfant 100 g | Normal 200 g | XL 300 g</p>
+    <div class="footer-disclaimer-row">
+      <span class="footer-disclaimer" data-i18n="footer.disclaimer">Images non contractuelles</span>
+      <button type="button" id="footer-qr-trigger" class="qr-footer-button" data-i18n-attr="aria-label:qr.menu.button" aria-label="Afficher les QR codes">
+        <svg class="qr-footer-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+          <rect x="3" y="3" width="6" height="6" rx="1.5"></rect>
+          <rect x="3" y="15" width="6" height="6" rx="1.5"></rect>
+          <rect x="15" y="3" width="6" height="6" rx="1.5"></rect>
+          <rect x="15" y="15" width="2" height="2" rx="0.5"></rect>
+          <rect x="19" y="19" width="2" height="2" rx="0.5"></rect>
+          <rect x="19" y="15" width="2" height="2" rx="0.5"></rect>
+          <rect x="15" y="19" width="2" height="2" rx="0.5"></rect>
+          <rect x="11" y="11" width="2" height="2" rx="0.5"></rect>
+          <rect x="7" y="11" width="2" height="2" rx="0.5"></rect>
+          <rect x="11" y="7" width="2" height="2" rx="0.5"></rect>
+        </svg>
+      </button>
+    </div>
   </footer>
 
   <script type="module" src="./main.js"></script>

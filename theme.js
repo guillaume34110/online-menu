@@ -31,10 +31,17 @@ const setThemeClass = (theme) => {
 };
 
 const getThemeForCurrentHour = () => {
-  const hour = new Date().getHours();
+  const now = new Date();
+  const hour = now.getHours();
+  const minutes = now.getMinutes();
+
+  // Matin de 5h00 à 10h59
   if (hour >= 5 && hour < 11) return 'morning';
-  if (hour >= 11 && hour < 17) return 'day';
-  if (hour >= 17 && hour < 21) return 'sunset';
+  // Journée de 11h00 à 17h29
+  if (hour >= 11 && (hour < 17 || (hour === 17 && minutes < 30))) return 'day';
+  // Crépuscule de 17h30 à 18h59
+  if ((hour === 17 && minutes >= 30) || hour === 18) return 'sunset';
+  // Nuit à partir de 19h00
   return 'night';
 };
 

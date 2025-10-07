@@ -51,8 +51,24 @@ body {
   letter-spacing: 0.02em;
 }
 
-.app-footer p + p {
+
+.app-footer > * + * {
   margin-top: 0.35rem;
+}
+
+.footer-disclaimer-row {
+  display: inline-flex;
+  align-items:center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.footer-disclaimer {
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 1;
+  letter-spacing: 0.05em;
 }
 
 .container {
@@ -132,6 +148,38 @@ img {
   filter: brightness(1.05);
 }
 
+.qr-footer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-accent);
+  background: linear-gradient(135deg, var(--color-accent), color-mix(in srgb, var(--color-accent) 70%, #ffffff 30%));
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed), filter var(--transition-speed);
+}
+
+.qr-footer-button:hover,
+.qr-footer-button:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.05);
+}
+
+.qr-footer-button:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
+}
+
+.qr-footer-icon {
+  fill: #fff;
+}
+
 .opening-hours {
   font-size: 0.9rem;
   font-weight: 500;
@@ -143,7 +191,7 @@ img {
   border-radius: var(--border-radius);
   border: 6px solid transparent;
   background:
-    linear-gradient(#ffffffb1, #ffffffad) padding-box,
+    linear-gradient(#ffffff, #ffffff) padding-box,
     image-set(
       url('../assets/textureBois.webp') type('image/webp'),
       url('../assets/textureBois.png') type('image/png')
@@ -790,10 +838,10 @@ body.modal-open {
 }
 
 .qr-modal-content {
-  background-image: url('../assets/textureBois.png');
+  background-image: url('../assets/bg_morning.png');
   background-image: image-set(
-    url('../assets/textureBois.webp') type('image/webp'),
-    url('../assets/textureBois.png') type('image/png')
+    url('../assets/bg_morning.webp') type('image/webp'),
+    url('../assets/bg_morning.png') type('image/png')
   );
   background-size: cover;
   background-position: center;
@@ -823,8 +871,8 @@ body.modal-open {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
-  border-bottom: 2px solid var(--color-border);
-  background: rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  background: transparent;
 }
 
 .qr-modal-header h2 {
@@ -832,6 +880,8 @@ body.modal-open {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
+  flex: 1;
+  text-align: center;
 }
 
 .qr-modal-close {
@@ -879,10 +929,8 @@ body.modal-open {
 }
 
 .qr-code-display {
-  background: rgba(255, 255, 255, 0.1);
   border-radius: var(--border-radius);
-  padding: 1.5rem;
-  border: 2px solid var(--color-border);
+  padding: 1rem;
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -900,7 +948,6 @@ body.modal-open {
   max-width: 200px;
   max-height: 200px;
   border-radius: var(--border-radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .qr-code-display .qr-url {
@@ -909,9 +956,6 @@ body.modal-open {
   word-break: break-all;
   text-align: center;
   padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--color-border);
 }
 
 /* Responsive pour la modal */
