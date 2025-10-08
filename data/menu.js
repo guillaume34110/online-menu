@@ -169,20 +169,20 @@ export const menuItems = [
         infinite: false
       },
       ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
-      description: {
-        fr: "Crêpe dorée et soyeuse, garnie de tendres émincés de poulet poêlés dans un authentique curry thaï aux épices parfumées, enrichi de lait de coco crémeux. Accompagnée de fromage fondant et d'une salade fraîche, cette création sublime unit la finesse française à l'art culinaire thaïlandais.",
-        th: "เครปทองอร่ามเนื้อนุ่มไหม เต็มไปด้วยไก่หั่นบางๆ ที่ผัดในแกงกะหรี่ไทยแท้เครื่องเทศหอม เข้มข้นด้วยกะทิครีมมี่ เสิร์ฟพร้อมชีสละลายและสลัดสด การสร้างสรรค์อันประณีตนี้ผสานความละเอียดอ่อนของฝรั่งเศสเข้ากับศิลปะการทำอาหารไทย",
-        en: "Golden, silky crêpe filled with tender chicken strips pan-fried in authentic Thai curry with fragrant spices, enriched with creamy coconut milk. Served with melted cheese and fresh salad, this sublime creation unites French finesse with Thai culinary art.",
-        de: "Goldene, seidige Crêpe gefüllt mit zarten Hähnchenstreifen, gebraten in authentischem Thai-Curry mit duftenden Gewürzen, angereichert mit cremiger Kokosmilch. Serviert mit geschmolzenem Käse und frischem Salat vereint diese erhabene Kreation französische Finesse mit thailändischer Kochkunst.",
-        ja: "香り高いスパイスを使った本格的なタイカレーで炒めた柔らかなチキンストリップを、クリーミーなココナッツミルクで仕上げた、黄金色でシルキーなクレープ。とろけるチーズと新鮮なサラダを添えて、この崇高な創作はフランスの繊細さとタイの料理芸術を結びつけます。",
-        zh: "金黄丝滑的可丽饼，填入用芳香香料制作的正宗泰式咖喱炒制的嫩鸡丝，以奶油椰浆调和。配以融化奶酪和新鲜沙拉，这道崇高的创作将法式精致与泰式烹饪艺术完美结合。",
-        ru: "Золотистый, шелковистый креп с нежными полосками курицы, обжаренными в подлинном тайском карри с ароматными специями, обогащенными сливочным кокосовым молоком. Подается с расплавленным сыром и свежим салатом, это возвышенное творение объединяет французскую утонченность с тайским кулинарным искусством.",
-        ko: "향긋한 향신료로 만든 정통 태국 카레로 볶은 부드러운 치킨 스트립을 크리미한 코코넛 밀크로 풍미를 더한 황금빛 실키한 크레프. 녹은 치즈와 신선한 샐러드와 함께 제공되는 이 숭고한 창작품은 프랑스의 섬세함과 태국 요리 예술을 결합합니다.",
-        es: "Crêpe dorada y sedosa rellena de tiernas tiras de pollo salteadas en auténtico curry tailandés con especias aromáticas, enriquecido con leche de coco cremosa. Servida con queso derretido y ensalada fresca, esta creación sublime une la finura francesa con el arte culinario tailandés.",
-        it: "Crêpe dorata e setosa farcita con tenere strisce di pollo saltate in autentico curry thailandese con spezie aromatiche, arricchito con latte di cocco cremoso. Servita con formaggio fuso e insalata fresca, questa creazione sublime unisce la finezza francese con l'arte culinaria thailandese.",
-        nl: "Goudkleurige, zijdeachtige crêpe gevuld met malse kippenreepjes gebakken in authentieke Thaise curry met geurige kruiden, verrijkt met romige kokosmelk. Geserveerd met gesmolten kaas en verse salade, deze sublieme creatie verenigt Franse finesse met Thaise culinaire kunst.",
-        pt: "Crepe dourado e sedoso recheado com tenras tiras de frango refogadas em autêntico curry tailandês com especiarias aromáticas, enriquecido com leite de coco cremoso. Servido com queijo derretido e salada fresca, esta criação sublime une a fineza francesa com a arte culinária tailandesa."
-      },
+     description: {
+  "fr": "Crêpe dorée et soyeuse, garnie de tendres émincés de poulet poêlés dans un curry thaï authentique aux épices parfumées, relevé d’un lait de coco crémeux. Servie avec du fromage fondant et une salade fraîche, cette création offre un équilibre parfait entre douceur et caractère.",
+  "th": "เครปสีทองเนื้อนุ่มไหม สอดไส้เนื้อไก่หั่นบางผัดในแกงกะหรี่ไทยแท้หอมเครื่องเทศและเข้มข้นด้วยกะทิครีม เสิร์ฟพร้อมชีสละลายและสลัดสด ความกลมกล่อมที่ลงตัวระหว่างความนุ่มนวลและรสเข้มข้น",
+  "en": "Golden, silky crêpe filled with tender chicken strips pan-fried in authentic Thai curry with fragrant spices and rich, creamy coconut milk. Served with melted cheese and fresh salad, this dish balances gentle smoothness with bold, aromatic flavor.",
+  "de": "Goldene, seidige Crêpe, gefüllt mit zarten Hähnchenstreifen, gebraten in authentischem Thai-Curry mit duftenden Gewürzen und cremiger Kokosmilch. Serviert mit geschmolzenem Käse und frischem Salat bietet sie ein harmonisches Gleichgewicht zwischen Milde und Würze.",
+  "ja": "黄金色に焼き上げたなめらかなクレープに、本格的なタイカレーで炒めたやわらかいチキンを包み、ココナッツミルクでまろやかに仕上げました。とろけるチーズと新鮮なサラダを添え、優しさとスパイスの力強さが調和する一皿です。",
+  "zh": "金黄柔滑的可丽饼，包裹以香料浓郁的正宗泰式咖喱炒制的嫩鸡条，并以椰奶提升香浓滑顺。搭配融化芝士与新鲜沙拉，口感柔和与辛香浓烈完美平衡。",
+  "ru": "Золотистый, шелковистый креп, наполненный нежными кусочками курицы, обжаренными в подлинном тайском карри с ароматными специями и сливочным кокосовым молоком. Подается с расплавленным сыром и свежим салатом — гармония мягкости и насыщенного вкуса.",
+  "ko": "황금빛의 부드러운 크레프에 향긋한 향신료로 만든 정통 태국 카레 치킨과 크리미한 코코넛 밀크가 어우러졌습니다. 녹은 치즈와 신선한 샐러드와 함께 부드러움과 짙은 풍미의 조화를 선사합니다.",
+  "es": "Crêpe dorada y sedosa rellena de tiernas tiras de pollo salteadas en curry tailandés auténtico con especias aromáticas y leche de coco cremosa. Servida con queso derretido y ensalada fresca, esta creación ofrece un equilibrio perfecto entre suavidad y sabor intenso.",
+  "it": "Crêpe dorata e setosa farcita con teneri filetti di pollo saltati in curry thailandese autentico con spezie profumate e latte di cocco cremoso. Servita con formaggio fuso e insalata fresca, offre un equilibrio perfetto tra morbidezza e intensità aromatica.",
+  "nl": "Goudkleurige, zijdeachtige crêpe gevuld met malse kippenreepjes gebakken in authentieke Thaise curry met geurige kruiden en romige kokosmelk. Geserveerd met gesmolten kaas en verse salade, brengt deze creatie een perfecte balans tussen zachtheid en kruidige kracht.",
+  "pt": "Crepe dourado e sedoso recheado com tenras tiras de frango refogadas em autêntico curry tailandês com especiarias aromáticas e leite de coco cremoso. Servido com queijo derretido e salada fresca, oferece um equilíbrio perfeito entre suavidade e sabor intenso."
+},
       supplements: [],
       sizes: [
         {
