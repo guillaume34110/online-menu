@@ -138,6 +138,12 @@ const formatListWithLocale = (items, lang) => {
 };
 
 const buildDishDescription = (dish, lang, dishName) => {
+  // Si le plat a une description personnalisée, l'utiliser
+  if (dish.description && dish.description[lang]) {
+    return dish.description[lang];
+  }
+  
+  // Sinon, utiliser l'ancien système basé sur les ingrédients
   const ingredients = getTranslatedIngredientNames(dish, lang);
   if (ingredients.length === 0) {
     return translate('dish.description.fallback', { name: dishName });
