@@ -129,65 +129,22 @@ export const menuItems = [
       supplements: []
     },
     {
-      id: "crepesaleepouletcurryenfant",
-      reference: "CS1E",
-      price: 39,
-      name: {
-        fr: "Crêpe salée poulet curry - Enfant",
-        th: "เครปคาวไก่แกงกะหรี่ - เด็ก",
-        en: "Chicken curry savory crêpe - Kids",
-        de: "Herzhafte Hähnchen-Curry-Crêpe - Kinder",
-        ja: "チキンカレーのセイボリークレープ（キッズ）",
-        zh: "咖喱鸡咸味可丽饼 - 儿童",
-        ru: "Соленый креп с курицей карри - дети",
-        ko: "치킨 카레 세이보리 크레프 - 키즈",
-        es: "Crepe salada de pollo al curry - Infantil",
-        it: "Crêpe salata al curry di pollo - Bambini",
-        nl: "Hartige kip-kerriecrêpe - Kind",
-        pt: "Crepe salgado de frango ao curry - Infantil"
-      },
-      category: {
-        id: "sale",
-        name: {
-          fr: "Salés",
-          th: "ของคาว",
-          en: "Savory",
-          de: "Herzhaft",
-          ja: "食事系",
-          zh: "咸味",
-          ru: "Солёные",
-          ko: "짭짤한",
-          es: "Salados",
-          it: "Salati",
-          nl: "Hartig",
-          pt: "Salgados"
-        }
-      },
-      image: "assets/images/crepe_poulet_curry.png",
-      quantity: {
-        amount: 20,
-        infinite: false
-      },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
-      supplements: []
-    },
-    {
-      id: "crepesaleepouletcurrynormal",
+      id: "crepesaleepouletcurry",
       reference: "CS1",
       price: 79,
       name: {
-        fr: "Crêpe salée poulet curry - Normal",
-        th: "เครปคาวไก่แกงกะหรี่ - ปกติ",
-        en: "Chicken curry savory crêpe - Regular",
-        de: "Herzhafte Hähnchen-Curry-Crêpe - Normal",
-        ja: "チキンカレーのセイボリークレープ（レギュラー）",
-        zh: "咖喱鸡咸味可丽饼 - 常规",
-        ru: "Соленый креп с курицей карри - стандарт",
-        ko: "치킨 카레 세이보리 크레프 - 일반",
-        es: "Crepe salada de pollo al curry - Normal",
-        it: "Crêpe salata al curry di pollo - Normale",
-        nl: "Hartige kip-kerriecrêpe - Normaal",
-        pt: "Crepe salgado de frango ao curry - Normal"
+        fr: "Crêpe salée poulet curry",
+        th: "เครปคาวไก่แกงกะหรี่",
+        en: "Chicken curry savory crêpe",
+        de: "Herzhafte Hähnchen-Curry-Crêpe",
+        ja: "チキンカレーのセイボリークレープ",
+        zh: "咖喱鸡咸味可丽饼",
+        ru: "Соленый креп с курицей карри",
+        ko: "치킨 카레 세이보리 크레프",
+        es: "Crepe salada de pollo al curry",
+        it: "Crêpe salata al curry di pollo",
+        nl: "Hartige kip-kerriecrêpe",
+        pt: "Crepe salgado de frango ao curry"
       },
       category: {
         id: "sale",
@@ -212,111 +169,45 @@ export const menuItems = [
         infinite: false
       },
       ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
-      supplements: []
-    },
-    {
-      id: "crepesaleepouletcurryxl",
-      reference: "CS1XL",
-      price: 119,
-      name: {
-        fr: "Crêpe salée poulet curry - XL",
-        th: "เครปคาวไก่แกงกะหรี่ - XL",
-        en: "Chicken curry savory crêpe - XL",
-        de: "Herzhafte Hähnchen-Curry-Crêpe - XL",
-        ja: "チキンカレーのセイボリークレープ（XL）",
-        zh: "咖喱鸡咸味可丽饼 - 加大",
-        ru: "Соленый креп с курицей карри - XL",
-        ko: "치킨 카레 세이보리 크레프 - XL",
-        es: "Crepe salada de pollo al curry - XL",
-        it: "Crêpe salata al curry di pollo - XL",
-        nl: "Hartige kip-kerriecrêpe - XL",
-        pt: "Crepe salgado de frango ao curry - XL"
-      },
-      category: {
-        id: "sale",
-        name: {
-          fr: "Salés",
-          th: "ของคาว",
-          en: "Savory",
-          de: "Herzhaft",
-          ja: "食事系",
-          zh: "咸味",
-          ru: "Солёные",
-          ko: "짭짤한",
-          es: "Salados",
-          it: "Salati",
-          nl: "Hartig",
-          pt: "Salgados"
+      supplements: [],
+      sizes: [
+        {
+          id: "kids",
+          reference: "CS1E",
+          price: 39,
+          quantity: { amount: 20, infinite: false }
+        },
+        {
+          id: "regular",
+          reference: "CS1",
+          price: 79,
+          quantity: { amount: 25, infinite: false }
+        },
+        {
+          id: "xl",
+          reference: "CS1XL",
+          price: 119,
+          quantity: { amount: 15, infinite: false }
         }
-      },
-      image: "assets/images/crepe_poulet_curry.png",
-      quantity: {
-        amount: 15,
-        infinite: false
-      },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
-      supplements: []
+      ]
     },
     {
-      id: "crepesaleeporchacheenfant",
-      reference: "CS2E",
-      price: 39,
-      name: {
-        fr: "Crêpe salée porc haché - Enfant",
-        th: "เครปคาวหมูสับ - เด็ก",
-        en: "Minced pork savory crêpe - Kids",
-        de: "Herzhafte Crêpe mit gehacktem Schwein - Kinder",
-        ja: "豚ひき肉のセイボリークレープ（キッズ）",
-        zh: "碎猪肉咸味可丽饼 - 儿童",
-        ru: "Соленый креп с рубленой свининой - дети",
-        ko: "다진 돼지고기 세이보리 크레프 - 키즈",
-        es: "Crepe salada de cerdo picado - Infantil",
-        it: "Crêpe salata al maiale tritato - Bambini",
-        nl: "Hartige crêpe met gehakt varkensvlees - Kind",
-        pt: "Crepe salgado de porco moído - Infantil"
-      },
-      category: {
-        id: "sale",
-        name: {
-          fr: "Salés",
-          th: "ของคาว",
-          en: "Savory",
-          de: "Herzhaft",
-          ja: "食事系",
-          zh: "咸味",
-          ru: "Солёные",
-          ko: "짭짤한",
-          es: "Salados",
-          it: "Salati",
-          nl: "Hartig",
-          pt: "Salgados"
-        }
-      },
-      image: "assets/images/crepe_porc_hache.png",
-      quantity: {
-        amount: 20,
-        infinite: false
-      },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache",'fromage', "oignon", "ail", "salade_composee"],
-      supplements: []
-    },
-    {
-      id: "crepesaleeporchachenormal",
+      id: "crepesaleeporchache",
       reference: "CS2",
       price: 79,
       name: {
-        fr: "Crêpe salée porc haché - Normal",
-        th: "เครปคาวหมูสับ - ปกติ",
-        en: "Minced pork savory crêpe - Regular",
-        de: "Herzhafte Crêpe mit gehacktem Schwein - Normal",
-        ja: "豚ひき肉のセイボリークレープ（レギュラー）",
-        zh: "碎猪肉咸味可丽饼 - 常规",
-        ru: "Соленый креп с рубленой свининой - стандарт",
-        ko: "다진 돼지고기 세이보리 크레프 - 일반",
-        es: "Crepe salada de cerdo picado - Normal",
-        it: "Crêpe salata al maiale tritato - Normale",
-        nl: "Hartige crêpe met gehakt varkensvlees - Normaal",
-        pt: "Crepe salgado de porco moído - Normal"
+        fr: "Crêpe salée porc haché",
+        th: "เครปคาวหมูสับ",
+        en: "Minced pork savory crêpe",
+        de: "Herzhafte Crêpe mit gehacktem Schwein",
+        ja: "豚ひき肉のセイボリークレープ",
+        zh: "碎猪肉咸味可丽饼",
+        ru: "Соленый креп с рубленой свининой",
+        ko: "다진 돼지고기 세이보리 크레프",
+        es: "Crepe salada de cerdo picado",
+        it: "Crêpe salata al maiale tritato",
+        nl: "Hartige crêpe met gehakt varkensvlees",
+        pt: "Crepe salgado de porco moído"
       },
       category: {
         id: "sale",
@@ -341,111 +232,45 @@ export const menuItems = [
         infinite: false
       },
       ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache",'fromage', "oignon", "ail", "salade_composee"],
-      supplements: []
-    },
-    {
-      id: "crepesaleeporchachexl",
-      reference: "CS2XL",
-      price: 119,
-      name: {
-        fr: "Crêpe salée porc haché - XL",
-        th: "เครปคาวหมูสับ - XL",
-        en: "Minced pork savory crêpe - XL",
-        de: "Herzhafte Crêpe mit gehacktem Schwein - XL",
-        ja: "豚ひき肉のセイボリークレープ（XL）",
-        zh: "碎猪肉咸味可丽饼 - 加大",
-        ru: "Соленый креп с рубленой свининой - XL",
-        ko: "다진 돼지고기 세이보리 크레프 - XL",
-        es: "Crepe salada de cerdo picado - XL",
-        it: "Crêpe salata al maiale tritato - XL",
-        nl: "Hartige crêpe met gehakt varkensvlees - XL",
-        pt: "Crepe salgado de porco moído - XL"
-      },
-      category: {
-        id: "sale",
-        name: {
-          fr: "Salés",
-          th: "ของคาว",
-          en: "Savory",
-          de: "Herzhaft",
-          ja: "食事系",
-          zh: "咸味",
-          ru: "Солёные",
-          ko: "짭짤한",
-          es: "Salados",
-          it: "Salati",
-          nl: "Hartig",
-          pt: "Salgados"
+      supplements: [],
+      sizes: [
+        {
+          id: "kids",
+          reference: "CS2E",
+          price: 39,
+          quantity: { amount: 20, infinite: false }
+        },
+        {
+          id: "regular",
+          reference: "CS2",
+          price: 79,
+          quantity: { amount: 25, infinite: false }
+        },
+        {
+          id: "xl",
+          reference: "CS2XL",
+          price: 119,
+          quantity: { amount: 15, infinite: false }
         }
-      },
-      image: "assets/images/crepe_porc_hache.png",
-      quantity: {
-        amount: 15,
-        infinite: false
-      },
-      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "porc_hache",'fromage', "oignon", "ail", "salade_composee"],
-      supplements: []
+      ]
     },
     {
-      id: "crepesaleesaladeenfant",
-      reference: "CS3E",
-      price: 39,
-      name: {
-        fr: "Crêpe salée salade - Enfant",
-        th: "เครปคาวสลัด - เด็ก",
-        en: "Salad savory crêpe - Kids",
-        de: "Herzhafte Salat-Crêpe - Kinder",
-        ja: "サラダのセイボリークレープ（キッズ）",
-        zh: "沙拉咸味可丽饼 - 儿童",
-        ru: "Соленый креп с салатом - дети",
-        ko: "샐러드 세이보리 크레프 - 키즈",
-        es: "Crepe salada de ensalada - Infantil",
-        it: "Crêpe salata all'insalata - Bambini",
-        nl: "Hartige saladecrêpe - Kind",
-        pt: "Crepe salgado de salada - Infantil"
-      },
-      category: {
-        id: "sale",
-        name: {
-          fr: "Salés",
-          th: "ของคาว",
-          en: "Savory",
-          de: "Herzhaft",
-          ja: "食事系",
-          zh: "咸味",
-          ru: "Солёные",
-          ko: "짭짤한",
-          es: "Salados",
-          it: "Salati",
-          nl: "Hartig",
-          pt: "Salgados"
-        }
-      },
-      image: "assets/images/crepe_salade.png",
-      quantity: {
-        amount: 20,
-        infinite: false
-      },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
-      supplements: []
-    },
-    {
-      id: "crepesaleesaladenormal",
+      id: "crepesaleesalade",
       reference: "CS3",
       price: 79,
       name: {
-        fr: "Crêpe salée salade - Normal",
-        th: "เครปคาวสลัด - ปกติ",
-        en: "Salad savory crêpe - Regular",
-        de: "Herzhafte Salat-Crêpe - Normal",
-        ja: "サラダのセイボリークレープ（レギュラー）",
-        zh: "沙拉咸味可丽饼 - 常规",
-        ru: "Соленый креп с салатом - стандарт",
-        ko: "샐러드 세이보리 크레프 - 일반",
-        es: "Crepe salada de ensalada - Normal",
-        it: "Crêpe salata all'insalata - Normale",
-        nl: "Hartige saladecrêpe - Normaal",
-        pt: "Crepe salgado de salada - Normal"
+        fr: "Crêpe salée salade",
+        th: "เครปคาวสลัด",
+        en: "Salad savory crêpe",
+        de: "Herzhafte Salat-Crêpe",
+        ja: "サラダのセイボリークレープ",
+        zh: "沙拉咸味可丽饼",
+        ru: "Соленый креп с салатом",
+        ko: "샐러드 세이보리 크레프",
+        es: "Crepe salada de ensalada",
+        it: "Crêpe salata all'insalata",
+        nl: "Hartige saladecrêpe",
+        pt: "Crepe salgado de salada"
       },
       category: {
         id: "sale",
@@ -470,50 +295,27 @@ export const menuItems = [
         infinite: false
       },
       ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
-      supplements: []
-    },
-    {
-      id: "crepesaleesaladexl",
-      reference: "CS3XL",
-      price: 119,
-      name: {
-        fr: "Crêpe salée salade - XL",
-        th: "เครปคาวสลัด - XL",
-        en: "Salad savory crêpe - XL",
-        de: "Herzhafte Salat-Crêpe - XL",
-        ja: "サラダのセイボリークレープ（XL）",
-        zh: "沙拉咸味可丽饼 - 加大",
-        ru: "Соленый креп с салатом - XL",
-        ko: "샐러드 세이보리 크레프 - XL",
-        es: "Crepe salada de ensalada - XL",
-        it: "Crêpe salata all'insalata - XL",
-        nl: "Hartige saladecrêpe - XL",
-        pt: "Crepe salgado de salada - XL"
-      },
-      category: {
-        id: "sale",
-        name: {
-          fr: "Salés",
-          th: "ของคาว",
-          en: "Savory",
-          de: "Herzhaft",
-          ja: "食事系",
-          zh: "咸味",
-          ru: "Солёные",
-          ko: "짭짤한",
-          es: "Salados",
-          it: "Salati",
-          nl: "Hartig",
-          pt: "Salgados"
+      supplements: [],
+      sizes: [
+        {
+          id: "kids",
+          reference: "CS3E",
+          price: 39,
+          quantity: { amount: 20, infinite: false }
+        },
+        {
+          id: "regular",
+          reference: "CS3",
+          price: 79,
+          quantity: { amount: 30, infinite: false }
+        },
+        {
+          id: "xl",
+          reference: "CS3XL",
+          price: 119,
+          quantity: { amount: 15, infinite: false }
         }
-      },
-      image: "assets/images/crepe_salade.png",
-      quantity: {
-        amount: 15,
-        infinite: false
-      },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
-      supplements: []
+      ]
     },
     {
       id: "crepechokaju",

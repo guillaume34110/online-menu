@@ -21,6 +21,8 @@ let dishModalImageSourceElement = null;
 let dishModalPriceElement = null;
 let dishModalNameElement = null;
 let dishModalDescriptionElement = null;
+let dishModalSizesSection = null;
+let dishModalSizesList = null;
 let dishModalIngredientsSection = null;
 let dishModalIngredientsList = null;
 let dishModalSupplementsSection = null;
@@ -184,12 +186,35 @@ const updateDishModalContent = (dish) => {
     }
   }
 
+  // Afficher le prix principal (normal) ou le prix unique
+  const displayPrice = dish.sizes ? 
+    dish.sizes.find(size => size.id === 'regular')?.price || dish.price : 
+    dish.price;
+  
   if (dishModalPriceElement) {
-    dishModalPriceElement.textContent = formatPrice(dish.price);
+    dishModalPriceElement.textContent = formatPrice(displayPrice);
   }
 
   if (dishModalDescriptionElement) {
     dishModalDescriptionElement.textContent = buildDishDescription(dish, lang, dishName);
+  }
+
+  // Afficher les tailles si disponibles
+  const hasSizes = Array.isArray(dish.sizes) && dish.sizes.length > 0;
+  if (dishModalSizesSection) {
+    dishModalSizesSection.hidden = !hasSizes;
+  }
+
+  if (dishModalSizesList && hasSizes) {
+    clearChildren(dishModalSizesList);
+    dish.sizes.forEach((size) => {
+      const sizeElement = createElement('div', { class: 'dish-modal-size-item' }, [
+        createElement('span', { class: 'dish-modal-size-name' }, translate(`dish.size.${size.id}`)),
+        createElement('span', { class: 'dish-modal-size-reference' }, size.reference),
+        createElement('span', { class: 'dish-modal-size-price' }, formatPrice(size.price))
+      ]);
+      dishModalSizesList.appendChild(sizeElement);
+    });
   }
 
   const translatedIngredients = getTranslatedIngredientNames(dish, lang);
@@ -272,6 +297,8 @@ const setupDishModal = () => {
   dishModalPriceElement = dishModalElement.querySelector('#dish-modal-price');
   dishModalNameElement = dishModalElement.querySelector('#dish-modal-title');
   dishModalDescriptionElement = dishModalElement.querySelector('#dish-modal-description');
+  dishModalSizesSection = dishModalElement.querySelector('#dish-modal-sizes');
+  dishModalSizesList = dishModalElement.querySelector('.dish-modal-sizes-list');
   dishModalIngredientsSection = dishModalElement.querySelector('#dish-modal-ingredients');
   dishModalIngredientsList = dishModalElement.querySelector('.dish-modal-ingredients-list');
   dishModalSupplementsSection = dishModalElement.querySelector('#dish-modal-supplements');
@@ -417,7 +444,11 @@ const createDishCard = (dish) => {
   
   const priceElement = card.querySelector('.dish-price');
   if (priceElement) {
-    priceElement.textContent = formatPrice(dish.price);
+    // Afficher le prix normal si des tailles sont disponibles, sinon le prix unique
+    const displayPrice = dish.sizes ? 
+      dish.sizes.find(size => size.id === 'regular')?.price || dish.price : 
+      dish.price;
+    priceElement.textContent = formatPrice(displayPrice);
   }
 
   // Ingrédients (collapsible)

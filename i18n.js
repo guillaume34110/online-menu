@@ -51,7 +51,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Ingrédients',
     'dish.modal.supplementsTitle': 'Suppléments',
     'dish.description.template': 'Savourez {name}, une création maison qui marie avec finesse {ingredients}.',
-    'dish.description.fallback': 'Savourez {name}, une création maison tout en élégance.'
+    'dish.description.fallback': 'Savourez {name}, une création maison tout en élégance.',
+    'dish.size.kids': 'Enfant',
+    'dish.size.regular': 'Normal',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Tailles disponibles'
   },
   en: {
     'app.title': 'Restaurant Menu',
@@ -87,7 +91,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Ingredients',
     'dish.modal.supplementsTitle': 'Add-ons',
     'dish.description.template': 'Savor {name}, a refined house specialty showcasing {ingredients}.',
-    'dish.description.fallback': 'Savor {name}, a refined house specialty crafted with care.'
+    'dish.description.fallback': 'Savor {name}, a refined house specialty crafted with care.',
+    'dish.size.kids': 'Kids',
+    'dish.size.regular': 'Regular',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Available sizes'
   },
   de: {
     'app.title': 'Restaurantmenü',
@@ -124,7 +132,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Zutaten',
     'dish.modal.supplementsTitle': 'Extras',
     'dish.description.template': 'Genießen Sie {name}, eine feine Hausspezialität, die {ingredients} in Szene setzt.',
-    'dish.description.fallback': 'Genießen Sie {name}, eine feine Hausspezialität aus meisterlicher Hand.'
+    'dish.description.fallback': 'Genießen Sie {name}, eine feine Hausspezialität aus meisterlicher Hand.',
+    'dish.size.kids': 'Kinder',
+    'dish.size.regular': 'Normal',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Verfügbare Größen'
   },
   ru: {
     'app.title': 'Меню ресторана',
@@ -161,7 +173,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Ингредиенты',
     'dish.modal.supplementsTitle': 'Дополнения',
     'dish.description.template': 'Насладитесь {name} — изысканной фирменной композицией, сочетающей {ingredients}.',
-    'dish.description.fallback': 'Насладитесь {name} — изысканным фирменным блюдом, созданным с заботой.'
+    'dish.description.fallback': 'Насладитесь {name} — изысканным фирменным блюдом, созданным с заботой.',
+    'dish.size.kids': 'Детский',
+    'dish.size.regular': 'Стандарт',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Доступные размеры'
   },
   zh: {
     'app.title': '餐厅菜单',
@@ -198,7 +214,11 @@ const translations = {
     'dish.modal.ingredientsTitle': '配料',
     'dish.modal.supplementsTitle': '加选项',
     'dish.description.template': '品味 {name}，主厨以匠心演绎 {ingredients}，呈现精致风味。',
-    'dish.description.fallback': '品味 {name}，主厨以匠心呈现的精致佳肴。'
+    'dish.description.fallback': '品味 {name}，主厨以匠心呈现的精致佳肴。',
+    'dish.size.kids': '儿童',
+    'dish.size.regular': '常规',
+    'dish.size.xl': '加大',
+    'dish.sizes.title': '可选份量'
   },
   ko: {
     'app.title': '레스토랑 메뉴',
@@ -235,7 +255,11 @@ const translations = {
     'dish.modal.ingredientsTitle': '재료',
     'dish.modal.supplementsTitle': '추가 옵션',
     'dish.description.template': '세련된 하우스 스페셜 {name}로 {ingredients}의 조화를 만끽하세요.',
-    'dish.description.fallback': '세련된 하우스 스페셜 {name}를 정성스럽게 즐겨보세요.'
+    'dish.description.fallback': '세련된 하우스 스페셜 {name}를 정성스럽게 즐겨보세요.',
+    'dish.size.kids': '키즈',
+    'dish.size.regular': '일반',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': '이용 가능한 사이즈'
   },
   ja: {
     'app.title': 'レストランメニュー',
@@ -272,7 +296,11 @@ const translations = {
     'dish.modal.ingredientsTitle': '食材',
     'dish.modal.supplementsTitle': '追加',
     'dish.description.template': '洗練されたシグネチャー料理「{name}」で、{ingredients}の調和をお楽しみください。',
-    'dish.description.fallback': '洗練されたシグネチャー料理「{name}」を心ゆくまでご堪能ください。'
+    'dish.description.fallback': '洗練されたシグネチャー料理「{name}」を心ゆくまでご堪能ください。',
+    'dish.size.kids': 'キッズ',
+    'dish.size.regular': 'レギュラー',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'サイズ選択'
   },
   es: {
     'app.title': 'Menú del restaurante',
@@ -309,7 +337,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Ingredientes',
     'dish.modal.supplementsTitle': 'Suplementos',
     'dish.description.template': 'Deguste {name}, una especialidad de la casa que realza con elegancia {ingredients}.',
-    'dish.description.fallback': 'Deguste {name}, una especialidad de la casa elaborada con esmero.'
+    'dish.description.fallback': 'Deguste {name}, una especialidad de la casa elaborada con esmero.',
+    'dish.size.kids': 'Infantil',
+    'dish.size.regular': 'Normal',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Tamaños disponibles'
   },
   it: {
     'app.title': 'Menu del ristorante',
@@ -346,7 +378,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Ingredienti',
     'dish.modal.supplementsTitle': 'Supplementi',
     'dish.description.template': 'Gustate {name}, una specialità della casa che esalta con raffinatezza {ingredients}.',
-    'dish.description.fallback': 'Gustate {name}, una specialità della casa curata con raffinatezza.'
+    'dish.description.fallback': 'Gustate {name}, una specialità della casa curata con raffinatezza.',
+    'dish.size.kids': 'Bambini',
+    'dish.size.regular': 'Normale',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Taglie disponibili'
   },
   nl: {
     'app.title': 'Restaurantmenu',
@@ -383,7 +419,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Ingrediënten',
     'dish.modal.supplementsTitle': 'Extra\'s',
     'dish.description.template': 'Geniet van {name}, een verfijnde huisspecialiteit waarin {ingredients} schitteren.',
-    'dish.description.fallback': 'Geniet van {name}, een verfijnde huisspecialiteit met zorg bereid.'
+    'dish.description.fallback': 'Geniet van {name}, een verfijnde huisspecialiteit met zorg bereid.',
+    'dish.size.kids': 'Kind',
+    'dish.size.regular': 'Normaal',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Beschikbare formaten'
   },
   pt: {
     'app.title': 'Menu do restaurante',
@@ -420,7 +460,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'Ingredientes',
     'dish.modal.supplementsTitle': 'Adicionais',
     'dish.description.template': 'Saboreie {name}, uma especialidade da casa que destaca com sofisticação {ingredients}.',
-    'dish.description.fallback': 'Saboreie {name}, uma especialidade da casa preparada com sofisticação.'
+    'dish.description.fallback': 'Saboreie {name}, uma especialidade da casa preparada com sofisticação.',
+    'dish.size.kids': 'Infantil',
+    'dish.size.regular': 'Normal',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Tamanhos disponíveis'
   },
   th: {
     'app.title': 'เมนูร้านอาหาร',
@@ -457,7 +501,11 @@ const translations = {
     'dish.modal.ingredientsTitle': 'ส่วนผสม',
     'dish.modal.supplementsTitle': 'ตัวเลือกเพิ่มเติม',
     'dish.description.template': 'ลิ้มลอง {name} เมนูซิกเนเจอร์ที่ผสาน {ingredients} อย่างประณีต',
-    'dish.description.fallback': 'ลิ้มลอง {name} เมนูซิกเนเจอร์ที่ปรุงอย่างประณีต'
+    'dish.description.fallback': 'ลิ้มลอง {name} เมนูซิกเนเจอร์ที่ปรุงอย่างประณีต',
+    'dish.size.kids': 'เด็ก',
+    'dish.size.regular': 'ปกติ',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'ขนาดที่มีให้เลือก'
   }
 };
 
