@@ -294,7 +294,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "beurre", "sel", "salade", "tomates", "fromage", "vinaigrette"],
+      ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "salade", "tomates", "fromage", "vinaigrette"],
       supplements: [],
       sizes: [
         {
@@ -362,7 +362,7 @@ export const menuItems = [
         "oeufs",
         "lait",
         "sucre",
-        "beurre",
+        "huile_de_coco",
         { fr: "Pâte Chokaju", en: "Chokaju spread", th: "สเปรดโชคาจู" },
         { fr: "Noisettes torréfiées", en: "Roasted hazelnuts", th: "ฮาเซลนัตส์อบ" }
       ],
@@ -413,7 +413,7 @@ export const menuItems = [
         "oeufs",
         "lait",
         "sucre",
-        "beurre",
+        "huile_de_coco",
         { fr: "Caramel maison", en: "House caramel", th: "คาราเมลโฮมเมด" },
         { fr: "Noix de coco râpée", en: "Toasted coconut", th: "มะพร้าวคั่ว" }
       ],
@@ -459,7 +459,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_fraise"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_fraise"],
       supplements: []
     },
     {
@@ -502,7 +502,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_mure"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_mure"],
       supplements: []
     },
     {
@@ -545,7 +545,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_mulberry"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_mulberry"],
       supplements: []
     },
     {
@@ -588,7 +588,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_gingembre"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_gingembre"],
       supplements: []
     },
     {
@@ -631,7 +631,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_papaye_passion"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_papaye_passion"],
       supplements: []
     },
     {
@@ -674,7 +674,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_ananas"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_ananas"],
       supplements: []
     },
     {
@@ -717,7 +717,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_ananas_passion"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_ananas_passion"],
       supplements: []
     },
     {
@@ -760,7 +760,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_mangue"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_mangue"],
       supplements: []
     },
     {
@@ -803,7 +803,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_mangue_passion"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_mangue_passion"],
       supplements: []
     },
     {
@@ -846,7 +846,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_mangue_verte_citron_vert"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_mangue_verte_citron_vert"],
       supplements: []
     },
     {
@@ -889,7 +889,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_passion"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_passion"],
       supplements: []
     },
     {
@@ -932,7 +932,7 @@ export const menuItems = [
         amount: 30,
         infinite: false
       },
-      ingredients: ["farine", "oeufs", "lait", "sucre", "beurre", "confiture_coco"],
+      ingredients: ["farine", "oeufs", "lait", "sucre", "huile_de_coco", "confiture_coco"],
       supplements: []
     }
 ];
