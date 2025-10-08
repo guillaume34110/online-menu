@@ -816,6 +816,7 @@ main {
 
 .dish-modal-size-name {
   font-weight: 600;
+  width: 25%;
   color: var(--color-text);
 }
 
@@ -832,6 +833,8 @@ main {
   font-weight: 600;
   color: var(--color-accent);
   font-size: 1.1rem;
+  width: 25%;
+  text-align: right;
 }
 
 body.modal-open {
