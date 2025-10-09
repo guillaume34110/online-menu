@@ -95,10 +95,64 @@ img {
 /* Styles pour la barre de contrôles supérieure */
 .top-bar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.75rem 0;
   margin-bottom: 1rem;
+}
+
+/* En-tête du restaurant */
+.restaurant-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-name {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.location-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.35);
+  transition: all var(--transition-speed);
+  border: 2px solid transparent;
+}
+
+.location-button:hover,
+.location-button:focus {
+  background: linear-gradient(135deg, #f7931e, #ff6b35);
+  box-shadow: 0 6px 18px rgba(247, 147, 30, 0.45);
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.location-button:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
+}
+
+.location-icon {
+  flex-shrink: 0;
 }
 
 .controls {
@@ -118,26 +172,30 @@ img {
   width: 100%;
 }
 
-.contact-phone-wrapper {
+.action-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-}
-
-.contact-phone-wrapper .contact-phone {
-  min-width: 220px;
-  text-align: center;
+  gap: 1rem;
 }
 
 .contact-phone {
   font-weight: 600;
   text-decoration: none;
   color: #fff;
-  padding: 0.45rem 0.95rem;
+  padding: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--border-radius);
   background: linear-gradient(135deg, #34c759, #2aa94f);
   box-shadow: 0 4px 10px rgba(46, 172, 75, 0.35);
   transition: transform var(--transition-speed), box-shadow var(--transition-speed), background-color var(--transition-speed), filter var(--transition-speed);
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
 }
 
 .contact-phone:hover,
@@ -580,9 +638,22 @@ main {
     font-size: 14px;
   }
 
-  .top-bar {
-    flex-direction: column;
-    gap: 1rem;
+  .restaurant-name {
+    font-size: 2rem;
+  }
+
+  .action-buttons {
+    gap: 0.5rem;
+  }
+
+  .contact-phone {
+    min-width: 160px;
+    font-size: 0.9rem;
+  }
+
+  .restaurant-header {
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
   }
   
   #dishes-grid {
