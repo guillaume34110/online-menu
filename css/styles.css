@@ -174,7 +174,7 @@ img {
 
 .action-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   gap: 1rem;
