@@ -28,6 +28,10 @@
   
   /* Arrière-plan spécifique */
   --bg-image: url('../assets/bg_morning.png');
+  --bg-image-set-webkit: -webkit-image-set(
+    url('../assets/bg_morning.webp') type('image/webp'),
+    url('../assets/bg_morning.png') type('image/png')
+  );
   --bg-image-set: image-set(
     url('../assets/bg_morning.webp') type('image/webp'),
     url('../assets/bg_morning.png') type('image/png')
@@ -60,6 +64,10 @@
   
   /* Arrière-plan spécifique */
   --bg-image: url('../assets/bgbbao.png');
+  --bg-image-set-webkit: -webkit-image-set(
+    url('../assets/bgbbao.webp') type('image/webp'),
+    url('../assets/bgbbao.png') type('image/png')
+  );
   --bg-image-set: image-set(
     url('../assets/bgbbao.webp') type('image/webp'),
     url('../assets/bgbbao.png') type('image/png')
@@ -92,6 +100,10 @@
   
   /* Arrière-plan spécifique */
   --bg-image: url('../assets/bg_sunset.png');
+  --bg-image-set-webkit: -webkit-image-set(
+    url('../assets/bg_sunset.webp') type('image/webp'),
+    url('../assets/bg_sunset.png') type('image/png')
+  );
   --bg-image-set: image-set(
     url('../assets/bg_sunset.webp') type('image/webp'),
     url('../assets/bg_sunset.png') type('image/png')
@@ -124,6 +136,10 @@
   
   /* Arrière-plan spécifique */
   --bg-image: url('../assets/bg_night.png');
+  --bg-image-set-webkit: -webkit-image-set(
+    url('../assets/bg_night.webp') type('image/webp'),
+    url('../assets/bg_night.png') type('image/png')
+  );
   --bg-image-set: image-set(
     url('../assets/bg_night.webp') type('image/webp'),
     url('../assets/bg_night.png') type('image/png')
