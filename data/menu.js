@@ -2,7 +2,7 @@ export const menuItems = [
     {
       id: "cafe",
       reference: "B1",
-      price: 35,
+      price: 50,
       name: {
         fr: "Café",
         th: "กาแฟ",
@@ -40,49 +40,6 @@ export const menuItems = [
         infinite: true
       },
       ingredients: ["cafe", "eau"],
-      supplements: []
-    },
-    {
-      id: "tea",
-      reference: "B2",
-      price: 35,
-      name: {
-        fr: "Thé",
-        th: "ชา",
-        en: "Tea",
-        de: "Tee",
-        ja: "お茶",
-        zh: "茶",
-        ru: "Чай",
-        ko: "차",
-        es: "Té",
-        it: "Tè",
-        nl: "Thee",
-        pt: "Chá"
-      },
-      category: {
-        id: "boisson",
-        name: {
-          fr: "Boissons",
-          th: "เครื่องดื่ม",
-          en: "Drinks",
-          de: "Getränke",
-          ja: "ドリンク",
-          zh: "饮品",
-          ru: "Напитки",
-          ko: "음료",
-          es: "Bebidas",
-          it: "Bevande",
-          nl: "Drankjes",
-          pt: "Bebidas"
-        }
-      },
-      image: "assets/images/the.png",
-      quantity: {
-        amount: 50,
-        infinite: true
-      },
-      ingredients: ["the", "eau"],
       supplements: []
     },
     {
@@ -134,7 +91,7 @@ export const menuItems = [
       price: 79,
       name: {
         fr: "Crêpe salée poulet curry",
-        th: "เครปคาวไก่แกงกะหรี่",
+        th: "เครปไก่แกงกะหรี่",
         en: "Chicken curry savory crêpe",
         de: "Herzhafte Hähnchen-Curry-Crêpe",
         ja: "チキンカレーのセイボリークレープ",
@@ -169,41 +126,21 @@ export const menuItems = [
         infinite: false
       },
       ingredients: ["farine", "oeufs", "lait", "huile_de_coco", "sel", "poulet",'fromage', "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee"],
-     description: {
-  "fr": "Crêpe dorée et soyeuse, garnie de tendres émincés de poulet poêlés dans un curry thaï authentique aux épices parfumées, relevé d’un lait de coco crémeux. Servie avec du fromage fondant et une salade fraîche, cette création offre un équilibre parfait entre douceur et caractère.",
-  "th": "เครปสีทองเนื้อนุ่มไหม สอดไส้เนื้อไก่หั่นบางผัดในแกงกะหรี่ไทยแท้หอมเครื่องเทศและเข้มข้นด้วยกะทิครีม เสิร์ฟพร้อมชีสละลายและสลัดสด ความกลมกล่อมที่ลงตัวระหว่างความนุ่มนวลและรสเข้มข้น",
-  "en": "Golden, silky crêpe filled with tender chicken strips pan-fried in authentic Thai curry with fragrant spices and rich, creamy coconut milk. Served with melted cheese and fresh salad, this dish balances gentle smoothness with bold, aromatic flavor.",
-  "de": "Goldene, seidige Crêpe, gefüllt mit zarten Hähnchenstreifen, gebraten in authentischem Thai-Curry mit duftenden Gewürzen und cremiger Kokosmilch. Serviert mit geschmolzenem Käse und frischem Salat bietet sie ein harmonisches Gleichgewicht zwischen Milde und Würze.",
-  "ja": "黄金色に焼き上げたなめらかなクレープに、本格的なタイカレーで炒めたやわらかいチキンを包み、ココナッツミルクでまろやかに仕上げました。とろけるチーズと新鮮なサラダを添え、優しさとスパイスの力強さが調和する一皿です。",
-  "zh": "金黄柔滑的可丽饼，包裹以香料浓郁的正宗泰式咖喱炒制的嫩鸡条，并以椰奶提升香浓滑顺。搭配融化芝士与新鲜沙拉，口感柔和与辛香浓烈完美平衡。",
-  "ru": "Золотистый, шелковистый креп, наполненный нежными кусочками курицы, обжаренными в подлинном тайском карри с ароматными специями и сливочным кокосовым молоком. Подается с расплавленным сыром и свежим салатом — гармония мягкости и насыщенного вкуса.",
-  "ko": "황금빛의 부드러운 크레프에 향긋한 향신료로 만든 정통 태국 카레 치킨과 크리미한 코코넛 밀크가 어우러졌습니다. 녹은 치즈와 신선한 샐러드와 함께 부드러움과 짙은 풍미의 조화를 선사합니다.",
-  "es": "Crêpe dorada y sedosa rellena de tiernas tiras de pollo salteadas en curry tailandés auténtico con especias aromáticas y leche de coco cremosa. Servida con queso derretido y ensalada fresca, esta creación ofrece un equilibrio perfecto entre suavidad y sabor intenso.",
-  "it": "Crêpe dorata e setosa farcita con teneri filetti di pollo saltati in curry thailandese autentico con spezie profumate e latte di cocco cremoso. Servita con formaggio fuso e insalata fresca, offre un equilibrio perfetto tra morbidezza e intensità aromatica.",
-  "nl": "Goudkleurige, zijdeachtige crêpe gevuld met malse kippenreepjes gebakken in authentieke Thaise curry met geurige kruiden en romige kokosmelk. Geserveerd met gesmolten kaas en verse salade, brengt deze creatie een perfecte balans tussen zachtheid en kruidige kracht.",
-  "pt": "Crepe dourado e sedoso recheado com tenras tiras de frango refogadas em autêntico curry tailandês com especiarias aromáticas e leite de coco cremoso. Servido com queijo derretido e salada fresca, oferece um equilíbrio perfeito entre suavidade e sabor intenso."
-},
-      supplements: [],
-      sizes: [
-        {
-          id: "kids",
-          reference: "CS1E",
-          price: 39,
-          quantity: { amount: 20, infinite: false }
-        },
-        {
-          id: "regular",
-          reference: "CS1",
-          price: 79,
-          quantity: { amount: 25, infinite: false }
-        },
-        {
-          id: "xl",
-          reference: "CS1XL",
-          price: 119,
-          quantity: { amount: 15, infinite: false }
-        }
-      ]
+      description: {
+        fr: "Crêpe dorée et soyeuse, garnie de tendres émincés de poulet poêlés dans un curry thaï authentique aux épices parfumées, relevé d’un lait de coco crémeux. Servie avec du fromage fondant et une salade fraîche, cette création offre un équilibre parfait entre douceur et caractère.",
+        th: "เครปสีทองเนื้อนุ่มไหม สอดไส้เนื้อไก่หั่นบางผัดในแกงกะหรี่ไทยแท้หอมเครื่องเทศและเข้มข้นด้วยกะทิครีม เสิร์ฟพร้อมชีสละลายและสลัดสด ความกลมกล่อมที่ลงตัวระหว่างความนุ่มนวลและรสเข้มข้น",
+        en: "Golden, silky crêpe filled with tender chicken strips pan-fried in authentic Thai curry with fragrant spices and rich, creamy coconut milk. Served with melted cheese and fresh salad, this dish balances gentle smoothness with bold, aromatic flavor.",
+        de: "Goldene, seidige Crêpe, gefüllt mit zarten Hähnchenstreifen, gebraten in authentischem Thai-Curry mit duftenden Gewürzen und cremiger Kokosmilch. Serviert mit geschmolzenem Käse und frischem Salat bietet sie ein harmonisches Gleichgewicht zwischen Milde und Würze.",
+        ja: "黄金色に焼き上げたなめらかなクレープに、本格的なタイカレーで炒めたやわらかいチキンを包み、ココナッツミルクでまろやかに仕上げました。とろけるチーズと新鮮なサラダを添え、優しさとスパイスの力強さが調和する一皿です。",
+        zh: "金黄柔滑的可丽饼，包裹以香料浓郁的正宗泰式咖喱炒制的嫩鸡条，并以椰奶提升香浓滑顺。搭配融化芝士与新鲜沙拉，口感柔和与辛香浓烈完美平衡。",
+        ru: "Золотистый, шелковистый креп, наполненный нежными кусочками курицы, обжаренными в подлинном тайском карри с ароматными специями и сливочным кокосовым молоком. Подается с расплавленным сыром и свежим салатом — гармония мягкости и насыщенного вкуса.",
+        ko: "황금빛의 부드러운 크레프에 향긋한 향신료로 만든 정통 태국 카레 치킨과 크리미한 코코넛 밀크가 어우러졌습니다. 녹은 치즈와 신선한 샐러드와 함께 부드러움과 짙은 풍미의 조화를 선사합니다.",
+        es: "Crêpe dorada y sedosa rellena de tiernas tiras de pollo salteadas en curry tailandés auténtico con especias aromáticas y leche de coco cremosa. Servida con queso derretido y ensalada fresca, esta creación ofrece un equilibrio perfecto entre suavidad y sabor intenso.",
+        it: "Crêpe dorata e setosa farcita con teneri filetti di pollo saltati in curry thailandese autentico con spezie profumate e latte di cocco cremoso. Servita con formaggio fuso e insalata fresca, offre un equilibrio perfetto tra morbidezza e intensità aromatica.",
+        nl: "Goudkleurige, zijdeachtige crêpe gevuld met malse kippenreepjes gebakken in authentieke Thaise curry met geurige kruiden en romige kokosmelk. Geserveerd met gesmolten kaas en verse salade, brengt deze creatie een perfecte balans tussen zachtheid en kruidige kracht.",
+        pt: "Crepe dourado e sedoso recheado com tenras tiras de frango refogadas em autêntico curry tailandês com especiarias aromáticas e leite de coco cremoso. Servido com queijo derretido e salada fresca, oferece um equilíbrio perfeito entre suavidade e sabor intenso."
+      },
+      supplements: []
     },
     {
       id: "crepesaleeporchache",
@@ -211,7 +148,7 @@ export const menuItems = [
       price: 79,
       name: {
         fr: "Crêpe salée porc haché",
-        th: "เครปคาวหมูสับ",
+        th: "เครปหมูสับ",
         en: "Minced pork savory crêpe",
         de: "Herzhafte Crêpe mit gehacktem Schwein",
         ja: "豚ひき肉のセイボリークレープ",
@@ -260,27 +197,7 @@ export const menuItems = [
         nl: "Goudkleurige ambachtelijke crêpe royaal gevuld met Thais gekruid gehakt varkensvlees, geparfumeerd met gouden knoflook en gekarameliseerde uien volgens Siamese tradities. Gesmolten kaas verrijkt deze authentieke bereiding, vergezeld van een verse salade met Aziatische kruiden.",
         pt: "Crepe artesanal dourado generosamente recheado com porco moído com sabores tailandeses, perfumado com alho dourado e cebolas caramelizadas segundo as tradições siamesas. O queijo derretido enriquece esta preparação autêntica, acompanhada de uma salada fresca com ervas asiáticas."
       },
-      supplements: [],
-      sizes: [
-        {
-          id: "kids",
-          reference: "CS2E",
-          price: 39,
-          quantity: { amount: 20, infinite: false }
-        },
-        {
-          id: "regular",
-          reference: "CS2",
-          price: 79,
-          quantity: { amount: 25, infinite: false }
-        },
-        {
-          id: "xl",
-          reference: "CS2XL",
-          price: 119,
-          quantity: { amount: 15, infinite: false }
-        }
-      ]
+      supplements: []
     },
     {
       id: "crepesaleesalade",
@@ -288,7 +205,7 @@ export const menuItems = [
       price: 79,
       name: {
         fr: "Crêpe salée salade",
-        th: "เครปคาวสลัด",
+        th: "เครปสลัด",
         en: "Salad savory crêpe",
         de: "Herzhafte Salat-Crêpe",
         ja: "サラダのセイボリークレープ",
@@ -337,27 +254,101 @@ export const menuItems = [
         nl: "Fijne en zijdeachtige crêpe, perfecte setting voor een tropische salade geïnspireerd door Thaise tuinen. Compositie van knapperige jonge scheuten en exotische groenten badend in zonlicht, vergezeld van delicate kaas, allemaal verhoogd door een Thaise kruiden vinaigrette.",
         pt: "Crepe fino e sedoso, cenário perfeito para uma salada tropical inspirada nos jardins tailandeses. Composição de brotos jovens crocantes e vegetais exóticos banhados pela luz do sol, acompanhada de queijo delicado, tudo realçado com um vinagrete de ervas tailandesas."
       },
-      supplements: [],
-      sizes: [
-        {
-          id: "kids",
-          reference: "CS3E",
-          price: 39,
-          quantity: { amount: 20, infinite: false }
-        },
-        {
-          id: "regular",
-          reference: "CS3",
-          price: 79,
-          quantity: { amount: 30, infinite: false }
-        },
-        {
-          id: "xl",
-          reference: "CS3XL",
-          price: 119,
-          quantity: { amount: 15, infinite: false }
+      supplements: []
+    },
+    {
+      id: "somtamthai",
+      reference: "ST1",
+      price: 79,
+      name: {
+        fr: "Somtam Thai",
+        th: "ส้มตำไทย",
+        en: "Somtam Thai",
+        de: "Somtam Thai",
+        ja: "ソムタム・タイ",
+        zh: "泰式木瓜沙拉",
+        ru: "Сомтам Тай",
+        ko: "솜탐 타이",
+        es: "Somtam Thai",
+        it: "Somtam Thai",
+        nl: "Somtam Thai",
+        pt: "Somtam Thai"
+      },
+      category: {
+        id: "somtam",
+        name: {
+          fr: "Somtam",
+          th: "ส้มตำ",
+          en: "Somtam",
+          de: "Somtam",
+          ja: "ソムタム",
+          zh: "青木瓜沙拉",
+          ru: "Сомтам",
+          ko: "솜탐",
+          es: "Som Tam",
+          it: "Som Tam",
+          nl: "Som Tam",
+          pt: "Som Tam"
         }
-      ]
+      },
+      image: "assets/images/somtamthai.png",
+      quantity: { amount: 50, infinite: true },
+      ingredients: [
+        "papaye_verte", "piment", "ail", "tomates", "citron_vert", "sauce_poisson", "cacahuetes", "sucre_de_palmier"
+      ],
+      description: {
+        fr: "Papaye verte râpée, relevée d'un trait de citron vert, d'ail et de piment, ourlée d’une sauce de poisson soyeuse et d’un voile de sucre de palmier. Un classique thaï au croquant lumineux, ponctué de cacahuètes torréfiées.",
+        th: "มะละกอดิบขูด คลุกเคล้าด้วยน้ำมะนาว กระเทียม และพริก เติมกลิ่นนัวด้วยน้ำปลาและความหวานละมุนของน้ำตาลโตนด โรยถั่วลิสง หอม กรอบ สดชื่น",
+        en: "Finely shredded green papaya lifted by lime, garlic and chili, glazed with silky fish sauce and palm sugar. A bright, crunchy Thai classic crowned with toasted peanuts."
+      },
+      supplements: []
+    },
+    {
+      id: "somtamissaan",
+      reference: "ST2",
+      price: 79,
+      name: {
+        fr: "Somtam Isaan",
+        th: "ส้มตำอีสาน",
+        en: "Somtam Isaan",
+        de: "Somtam Isaan",
+        ja: "ソムタム・イーサーン",
+        zh: "伊桑木瓜沙拉",
+        ru: "Сомтам Иссан",
+        ko: "솜탐 이산",
+        es: "Somtam Isaan",
+        it: "Somtam Isaan",
+        nl: "Somtam Isaan",
+        pt: "Somtam Isaan"
+      },
+      category: {
+        id: "somtam",
+        name: {
+          fr: "Somtam",
+          th: "ส้มตำ",
+          en: "Somtam",
+          de: "Somtam",
+          ja: "ソムタム",
+          zh: "青木瓜沙拉",
+          ru: "Сомтам",
+          ko: "솜탐",
+          es: "Som Tam",
+          it: "Som Tam",
+          nl: "Som Tam",
+          pt: "Som Tam"
+        }
+      },
+      image: "assets/images/somtamisaan.png",
+      quantity: { amount: 50, infinite: true },
+      ingredients: [
+        "papaye_verte", "piment", "ail", "tomates", "citron_vert", "sauce_poisson", "cacahuetes", "sucre_de_palmier"
+      ],
+      description: {
+        fr: "Une interprétation du Nord-Est, plus franche et parfumée : papaye verte ciselée, citron vert éclatant, ail et piment, soutenus par une salinité délicate et une douceur de sucre de palmier. Un relief aromatique intense, d’une belle longueur.",
+        th: "ส้มตำสไตล์อีสาน รสชัด หอมฉุนสดใส มะละกอกรอบ น้ำมะนาวเด่น กระเทียม พริก และกลิ่นนัวกลมกล่อม หวานบางๆ จากน้ำตาลโตนด ยาวนานในปลายลิ้น",
+        en: "The bolder, northeastern expression: crisp green papaya, vivid lime, garlic and chili, carried by gentle salinity and a veil of palm sugar. Aromatic depth with lasting finish."
+      },
+      supplements: []
     },
     {
       id: "crepechokaju",

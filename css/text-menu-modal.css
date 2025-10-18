@@ -1,0 +1,383 @@
+/* Menu textuel traditionnel dans modal */
+
+.text-menu-modal-content .qr-modal-header {
+  display: none;
+}
+
+.text-menu-traditional {
+  font-family: var(--font-primary);
+  color: #1a1a1a;
+  line-height: 1.3;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.62);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Header avec nom restaurant */
+.menu-header {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+.menu-restaurant-name {
+  font-family: var(--font-secondary);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.15rem 0;
+  letter-spacing: 0.05em;
+}
+
+.menu-restaurant-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0;
+  color: #555;
+}
+
+/* Grille 2 colonnes : gauche crepes, droite boissons/supplements */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.menu-column-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-category {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 0;
+}
+
+.category-title {
+  font-family: var(--font-secondary);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 0.2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.menu-items {
+  margin: 0 !important;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: max-content minmax(40px, 2fr) max-content;
+  align-items: baseline;
+  column-gap: 0.35rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.2;
+}
+
+.menu-item-left {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.menu-item-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  display: inline;
+  white-space: nowrap;
+}
+
+.menu-item-reference {
+  display: inline;
+  font-size: 0.7rem;
+  color: #666;
+  margin-left: 0.3rem;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+}
+
+.menu-item-dots {
+  width: 100%;
+  border-bottom: 1px dotted #aaa;
+  margin: 0;
+  min-width: 30px;
+  height: 1px;
+  align-self: center;
+}
+
+.menu-item-price {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+/* Tailles multiples */
+.menu-item-sizes {
+  margin-left: 0;
+  margin-top: 0.15rem;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.menu-item-size {
+  display: inline;
+}
+
+.menu-item-size:not(:last-child)::after {
+  content: ' | ';
+  margin: 0 0.2rem;
+}
+
+.size-name {
+  font-weight: 600;
+}
+
+.size-reference {
+  font-size: 0.7rem;
+}
+
+.size-price {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* Items compressés (confitures) - une seule ligne */
+.menu-item-compressed {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.menu-item-compressed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.menu-item-compressed-name-block {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.menu-item-variants {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+  display: block;
+  margin-top: 0.25rem;
+  margin-left: 0;
+}
+
+/* Table pour crêpes salées */
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  table-layout: auto;
+}
+
+.menu-table thead th {
+  font-family: var(--font-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: right;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-table thead th:first-child {
+  text-align: left;
+}
+
+.menu-table thead th:nth-child(2),
+.menu-table thead th:nth-child(3),
+.menu-table thead th:nth-child(4) {
+  width: 4rem;
+  min-width: 4rem;
+  max-width: 4rem;
+}
+
+.menu-table tbody td {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+.menu-table tbody td:first-child {
+  font-weight: 600;
+  color: #1a1a1a;
+  padding-left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+.menu-table tbody td.price-cell {
+  text-align: right;
+  font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
+  width: 4rem;
+  min-width: 4rem;
+  max-width: 4rem;
+  padding: 0.35rem 0.25rem;
+}
+
+.menu-table tbody tr:not(:last-child) td {
+  border-bottom: 1px dotted #ddd;
+}
+
+/* Section suppléments - compacte */
+.supplements-section {
+  margin-top: 0;
+}
+
+.supplements-title {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.35rem 0;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 0.2rem;
+}
+
+.supplements-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.supplement-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.supplement-name {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.supplement-price {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* Pied de page avec horaires */
+.text-menu-footer {
+  text-align: center;
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .text-menu-modal-content {
+    width: min(var(--modal-frame-width), 90vw);
+  }
+}
+
+@media (max-width: 600px) {
+  .text-menu-modal-body {
+    padding: 1rem 1.5rem;
+  }
+
+  .category-title {
+    font-size: 1.1rem;
+  }
+
+  .menu-item-name,
+  .menu-item-price {
+    font-size: 0.9rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .qr-modal-header {
+    display: block !important;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1rem !important;
+  }
+
+  .text-menu-modal-content .qr-modal-header {
+    display: block !important;
+  }
+
+  .qr-modal-actions {
+    display: none !important;
+  }
+
+  .text-menu-modal-body {
+    background: white !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 1rem !important;
+  }
+
+  .text-menu-traditional {
+    background: white !important;
+    color: #000 !important;
+  }
+
+  .menu-grid {
+    gap: 1rem 2rem;
+  }
+
+  .category-title {
+    font-size: 1.2rem;
+    page-break-after: avoid;
+  }
+
+  .menu-category {
+    page-break-inside: avoid;
+  }
+
+  .menu-table {
+    page-break-inside: avoid;
+  }
+}

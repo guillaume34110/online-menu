@@ -1,0 +1,331 @@
+/* Menu textuel - Style */
+
+.text-menu-page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.text-menu-container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Effet glass morphism */
+.text-menu-glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  padding: 2.5rem;
+  overflow: hidden;
+}
+
+/* Header */
+.text-menu-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 1.5rem;
+}
+
+.text-menu-header .restaurant-name {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 0.75rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text-menu-header .opening-hours {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+  margin: 0 0 1rem 0;
+  padding: 0.6rem 1.2rem;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #ff6b35, #f7931e);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  transition: all var(--transition-speed);
+}
+
+.back-button::before {
+  content: '←';
+  font-size: 1.2rem;
+}
+
+.back-button:hover,
+.back-button:focus {
+  background: linear-gradient(135deg, #f7931e, #ff6b35);
+  box-shadow: 0 6px 18px rgba(247, 147, 30, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Content */
+.text-menu-content {
+  margin-bottom: 2rem;
+}
+
+.menu-category {
+  margin-bottom: 2.5rem;
+}
+
+.category-title {
+  font-family: var(--font-secondary);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all var(--transition-speed);
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-info {
+  flex: 1;
+}
+
+.menu-item-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.menu-item-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.menu-item-reference {
+  background: var(--color-accent);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.5px;
+}
+
+.menu-item-description {
+  font-size: 0.95rem;
+  color: var(--color-text-alt);
+  line-height: 1.5;
+  margin: 0.5rem 0 0 0;
+}
+
+.menu-item-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.menu-item-size {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.size-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.size-reference {
+  font-size: 0.85rem;
+  color: var(--color-text-alt);
+  font-style: italic;
+}
+
+.size-price {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.menu-item-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* Compressed items (jam crepes) */
+.menu-item-compressed {
+  display: block;
+}
+
+.menu-item-compressed .menu-item-header {
+  margin-bottom: 0.75rem;
+}
+
+.menu-item-variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.variant-tag {
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Footer - Supplements */
+.text-menu-footer {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-menu-footer h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#supplements-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.supplement-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.supplement-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.supplement-price {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* Loading indicator */
+.text-menu-content .loading-indicator {
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-menu-glass {
+    padding: 1.5rem;
+  }
+
+  .text-menu-header .restaurant-name {
+    font-size: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu-item-price {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-menu-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .text-menu-glass {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .text-menu-header .restaurant-name {
+    font-size: 1.75rem;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .menu-item-name {
+    font-size: 1.1rem;
+  }
+}

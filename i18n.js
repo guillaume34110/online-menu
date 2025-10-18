@@ -1,7 +1,10 @@
 /**
  * Module de gestion des langues (i18n)
  */
-import { getStoredData, storeData, EVENTS, STORAGE_KEYS, emitEvent } from './utils.js';
+import { getStoredData, storeData, EVENTS, STORAGE_KEYS, emitEvent, onEvent as onEventUtil } from './utils.js';
+
+export { EVENTS };
+export const onEvent = onEventUtil;
 
 // Langues disponibles
 const AVAILABLE_LANGUAGES = ['en','th','fr' , 'de', 'ru', 'zh', 'ko', 'ja', 'es', 'it', 'nl', 'pt'];
@@ -14,6 +17,31 @@ export const normalizeLanguage = (lang) => {
   return String(lang).toLowerCase().split('-')[0].trim();
 };
 
+/**
+ * Détecte la langue du navigateur de l'utilisateur
+ * @returns {string} Code de langue détecté ou DEFAULT_LANGUAGE
+ */
+const detectBrowserLanguage = () => {
+  if (typeof navigator === 'undefined') {
+    return DEFAULT_LANGUAGE;
+  }
+
+  // Essayer navigator.language puis navigator.languages
+  const browserLangs = [
+    navigator.language,
+    ...(navigator.languages || [])
+  ].filter(Boolean);
+
+  for (const lang of browserLangs) {
+    const normalized = normalizeLanguage(lang);
+    if (AVAILABLE_LANGUAGES.includes(normalized)) {
+      return normalized;
+    }
+  }
+
+  return DEFAULT_LANGUAGE;
+};
+
 // Traductions
 const translations = {
   fr: {
@@ -22,13 +50,21 @@ const translations = {
     'app.loading': 'Chargement du menu...',
     'menu.empty': 'Aucun plat disponible.',
     'restaurant.name': 'Mia Farang Noi',
+    'restaurant.subtitle': 'Crêpes & Somtam',
     'location.button': 'Notre localisation',
     'location.button.aria': 'Voir notre localisation à Bang Bao Koh Chang sur Google Maps',
     'location.text': 'Bang Bao, Koh Chang',
-    'qr.menu.title': 'Mia farang noi',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Scannez pour accéder au menu',
     'qr.menu.loading': 'Chargement...',
     'qr.menu.button': 'Afficher les QR codes',
+    'text.menu.button': 'Menu textuel',
+    'text.menu.button.aria': 'Voir le menu au format texte',
+    'text.menu.title': 'Menu',
+    'print.text.menu.aria': 'Imprimer le menu',
+    'print.qr.aria': 'Imprimer le QR code',
+    'text.menu.back': 'Retour au menu',
+    'text.menu.supplements.title': 'Suppléments disponibles',
     'qr.request.pending': 'Demande des QR codes en cours...',
     'qr.request.error': 'Erreur: Impossible de récupérer le QR code',
     'qr.menu.alt': 'QR Code du menu',
@@ -37,7 +73,6 @@ const translations = {
     'app.footer': '© 2023 Restaurant - Menu en temps réel',
     'footer.disclaimer': 'Images non contractuelles',
     'header.openingHours': 'Horaires d\'ouverture : 10 h - 21 h 30',
-    'legend.crepeFormats': 'Formats de crêpes : Enfant 100 g | Normal 200 g | XL 300 g',
     'category.all': 'Tous',
     'connection.connected': 'Connecté',
     'connection.connecting': 'Connexion...',
@@ -67,13 +102,20 @@ const translations = {
     'app.loading': 'Loading menu...',
     'menu.empty': 'No dishes available.',
     'restaurant.name': 'Mia Farang Noi',
+    'restaurant.subtitle': 'Crêpes & Somtam',
     'location.button': 'Our location',
     'location.button.aria': 'View our location in Bang Bao Koh Chang on Google Maps',
     'location.text': 'Bang Bao, Koh Chang',
-    'qr.menu.title': 'Mia farang noi',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Scan to access the menu',
     'qr.menu.loading': 'Loading...',
     'qr.menu.button': 'Show QR codes',
+    'text.menu.button': 'Text menu',
+    'text.menu.button.aria': 'View text format menu',
+    'text.menu.title': 'Menu',
+    'print.button.aria': 'Print',
+    'text.menu.back': 'Back to menu',
+    'text.menu.supplements.title': 'Available add-ons',
     'qr.request.pending': 'Requesting QR codes...',
     'qr.request.error': 'Error: Unable to fetch the QR code',
     'qr.menu.alt': 'Menu QR code',
@@ -81,7 +123,6 @@ const translations = {
     'qr.menu.missing': 'Menu QR code not available',
     'footer.disclaimer': 'Images for illustration only',
     'header.openingHours': 'Opening hours: 10:00 - 21:30',
-    'legend.crepeFormats': 'Crepe sizes: Kids 100 g | Regular 200 g | XL 300 g',
     'category.all': 'All',
     'connection.connected': 'Connected',
     'connection.connecting': 'Connecting...',
@@ -111,13 +152,19 @@ const translations = {
     'app.loading': 'Menü wird geladen...',
     'menu.empty': 'Keine Gerichte verfügbar.',
     'restaurant.name': 'Mia Farang Noi',
+    'restaurant.subtitle': 'Crêpes & Somtam',
     'location.button': 'Unser Standort',
     'location.button.aria': 'Unseren Standort in Bang Bao Koh Chang auf Google Maps anzeigen',
     'location.text': 'Bang Bao, Koh Chang',
-    'qr.menu.title': 'Mia farang noi',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Zum Menü scannen',
     'qr.menu.loading': 'Wird geladen...',
     'qr.menu.button': 'QR-Codes anzeigen',
+    'text.menu.button': 'Textmenü',
+    'text.menu.button.aria': 'Menü im Textformat anzeigen',
+    'text.menu.title': 'Menü',
+    'text.menu.back': 'Zurück zum Menü',
+    'text.menu.supplements.title': 'Verfügbare Extras',
     'qr.request.pending': 'QR-Codes werden angefordert...',
     'qr.request.error': 'Fehler: QR-Code kann nicht abgerufen werden',
     'qr.menu.alt': 'Menü-QR-Code',
@@ -126,7 +173,6 @@ const translations = {
     'app.footer': '© 2023 Restaurant - Echtzeitmenü',
     'footer.disclaimer': 'Abbildungen dienen nur zur Illustration',
     'header.openingHours': 'Öffnungszeiten: 10:00 - 21:30',
-    'legend.crepeFormats': 'Crêpe-Größen: Kinder 100 g | Normal 200 g | XL 300 g',
     'category.all': 'Alle',
     'connection.connected': 'Verbunden',
     'connection.connecting': 'Verbindung wird hergestellt...',
@@ -155,10 +201,16 @@ const translations = {
     'app.categories': 'Категории',
     'app.loading': 'Загрузка меню...',
     'menu.empty': 'Нет доступных блюд.',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': 'Блины & Сомтам',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Отсканируйте, чтобы открыть меню',
     'qr.menu.loading': 'Загрузка...',
     'qr.menu.button': 'Показать QR-коды',
+    'text.menu.button': 'Текстовое меню',
+    'text.menu.button.aria': 'Посмотреть меню в текстовом формате',
+    'text.menu.title': 'Меню',
+    'text.menu.back': 'Вернуться к меню',
+    'text.menu.supplements.title': 'Доступные дополнения',
     'qr.request.pending': 'Запрос QR-кодов...',
     'qr.request.error': 'Ошибка: не удалось получить QR-код',
     'qr.menu.alt': 'QR-код меню',
@@ -167,7 +219,6 @@ const translations = {
     'app.footer': '© 2023 Ресторан - меню в реальном времени',
     'footer.disclaimer': 'Изображения приведены для иллюстрации',
     'header.openingHours': 'Часы работы: 10:00 - 21:30',
-    'legend.crepeFormats': 'Размеры крепов: Детский 100 г | Стандарт 200 г | XL 300 г',
     'category.all': 'Все',
     'connection.connected': 'Подключено',
     'connection.connecting': 'Подключение...',
@@ -196,10 +247,16 @@ const translations = {
     'app.categories': '分类',
     'app.loading': '正在加载菜单...',
     'menu.empty': '暂无可用菜品。',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': '可丽饼 & 青木瓜沙拉',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': '扫描以查看菜单',
     'qr.menu.loading': '正在加载...',
     'qr.menu.button': '显示二维码',
+    'text.menu.button': '文字菜单',
+    'text.menu.button.aria': '查看文字格式菜单',
+    'text.menu.title': '菜单',
+    'text.menu.back': '返回菜单',
+    'text.menu.supplements.title': '可选加料',
     'qr.request.pending': '正在请求二维码...',
     'qr.request.error': '错误：无法获取二维码',
     'qr.menu.alt': '菜单二维码',
@@ -208,7 +265,6 @@ const translations = {
     'app.footer': '© 2023 餐厅 - 实时菜单',
     'footer.disclaimer': '图片仅供参考',
     'header.openingHours': '营业时间：10:00 - 21:30',
-    'legend.crepeFormats': '可丽饼份量：儿童 100 克 | 常规 200 克 | XL 300 克',
     'category.all': '全部',
     'connection.connected': '已连接',
     'connection.connecting': '连接中...',
@@ -237,10 +293,16 @@ const translations = {
     'app.categories': '카테고리',
     'app.loading': '메뉴 불러오는 중...',
     'menu.empty': '이용 가능한 메뉴가 없습니다.',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': '크레페 & 솜땀',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': '메뉴에 접속하려면 스캔하세요',
     'qr.menu.loading': '불러오는 중...',
     'qr.menu.button': 'QR 코드 보기',
+    'text.menu.button': '텍스트 메뉴',
+    'text.menu.button.aria': '텍스트 형식 메뉴 보기',
+    'text.menu.title': '메뉴',
+    'text.menu.back': '메뉴로 돌아가기',
+    'text.menu.supplements.title': '추가 옵션',
     'qr.request.pending': 'QR 코드를 요청하는 중...',
     'qr.request.error': '오류: QR 코드를 가져올 수 없습니다',
     'qr.menu.alt': '메뉴 QR 코드',
@@ -249,7 +311,6 @@ const translations = {
     'app.footer': '© 2023 레스토랑 - 실시간 메뉴',
     'footer.disclaimer': '이미지는 연출된 것입니다',
     'header.openingHours': '영업시간: 10:00 - 21:30',
-    'legend.crepeFormats': '크레페 사이즈: 키즈 100 g | 레귤러 200 g | XL 300 g',
     'category.all': '전체',
     'connection.connected': '연결됨',
     'connection.connecting': '연결 중...',
@@ -278,10 +339,16 @@ const translations = {
     'app.categories': 'カテゴリ',
     'app.loading': 'メニューを読み込み中...',
     'menu.empty': '利用できる料理がありません。',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': 'クレープ & ソムタム',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'メニューを見るにはスキャンしてください',
     'qr.menu.loading': '読み込み中...',
     'qr.menu.button': 'QRコードを表示',
+    'text.menu.button': 'テキストメニュー',
+    'text.menu.button.aria': 'テキスト形式メニューを表示',
+    'text.menu.title': 'メニュー',
+    'text.menu.back': 'メニューに戻る',
+    'text.menu.supplements.title': '追加オプション',
     'qr.request.pending': 'QRコードを要求しています...',
     'qr.request.error': 'エラー: QRコードを取得できません',
     'qr.menu.alt': 'メニューQRコード',
@@ -290,7 +357,6 @@ const translations = {
     'app.footer': '© 2023 レストラン - リアルタイムメニュー',
     'footer.disclaimer': '画像はイメージです',
     'header.openingHours': '営業時間：10:00 - 21:30',
-    'legend.crepeFormats': 'クレープのサイズ：キッズ 100 g | レギュラー 200 g | XL 300 g',
     'category.all': 'すべて',
     'connection.connected': '接続済み',
     'connection.connecting': '接続中...',
@@ -319,10 +385,16 @@ const translations = {
     'app.categories': 'Categorías',
     'app.loading': 'Cargando el menú...',
     'menu.empty': 'No hay platos disponibles.',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': 'Crêpes & Somtam',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Escanee para acceder al menú',
     'qr.menu.loading': 'Cargando...',
     'qr.menu.button': 'Mostrar códigos QR',
+    'text.menu.button': 'Menú de texto',
+    'text.menu.button.aria': 'Ver el menú en formato texto',
+    'text.menu.title': 'Menú',
+    'text.menu.back': 'Volver al menú',
+    'text.menu.supplements.title': 'Suplementos disponibles',
     'qr.request.pending': 'Solicitando códigos QR...',
     'qr.request.error': 'Error: no se pudo obtener el código QR',
     'qr.menu.alt': 'Código QR del menú',
@@ -331,7 +403,6 @@ const translations = {
     'app.footer': '© 2023 Restaurante - Menú en tiempo real',
     'footer.disclaimer': 'Imágenes meramente ilustrativas',
     'header.openingHours': 'Horario: 10:00 - 21:30',
-    'legend.crepeFormats': 'Tamaños de crêpe: Infantil 100 g | Normal 200 g | XL 300 g',
     'category.all': 'Todos',
     'connection.connected': 'Conectado',
     'connection.connecting': 'Conectando...',
@@ -360,10 +431,16 @@ const translations = {
     'app.categories': 'Categorie',
     'app.loading': 'Caricamento del menu...',
     'menu.empty': 'Nessun piatto disponibile.',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': 'Crêpes & Somtam',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Scansiona per accedere al menu',
     'qr.menu.loading': 'Caricamento...',
     'qr.menu.button': 'Mostra i QR code',
+    'text.menu.button': 'Menu testuale',
+    'text.menu.button.aria': 'Visualizza il menu in formato testo',
+    'text.menu.title': 'Menu',
+    'text.menu.back': 'Torna al menu',
+    'text.menu.supplements.title': 'Supplementi disponibili',
     'qr.request.pending': 'Richiesta dei codici QR in corso...',
     'qr.request.error': 'Errore: impossibile recuperare il QR code',
     'qr.menu.alt': 'QR code del menu',
@@ -372,7 +449,6 @@ const translations = {
     'app.footer': '© 2023 Ristorante - Menu in tempo reale',
     'footer.disclaimer': 'Immagini puramente indicative',
     'header.openingHours': 'Orari di apertura: 10:00 - 21:30',
-    'legend.crepeFormats': 'Formati crêpe: Bambino 100 g | Normale 200 g | XL 300 g',
     'category.all': 'Tutti',
     'connection.connected': 'Connesso',
     'connection.connecting': 'Connessione...',
@@ -401,10 +477,16 @@ const translations = {
     'app.categories': 'Categorieën',
     'app.loading': 'Menu wordt geladen...',
     'menu.empty': 'Geen gerechten beschikbaar.',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': 'Crêpes & Somtam',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Scan om het menu te bekijken',
     'qr.menu.loading': 'Bezig met laden...',
     'qr.menu.button': 'QR-codes tonen',
+    'text.menu.button': 'Tekstmenu',
+    'text.menu.button.aria': 'Menu in tekstformaat bekijken',
+    'text.menu.title': 'Menu',
+    'text.menu.back': 'Terug naar menu',
+    'text.menu.supplements.title': 'Beschikbare extra\'s',
     'qr.request.pending': 'QR-codes worden aangevraagd...',
     'qr.request.error': 'Fout: QR-code kan niet worden opgehaald',
     'qr.menu.alt': 'Menu QR-code',
@@ -413,7 +495,6 @@ const translations = {
     'app.footer': '© 2023 Restaurant - Menu in realtime',
     'footer.disclaimer': 'Afbeeldingen dienen slechts ter illustratie',
     'header.openingHours': 'Openingstijden: 10:00 - 21:30',
-    'legend.crepeFormats': 'Crêpe-formaten: Kind 100 g | Normaal 200 g | XL 300 g',
     'category.all': 'Alle',
     'connection.connected': 'Verbonden',
     'connection.connecting': 'Verbinding wordt gemaakt...',
@@ -442,10 +523,16 @@ const translations = {
     'app.categories': 'Categorias',
     'app.loading': 'Carregando o menu...',
     'menu.empty': 'Nenhum prato disponível.',
-    'qr.menu.title': 'Mia farang noi',
+    'restaurant.subtitle': 'Crêpes & Somtam',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'Escaneie para acessar o menu',
     'qr.menu.loading': 'Carregando...',
     'qr.menu.button': 'Mostrar QR codes',
+    'text.menu.button': 'Menu de texto',
+    'text.menu.button.aria': 'Ver o menu em formato de texto',
+    'text.menu.title': 'Menu',
+    'text.menu.back': 'Voltar ao menu',
+    'text.menu.supplements.title': 'Adicionais disponíveis',
     'qr.request.pending': 'Solicitando códigos QR...',
     'qr.request.error': 'Erro: não foi possível obter o QR code',
     'qr.menu.alt': 'QR code do menu',
@@ -454,7 +541,6 @@ const translations = {
     'app.footer': '© 2023 Restaurante - Menu em tempo real',
     'footer.disclaimer': 'Imagens meramente ilustrativas',
     'header.openingHours': 'Horário de funcionamento: 10:00 - 21:30',
-    'legend.crepeFormats': 'Tamanhos de crepe: Infantil 100 g | Normal 200 g | XL 300 g',
     'category.all': 'Todos',
     'connection.connected': 'Conectado',
     'connection.connecting': 'Conectando...',
@@ -484,13 +570,19 @@ const translations = {
     'app.loading': 'กำลังโหลดเมนู...',
     'menu.empty': 'ไม่มีเมนูให้บริการ',
     'restaurant.name': 'Mia Farang Noi',
+    'restaurant.subtitle': 'เครป & ส้มตำ',
     'location.button': 'ที่ตั้งร้าน',
     'location.button.aria': 'ดูที่ตั้งร้านของเราที่บางเบ้า เกาะช้าง บน Google Maps',
     'location.text': 'บางเบ้า, เกาะช้าง',
-    'qr.menu.title': 'Mia farang noi',
+    'qr.menu.title': 'Mia Farang noi',
     'qr.menu.heading': 'สแกนเพื่อเปิดเมนู',
     'qr.menu.loading': 'กำลังโหลด...',
     'qr.menu.button': 'แสดงคิวอาร์โค้ด',
+    'text.menu.button': 'เมนูข้อความ',
+    'text.menu.button.aria': 'ดูเมนูในรูปแบบข้อความ',
+    'text.menu.title': 'เมนู',
+    'text.menu.back': 'กลับไปที่เมนู',
+    'text.menu.supplements.title': 'ตัวเลือกเพิ่มเติม',
     'qr.request.pending': 'กำลังร้องขอโค้ด QR...',
     'qr.request.error': 'ข้อผิดพลาด: ไม่สามารถดึง QR code ได้',
     'qr.menu.alt': 'คิวอาร์โค้ดของเมนู',
@@ -499,7 +591,6 @@ const translations = {
     'app.footer': '© 2023 ร้านอาหาร - เมนูเรียลไทม์',
     'footer.disclaimer': 'ภาพใช้เพื่อประกอบการนำเสนอเท่านั้น',
     'header.openingHours': 'เวลาเปิดทำการ: 10:00 - 21:30',
-    'legend.crepeFormats': 'ขนาดเครป: เด็ก 100 g | ปกติ 200 g | XL 300 g',
     'category.all': 'ทั้งหมด',
     'connection.connected': 'เชื่อมต่อแล้ว',
     'connection.connecting': 'กำลังเชื่อมต่อ...',
@@ -528,7 +619,9 @@ const translations = {
 /**
  * État actuel de la langue
  */
-let currentLanguage = normalizeLanguage(getStoredData(STORAGE_KEYS.LANGUAGE, DEFAULT_LANGUAGE));
+let currentLanguage = normalizeLanguage(
+  getStoredData(STORAGE_KEYS.LANGUAGE) || detectBrowserLanguage()
+);
 if (!AVAILABLE_LANGUAGES.includes(currentLanguage)) {
   currentLanguage = DEFAULT_LANGUAGE;
 }

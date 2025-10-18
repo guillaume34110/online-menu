@@ -849,6 +849,92 @@ export const ingredients = [
       pt: "Geleia de coco"
     }
   }
+  ,
+  {
+    id: "papaye_verte",
+    name: {
+      fr: "Papaye verte",
+      th: "มะละกอดิบ",
+      en: "Green papaya",
+      de: "Grüne Papaya",
+      ja: "青パパイヤ",
+      zh: "青木瓜",
+      ru: "Зеленая папайя",
+      ko: "청파파야",
+      es: "Papaya verde",
+      it: "Papaya verde",
+      nl: "Groene papaja",
+      pt: "Mamão verde"
+    }
+  },
+  {
+    id: "citron_vert",
+    name: {
+      fr: "Citron vert",
+      th: "มะนาว",
+      en: "Lime",
+      de: "Limette",
+      ja: "ライム",
+      zh: "青柠",
+      ru: "Лайм",
+      ko: "라임",
+      es: "Lima",
+      it: "Lime",
+      nl: "Limoen",
+      pt: "Limão tahiti"
+    }
+  },
+  {
+    id: "sauce_poisson",
+    name: {
+      fr: "Sauce de poisson",
+      th: "น้ำปลา",
+      en: "Fish sauce",
+      de: "Fischsauce",
+      ja: "ナンプラー",
+      zh: "鱼露",
+      ru: "Рыбный соус",
+      ko: "피시 소스",
+      es: "Salsa de pescado",
+      it: "Salsa di pesce",
+      nl: "Vissaus",
+      pt: "Molho de peixe"
+    }
+  },
+  {
+    id: "cacahuetes",
+    name: {
+      fr: "Cacahuètes",
+      th: "ถั่วลิสง",
+      en: "Peanuts",
+      de: "Erdnüsse",
+      ja: "ピーナッツ",
+      zh: "花生",
+      ru: "Арахис",
+      ko: "땅콩",
+      es: "Cacahuetes",
+      it: "Arachidi",
+      nl: "Pinda's",
+      pt: "Amendoim"
+    }
+  },
+  {
+    id: "sucre_de_palmier",
+    name: {
+      fr: "Sucre de palmier",
+      th: "น้ำตาลโตนด",
+      en: "Palm sugar",
+      de: "Palmzucker",
+      ja: "パームシュガー",
+      zh: "椰糖",
+      ru: "Пальмовый сахар",
+      ko: "팜슈가",
+      es: "Azúcar de palma",
+      it: "Zucchero di palma",
+      nl: "Palmsuiker",
+      pt: "Açúcar de palma"
+    }
+  }
 ];
 
 export const getIngredientById = (id) => {

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="text.menu.title">Menu</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/themes.css">
+  <link rel="stylesheet" href="./css/menu-text.css">
+</head>
+<body class="theme-day text-menu-page">
+  <div class="text-menu-container">
+    <div class="text-menu-glass">
+      <header class="text-menu-header">
+        <h1 class="restaurant-name" data-i18n="restaurant.name">Mia Farang Noi</h1>
+        <p class="opening-hours" data-i18n="header.openingHours">Horaires d'ouverture : 10 h - 21 h 30</p>
+        <a href="index.html" class="back-button" data-i18n="text.menu.back">Retour au menu</a>
+      </header>
+
+      <main class="text-menu-content" id="menu-content">
+        <div class="loading-indicator">
+          <span data-i18n="app.loading">Chargement du menu...</span>
+        </div>
+      </main>
+
+      <footer class="text-menu-footer" id="supplements-section" hidden>
+        <h3 data-i18n="text.menu.supplements.title">Suppléments disponibles</h3>
+        <div id="supplements-list"></div>
+      </footer>
+    </div>
+  </div>
+
+  <script type="module" src="./menu-text.js"></script>
+</body>
+</html>

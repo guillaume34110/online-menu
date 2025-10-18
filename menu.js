@@ -379,7 +379,17 @@ const createCategoryButtons = (categories) => {
   if (allButton) container.appendChild(allButton);
 
   const currentLang = getCurrentLanguage();
-  categories.forEach(category => {
+  const orderMap = { sale: 1, somtam: 2, sucre: 3, boisson: 4 };
+  const sorted = categories.slice().sort((a, b) => {
+    const pa = orderMap[a.id] ?? 99;
+    const pb = orderMap[b.id] ?? 99;
+    if (pa !== pb) return pa - pb;
+    const la = (resolveLocalizedText(a.name, currentLang) || a.id).toLowerCase();
+    const lb = (resolveLocalizedText(b.name, currentLang) || b.id).toLowerCase();
+    return la.localeCompare(lb);
+  });
+
+  sorted.forEach(category => {
     const button = createElement('button', {
       'class': 'btn-category',
       'data-category': category.id
