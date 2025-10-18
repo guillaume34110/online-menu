@@ -291,7 +291,7 @@ export const menuItems = [
           pt: "Som Tam"
         }
       },
-      image: "assets/images/somtamthai.png",
+      image: "assets/images/somtamthai.png?no-webp",
       quantity: { amount: 50, infinite: true },
       ingredients: [
         "papaye_verte", "piment", "ail", "tomates", "citron_vert", "sauce_poisson", "cacahuetes", "sucre_de_palmier"
@@ -338,7 +338,7 @@ export const menuItems = [
           pt: "Som Tam"
         }
       },
-      image: "assets/images/somtamisaan.png",
+      image: "assets/images/somtamisaan.png?no-webp",
       quantity: { amount: 50, infinite: true },
       ingredients: [
         "papaye_verte", "piment", "ail", "tomates", "citron_vert", "sauce_poisson", "cacahuetes", "sucre_de_palmier"
