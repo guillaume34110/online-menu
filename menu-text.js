@@ -373,8 +373,17 @@ const renderMenu = () => {
   const lang = getCurrentLanguage();
   const availableDishes = filterAvailableDishes(menuItemsSource);
   const categories = groupDishesByCategory(availableDishes);
+  const orderMap = { sale: 1, somtam: 2, assiette: 3, sucre: 4, boisson: 5 };
+  const sortedCategories = categories.slice().sort((a, b) => {
+    const pa = orderMap[a.id] ?? 99;
+    const pb = orderMap[b.id] ?? 99;
+    if (pa !== pb) return pa - pb;
+    const nameA = (resolveLocalizedText(a.name, lang) || a.id).toLowerCase();
+    const nameB = (resolveLocalizedText(b.name, lang) || b.id).toLowerCase();
+    return nameA.localeCompare(nameB);
+  });
 
-  categories.forEach(category => {
+  sortedCategories.forEach(category => {
     const section = createCategorySection(category, lang);
     container.appendChild(section);
   });

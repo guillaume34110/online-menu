@@ -497,6 +497,15 @@ const renderMenu = () => {
     }
   });
 
+  // Assiettes (sous le Somtam)
+  categories.forEach(cat => {
+    const catId = cat.id.toLowerCase();
+    if (catId === 'assiette') {
+      const section = createCategory(cat, lang);
+      rightCol.appendChild(section);
+    }
+  });
+
   // Boissons
   categories.forEach(cat => {
     const catId = cat.id.toLowerCase();

@@ -119,6 +119,23 @@ export const ingredients = [
     }
   },
   {
+    id: "riz",
+    name: {
+      fr: "Riz",
+      th: "ข้าว",
+      en: "Rice",
+      de: "Reis",
+      ja: "ご飯",
+      zh: "米饭",
+      ru: "Рис",
+      ko: "밥",
+      es: "Arroz",
+      it: "Riso",
+      nl: "Rijst",
+      pt: "Arroz"
+    }
+  },
+  {
     id: "poivre",
     name: {
       fr: "Poivre",

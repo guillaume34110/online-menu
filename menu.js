@@ -379,7 +379,7 @@ const createCategoryButtons = (categories) => {
   if (allButton) container.appendChild(allButton);
 
   const currentLang = getCurrentLanguage();
-  const orderMap = { sale: 1, somtam: 2, sucre: 3, boisson: 4 };
+  const orderMap = { sale: 1, somtam: 2, assiette: 3, sucre: 4, boisson: 5 };
   const sorted = categories.slice().sort((a, b) => {
     const pa = orderMap[a.id] ?? 99;
     const pb = orderMap[b.id] ?? 99;

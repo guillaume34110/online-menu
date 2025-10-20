@@ -90,18 +90,18 @@ export const menuItems = [
       reference: "CS1",
       price: 79,
       name: {
-        fr: "Crêpe salée poulet curry",
+        fr: "Crêpe poulet curry",
         th: "เครปไก่แกงกะหรี่",
-        en: "Chicken curry savory crêpe",
-        de: "Herzhafte Hähnchen-Curry-Crêpe",
-        ja: "チキンカレーのセイボリークレープ",
-        zh: "咖喱鸡咸味可丽饼",
-        ru: "Соленый креп с курицей карри",
-        ko: "치킨 카레 세이보리 크레프",
-        es: "Crepe salada de pollo al curry",
-        it: "Crêpe salata al curry di pollo",
-        nl: "Hartige kip-kerriecrêpe",
-        pt: "Crepe salgado de frango ao curry"
+        en: "Chicken curry crêpe",
+        de: "Hähnchen-Curry-Crêpe",
+        ja: "チキンカレーのクレープ",
+        zh: "咖喱鸡可丽饼",
+        ru: "Креп с курицей карри",
+        ko: "치킨 카레 크레프",
+        es: "Crepe de pollo al curry",
+        it: "Crêpe al curry di pollo",
+        nl: "Kip-kerriecrêpe",
+        pt: "Crepe de frango ao curry"
       },
       category: {
         id: "sale",
@@ -147,18 +147,18 @@ export const menuItems = [
       reference: "CS2",
       price: 79,
       name: {
-        fr: "Crêpe salée porc haché",
+        fr: "Crêpe porc haché",
         th: "เครปหมูสับ",
-        en: "Minced pork savory crêpe",
-        de: "Herzhafte Crêpe mit gehacktem Schwein",
-        ja: "豚ひき肉のセイボリークレープ",
-        zh: "碎猪肉咸味可丽饼",
-        ru: "Соленый креп с рубленой свининой",
-        ko: "다진 돼지고기 세이보리 크레프",
-        es: "Crepe salada de cerdo picado",
-        it: "Crêpe salata al maiale tritato",
-        nl: "Hartige crêpe met gehakt varkensvlees",
-        pt: "Crepe salgado de porco moído"
+        en: "Minced pork crêpe",
+        de: "Crêpe mit gehacktem Schwein",
+        ja: "豚ひき肉のクレープ",
+        zh: "碎猪肉可丽饼",
+        ru: "Креп с рубленой свининой",
+        ko: "다진 돼지고기 크레프",
+        es: "Crepe de cerdo picado",
+        it: "Crêpe al maiale tritato",
+        nl: "Crêpe met gehakt varkensvlees",
+        pt: "Crepe de porco moído"
       },
       category: {
         id: "sale",
@@ -204,18 +204,18 @@ export const menuItems = [
       reference: "CS3",
       price: 79,
       name: {
-        fr: "Crêpe salée salade",
+        fr: "Crêpe salade",
         th: "เครปสลัด",
-        en: "Salad savory crêpe",
-        de: "Herzhafte Salat-Crêpe",
-        ja: "サラダのセイボリークレープ",
-        zh: "沙拉咸味可丽饼",
-        ru: "Соленый креп с салатом",
-        ko: "샐러드 세이보리 크레프",
-        es: "Crepe salada de ensalada",
-        it: "Crêpe salata all'insalata",
-        nl: "Hartige saladecrêpe",
-        pt: "Crepe salgado de salada"
+        en: "Salad crêpe",
+        de: "Salat-Crêpe",
+        ja: "サラダクレープ",
+        zh: "沙拉可丽饼",
+        ru: "Креп с салатом",
+        ko: "샐러드 크레프",
+        es: "Crepe de ensalada",
+        it: "Crêpe all'insalata",
+        nl: "Saladecrêpe",
+        pt: "Crepe de salada"
       },
       category: {
         id: "sale",
@@ -348,6 +348,135 @@ export const menuItems = [
         th: "ส้มตำสไตล์อีสาน รสชัด หอมฉุนสดใส มะละกอกรอบ น้ำมะนาวเด่น กระเทียม พริก และกลิ่นนัวกลมกล่อม หวานบางๆ จากน้ำตาลโตนด ยาวนานในปลายลิ้น",
         en: "The bolder, northeastern expression: crisp green papaya, vivid lime, garlic and chili, carried by gentle salinity and a veil of palm sugar. Aromatic depth with lasting finish."
       },
+      supplements: []
+    },
+    {
+      id: "assiettepouletcurry",
+      reference: "AS1",
+      price: 119,
+      name: {
+        fr: "Assiette poulet curry",
+        th: "จานไก่แกงกะหรี่",
+        en: "Chicken curry dish",
+        de: "Hähnchen-Curry-Teller",
+        ja: "チキンカリープレート",
+        zh: "咖喱鸡拼盘",
+        ru: "Блюдо с курицей карри",
+        ko: "치킨 카레 플레이트",
+        es: "Plato de pollo al curry",
+        it: "Piatto di curry di pollo",
+        nl: "Kip-kerrieschotel",
+        pt: "Prato de frango ao curry"
+      },
+      category: {
+        id: "assiette",
+        name: {
+          fr: "Assiettes",
+          th: "จานหลัก",
+          en: "Dishes",
+          de: "Gerichte",
+          ja: "プレート",
+          zh: "拼盘",
+          ru: "Блюда",
+          ko: "플레이트",
+          es: "Platos",
+          it: "Piatti",
+          nl: "Schotels",
+          pt: "Pratos"
+        }
+      },
+      image: "assets/images/assiette-curry.png?no-webp",
+      quantity: {
+        amount: 25,
+        infinite: false
+      },
+      ingredients: ["poulet", "pate_de_curry", "lait_de_coco", "oignon", "ail", "salade_composee", "riz"],
+      supplements: []
+    },
+    {
+      id: "assietteporchache",
+      reference: "AS2",
+      price: 119,
+      name: {
+        fr: "Assiette porc haché",
+        th: "จานหมูสับ",
+        en: "Minced pork dish",
+        de: "Teller mit gehacktem Schwein",
+        ja: "豚ひき肉プレート",
+        zh: "碎猪肉拼盘",
+        ru: "Блюдо с рубленой свининой",
+        ko: "다진 돼지고기 플레이트",
+        es: "Plato de cerdo picado",
+        it: "Piatto di maiale tritato",
+        nl: "Schotel met gehakt varkensvlees",
+        pt: "Prato de porco moído"
+      },
+      category: {
+        id: "assiette",
+        name: {
+          fr: "Assiettes",
+          th: "จานหลัก",
+          en: "Dishes",
+          de: "Gerichte",
+          ja: "プレート",
+          zh: "拼盘",
+          ru: "Блюда",
+          ko: "플레이트",
+          es: "Platos",
+          it: "Piatti",
+          nl: "Schotels",
+          pt: "Pratos"
+        }
+      },
+      image: "assets/images/assiette-kapao.png?no-webp",
+      quantity: {
+        amount: 25,
+        infinite: false
+      },
+      ingredients: ["porc_hache", "oignon", "ail", "salade_composee", "riz"],
+      supplements: []
+    },
+    {
+      id: "assiettesalade",
+      reference: "AS3",
+      price: 119,
+      name: {
+        fr: "Assiette salade",
+        th: "จานสลัด",
+        en: "Salad dish",
+        de: "Salatteller",
+        ja: "サラダプレート",
+        zh: "沙拉拼盘",
+        ru: "Блюдо с салатом",
+        ko: "샐러드 플레이트",
+        es: "Plato de ensalada",
+        it: "Piatto di insalata",
+        nl: "Saladeschotel",
+        pt: "Prato de salada"
+      },
+      category: {
+        id: "assiette",
+        name: {
+          fr: "Assiettes",
+          th: "จานหลัก",
+          en: "Dishes",
+          de: "Gerichte",
+          ja: "プレート",
+          zh: "拼盘",
+          ru: "Блюда",
+          ko: "플레이트",
+          es: "Platos",
+          it: "Piatti",
+          nl: "Schotels",
+          pt: "Pratos"
+        }
+      },
+      image: "assets/images/assiette-salade.png?no-webp",
+      quantity: {
+        amount: 30,
+        infinite: false
+      },
+      ingredients: ["salade_composee", "vinaigrette", "riz"],
       supplements: []
     },
     {
