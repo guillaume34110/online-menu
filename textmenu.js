@@ -546,6 +546,7 @@ const renderMenu = () => {
   const footer = document.createElement('div');
   footer.className = 'text-menu-footer';
   footer.innerHTML = `<p>${translate('header.openingHours')}</p>`;
+  footer.innerHTML += `<p>${translate('header.closedMonday')}</p>`;
   contentContainer.appendChild(footer);
 };
 

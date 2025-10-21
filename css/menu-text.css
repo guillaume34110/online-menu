@@ -42,16 +42,31 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.text-menu-header .opening-hours-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .text-menu-header .opening-hours {
   font-size: 1rem;
   font-weight: 600;
   color: #212529;
-  margin: 0 0 1rem 0;
+  margin: 0;
   padding: 0.6rem 1.2rem;
   display: inline-block;
   background: rgba(255, 255, 255, 0.9);
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-menu-header .closed-note {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #212529;
+  margin: 0;
 }
 
 .back-button {

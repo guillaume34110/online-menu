@@ -77,12 +77,98 @@ export const menuItems = [
           pt: "Bebidas"
         }
       },
-      image: "assets/images/water.png",
+      image: "assets/images/water.png?no-webp",
       quantity: {
         amount: 100,
         infinite: true
       },
       ingredients: ["eau"],
+      supplements: []
+    },
+    {
+      id: "biereleopetite",
+      reference: "B4",
+      price: 60,
+      name: {
+        fr: "Bière Leo (petite)",
+        th: "เบียร์ลีโอ (ขวดเล็ก)",
+        en: "Leo Beer (small)",
+        de: "Leo Bier (klein)",
+        ja: "レオビール（小瓶）",
+        zh: "Leo 啤酒（小瓶）",
+        ru: "Пиво Leo (маленькое)",
+        ko: "레오 맥주 (소병)",
+        es: "Cerveza Leo (pequeña)",
+        it: "Birra Leo (piccola)",
+        nl: "Leo-bier (klein)",
+        pt: "Cerveja Leo (pequena)"
+      },
+      category: {
+        id: "boisson",
+        name: {
+          fr: "Boissons",
+          th: "เครื่องดื่ม",
+          en: "Drinks",
+          de: "Getränke",
+          ja: "ドリンク",
+          zh: "饮品",
+          ru: "Напитки",
+          ko: "음료",
+          es: "Bebidas",
+          it: "Bevande",
+          nl: "Drankjes",
+          pt: "Bebidas"
+        }
+      },
+      image: "assets/images/bierre-leo.png?no-webp",
+      quantity: {
+        amount: 40,
+        infinite: true
+      },
+      ingredients: [],
+      supplements: []
+    },
+    {
+      id: "biereleogrande",
+      reference: "B5",
+      price: 90,
+      name: {
+        fr: "Bière Leo (grande)",
+        th: "เบียร์ลีโอ (ขวดใหญ่)",
+        en: "Leo Beer (large)",
+        de: "Leo Bier (groß)",
+        ja: "レオビール（大瓶）",
+        zh: "Leo 啤酒（大瓶）",
+        ru: "Пиво Leo (большое)",
+        ko: "레오 맥주 (대병)",
+        es: "Cerveza Leo (grande)",
+        it: "Birra Leo (grande)",
+        nl: "Leo-bier (groot)",
+        pt: "Cerveja Leo (grande)"
+      },
+      category: {
+        id: "boisson",
+        name: {
+          fr: "Boissons",
+          th: "เครื่องดื่ม",
+          en: "Drinks",
+          de: "Getränke",
+          ja: "ドリンク",
+          zh: "饮品",
+          ru: "Напитки",
+          ko: "음료",
+          es: "Bebidas",
+          it: "Bevande",
+          nl: "Drankjes",
+          pt: "Bebidas"
+        }
+      },
+      image: "assets/images/bierre-leo.png?no-webp",
+      quantity: {
+        amount: 40,
+        infinite: true
+      },
+      ingredients: [],
       supplements: []
     },
     {
