@@ -7,7 +7,7 @@ export { EVENTS };
 export const onEvent = onEventUtil;
 
 // Langues disponibles
-const AVAILABLE_LANGUAGES = ['en','th','fr' , 'de', 'ru', 'zh', 'ko', 'ja', 'es', 'it', 'nl', 'pt'];
+const AVAILABLE_LANGUAGES = ['en','th','fr' , 'de', 'ru', 'zh', 'ko', 'ja', 'es', 'it', 'nl', 'pt', 'pl'];
 const DEFAULT_LANGUAGE = 'en';
 
 export const normalizeLanguage = (lang) => {
@@ -574,6 +574,59 @@ const translations = {
     'dish.size.regular': 'Normal',
     'dish.size.xl': 'XL',
     'dish.sizes.title': 'Tamanhos disponíveis'
+  },
+  pl: {
+    'app.title': 'Menu restauracji',
+    'app.categories': 'Kategorie',
+    'app.loading': 'Ładowanie menu...',
+    'menu.empty': 'Brak dostępnych dań.',
+    'restaurant.name': 'Mia Farang Noi',
+    'restaurant.subtitle': 'Naleśniki i Somtam',
+    'location.button': 'Nasza lokalizacja',
+    'location.button.aria': 'Zobacz naszą lokalizację w Bang Bao Koh Chang w Mapach Google',
+    'location.text': 'Bang Bao, Koh Chang',
+    'qr.menu.title': 'Mia Farang noi',
+    'qr.menu.heading': 'Zeskanuj, aby zobaczyć menu',
+    'qr.menu.loading': 'Ładowanie...',
+    'qr.menu.button': 'Pokaż kody QR',
+    'text.menu.button': 'Menu tekstowe',
+    'text.menu.button.aria': 'Wyświetl menu w formacie tekstowym',
+    'text.menu.title': 'Menu',
+    'print.text.menu.aria': 'Wydrukuj menu',
+    'print.button.aria': 'Drukuj',
+    'text.menu.back': 'Powrót do menu',
+    'text.menu.supplements.title': 'Dostępne dodatki',
+    'qr.request.pending': 'Trwa pobieranie kodów QR...',
+    'qr.request.error': 'Błąd: nie można pobrać kodu QR',
+    'qr.menu.alt': 'Kod QR menu',
+    'qr.menu.unavailable': 'Kod QR niedostępny',
+    'qr.menu.missing': 'Kod QR menu niedostępny',
+    'app.footer': '© 2023 Restauracja - Menu w czasie rzeczywistym',
+    'footer.disclaimer': 'Zdjęcia mają charakter poglądowy',
+    'header.openingHours': 'Godziny otwarcia: 10:00 - 21:30',
+    'header.closedMonday': 'Nieczynne w poniedziałki',
+    'category.all': 'Wszystkie',
+    'connection.connected': 'Połączono',
+    'connection.connecting': 'Łączenie...',
+    'connection.disconnected': 'Rozłączono',
+    'dish.quantity.infinite': 'Dostępne',
+    'dish.quantity.available': 'Dostępne: {amount}',
+    'dish.quantity.low': 'Pozostało: {amount}',
+    'dish.quantity.out': 'Wyprzedane',
+    'dish.ingredients': 'Składniki: ',
+    'dish.supplements': 'Dodatki:',
+    'dish.supplement.price': '+{price}',
+    'header.phone': 'Rezerwacje: 08 02 02 88 96',
+    'header.phone.aria': 'Zadzwoń do restauracji pod numer 08 02 02 88 96',
+    'dish.modal.close': 'Zamknij szczegóły dania',
+    'dish.modal.ingredientsTitle': 'Składniki',
+    'dish.modal.supplementsTitle': 'Dodatki',
+    'dish.description.template': 'Skosztuj {name}, autorskiej kompozycji, która subtelnie łączy {ingredients}.',
+    'dish.description.fallback': 'Skosztuj {name}, autorskiej specjalności przygotowanej z dbałością.',
+    'dish.size.kids': 'Dziecięca',
+    'dish.size.regular': 'Standard',
+    'dish.size.xl': 'XL',
+    'dish.sizes.title': 'Dostępne rozmiary'
   },
   th: {
     'app.title': 'เมนูร้านอาหาร',

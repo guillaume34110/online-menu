@@ -13,7 +13,8 @@ export const ingredients = [
       es: "Harina",
       it: "Farina",
       nl: "Bloem",
-      pt: "Farinha"
+      pt: "Farinha",
+      pl: "Mąka"
     }
   },
   {
@@ -30,7 +31,8 @@ export const ingredients = [
       es: "Huevos",
       it: "Uova",
       nl: "Eieren",
-      pt: "Ovos"
+      pt: "Ovos",
+      pl: "Jajka"
     }
   },
   {
@@ -47,7 +49,8 @@ export const ingredients = [
       es: "Leche",
       it: "Latte",
       nl: "Melk",
-      pt: "Leite"
+      pt: "Leite",
+      pl: "Mleko"
     }
   },
   {
@@ -64,7 +67,8 @@ export const ingredients = [
       es: "Mantequilla",
       it: "Burro",
       nl: "Boter",
-      pt: "Manteiga"
+      pt: "Manteiga",
+      pl: "Masło"
     }
   },
   {
@@ -81,7 +85,8 @@ export const ingredients = [
       es: "Aceite de coco",
       it: "Olio di cocco",
       nl: "Kokosolie",
-      pt: "Óleo de coco"
+      pt: "Óleo de coco",
+      pl: "Olej kokosowy"
     }
   },
   {
@@ -98,7 +103,8 @@ export const ingredients = [
       es: "Azúcar",
       it: "Zucchero",
       nl: "Suiker",
-      pt: "Açúcar"
+      pt: "Açúcar",
+      pl: "Cukier"
     }
   },
   {
@@ -115,7 +121,8 @@ export const ingredients = [
       es: "Sal",
       it: "Sale",
       nl: "Zout",
-      pt: "Sal"
+      pt: "Sal",
+      pl: "Sól"
     }
   },
   {
@@ -132,7 +139,8 @@ export const ingredients = [
       es: "Arroz",
       it: "Riso",
       nl: "Rijst",
-      pt: "Arroz"
+      pt: "Arroz",
+      pl: "Ryż"
     }
   },
   {
@@ -149,7 +157,8 @@ export const ingredients = [
       es: "Pimienta",
       it: "Pepe",
       nl: "Peper",
-      pt: "Pimenta"
+      pt: "Pimenta",
+      pl: "Pieprz"
     }
   },
   {
@@ -166,7 +175,8 @@ export const ingredients = [
       es: "Jamón",
       it: "Prosciutto",
       nl: "Ham",
-      pt: "Presunto"
+      pt: "Presunto",
+      pl: "Szynka"
     }
   },
   {
@@ -183,7 +193,8 @@ export const ingredients = [
       es: "Queso",
       it: "Formaggio",
       nl: "Kaas",
-      pt: "Queijo"
+      pt: "Queijo",
+      pl: "Ser"
     }
   },
   {
@@ -200,7 +211,8 @@ export const ingredients = [
       es: "Champiñones",
       it: "Funghi",
       nl: "Champignons",
-      pt: "Cogumelos"
+      pt: "Cogumelos",
+      pl: "Grzyby"
     }
   },
   {
@@ -217,7 +229,8 @@ export const ingredients = [
       es: "Chocolate",
       it: "Cioccolato",
       nl: "Chocolade",
-      pt: "Chocolate"
+      pt: "Chocolate",
+      pl: "Czekolada"
     }
   },
   {
@@ -234,7 +247,8 @@ export const ingredients = [
       es: "Plátanos",
       it: "Banane",
       nl: "Bananen",
-      pt: "Bananas"
+      pt: "Bananas",
+      pl: "Banany"
     }
   },
   {
@@ -251,7 +265,8 @@ export const ingredients = [
       es: "Vainilla",
       it: "Vaniglia",
       nl: "Vanille",
-      pt: "Baunilha"
+      pt: "Baunilha",
+      pl: "Wanilia"
     }
   },
   {
@@ -268,7 +283,8 @@ export const ingredients = [
       es: "Café",
       it: "Caffè",
       nl: "Koffie",
-      pt: "Café"
+      pt: "Café",
+      pl: "Kawa"
     }
   },
   {
@@ -285,7 +301,8 @@ export const ingredients = [
       es: "Té",
       it: "Tè",
       nl: "Thee",
-      pt: "Chá"
+      pt: "Chá",
+      pl: "Herbata"
     }
   },
   {
@@ -302,7 +319,8 @@ export const ingredients = [
       es: "Agua",
       it: "Acqua",
       nl: "Water",
-      pt: "Água"
+      pt: "Água",
+      pl: "Woda"
     }
   },
   {
@@ -319,7 +337,8 @@ export const ingredients = [
       es: "Tortilla",
       it: "Tortilla",
       nl: "Wrap",
-      pt: "Tortilha"
+      pt: "Tortilha",
+      pl: "Wrap"
     }
   },
   {
@@ -336,7 +355,8 @@ export const ingredients = [
       es: "Pollo",
       it: "Pollo",
       nl: "Kip",
-      pt: "Frango"
+      pt: "Frango",
+      pl: "Kurczak"
     }
   },
   {
@@ -353,7 +373,8 @@ export const ingredients = [
       es: "Albahaca tailandesa",
       it: "Basilico tailandese",
       nl: "Thaise basilicum",
-      pt: "Manjericão tailandês"
+      pt: "Manjericão tailandês",
+      pl: "Bazylia tajska"
     }
   },
   {
@@ -370,7 +391,8 @@ export const ingredients = [
       es: "Chile",
       it: "Peperoncino",
       nl: "Chilipeper",
-      pt: "Pimenta"
+      pt: "Pimenta",
+      pl: "Papryczka chili"
     }
   },
   {
@@ -387,7 +409,8 @@ export const ingredients = [
       es: "Ajo",
       it: "Aglio",
       nl: "Knoflook",
-      pt: "Alho"
+      pt: "Alho",
+      pl: "Czosnek"
     }
   },
   {
@@ -404,7 +427,8 @@ export const ingredients = [
       es: "Salsa de ostras",
       it: "Salsa di ostriche",
       nl: "Oestersaus",
-      pt: "Molho de ostra"
+      pt: "Molho de ostra",
+      pl: "Sos ostrygowy"
     }
   },
   {
@@ -421,7 +445,8 @@ export const ingredients = [
       es: "Salsa de soja",
       it: "Salsa di soia",
       nl: "Sojasaus",
-      pt: "Molho de soja"
+      pt: "Molho de soja",
+      pl: "Sos sojowy"
     }
   },
   {
@@ -438,7 +463,8 @@ export const ingredients = [
       es: "Carne de res",
       it: "Manzo",
       nl: "Rundvlees",
-      pt: "Carne bovina"
+      pt: "Carne bovina",
+      pl: "Wołowina"
     }
   },
   {
@@ -455,7 +481,8 @@ export const ingredients = [
       es: "Patata",
       it: "Patata",
       nl: "Aardappel",
-      pt: "Batata"
+      pt: "Batata",
+      pl: "Ziemniak"
     }
   },
   {
@@ -472,7 +499,8 @@ export const ingredients = [
       es: "Cacahuetes",
       it: "Arachidi",
       nl: "Pinda's",
-      pt: "Amendoins"
+      pt: "Amendoins",
+      pl: "Orzeszki ziemne"
     }
   },
   {
@@ -489,7 +517,8 @@ export const ingredients = [
       es: "Curry amarillo",
       it: "Curry giallo",
       nl: "Gele curry",
-      pt: "Curry amarelo"
+      pt: "Curry amarelo",
+      pl: "Żółte curry"
     }
   },
   {
@@ -506,7 +535,8 @@ export const ingredients = [
       es: "Pasta de curry",
       it: "Pasta di curry",
       nl: "Currypasta",
-      pt: "Pasta de curry"
+      pt: "Pasta de curry",
+      pl: "Pasta curry"
     }
   },
   {
@@ -523,7 +553,8 @@ export const ingredients = [
       es: "Curry massaman",
       it: "Curry massaman",
       nl: "Massaman-curry",
-      pt: "Curry massaman"
+      pt: "Curry massaman",
+      pl: "Curry Massaman"
     }
   },
   {
@@ -540,7 +571,8 @@ export const ingredients = [
       es: "Leche de coco",
       it: "Latte di cocco",
       nl: "Kokosmelk",
-      pt: "Leite de coco"
+      pt: "Leite de coco",
+      pl: "Mleko kokosowe"
     }
   },
   {
@@ -557,7 +589,8 @@ export const ingredients = [
       es: "Cebolla",
       it: "Cipolla",
       nl: "Ui",
-      pt: "Cebola"
+      pt: "Cebola",
+      pl: "Cebula"
     }
   },
   {
@@ -574,7 +607,8 @@ export const ingredients = [
       es: "Ensalada",
       it: "Insalata",
       nl: "Salade",
-      pt: "Salada"
+      pt: "Salada",
+      pl: "Sałata"
     }
   },
   {
@@ -591,7 +625,8 @@ export const ingredients = [
       es: "Ensalada mixta",
       it: "Insalata mista",
       nl: "Gemengde salade",
-      pt: "Salada mista"
+      pt: "Salada mista",
+      pl: "Sałatka mieszana"
     }
   },
   {
@@ -608,7 +643,8 @@ export const ingredients = [
       es: "Tomates",
       it: "Pomodori",
       nl: "Tomaten",
-      pt: "Tomates"
+      pt: "Tomates",
+      pl: "Pomidory"
     }
   },
   {
@@ -625,7 +661,8 @@ export const ingredients = [
       es: "Vinagreta",
       it: "Vinaigrette",
       nl: "Vinaigrette",
-      pt: "Vinagrete"
+      pt: "Vinagrete",
+      pl: "Sos winegret"
     }
   },
   {
@@ -642,7 +679,8 @@ export const ingredients = [
       es: "Cerdo",
       it: "Maiale",
       nl: "Varkensvlees",
-      pt: "Carne de porco"
+      pt: "Carne de porco",
+      pl: "Wieprzowina"
     }
   },
   {
@@ -659,7 +697,8 @@ export const ingredients = [
       es: "Carne de cerdo picada",
       it: "Maiale macinato",
       nl: "Gehakt varkensvlees",
-      pt: "Carne de porco moída"
+      pt: "Carne de porco moída",
+      pl: "Mielona wieprzowina"
     }
   },
   {
@@ -676,7 +715,8 @@ export const ingredients = [
       es: "Mermelada de fresa",
       it: "Marmellata di fragole",
       nl: "Aardbeienjam",
-      pt: "Geleia de morango"
+      pt: "Geleia de morango",
+      pl: "Dżem truskawkowy"
     }
   },
   {
@@ -693,7 +733,8 @@ export const ingredients = [
       es: "Mermelada de mora",
       it: "Marmellata di mora",
       nl: "Bramenjam",
-      pt: "Geleia de amora"
+      pt: "Geleia de amora",
+      pl: "Dżem jeżynowy"
     }
   },
   {
@@ -710,7 +751,8 @@ export const ingredients = [
       es: "Mermelada de morera",
       it: "Marmellata di gelso",
       nl: "Moerbeienjam",
-      pt: "Geleia de amoreira"
+      pt: "Geleia de amoreira",
+      pl: "Dżem morwowy"
     }
   },
   {
@@ -727,7 +769,8 @@ export const ingredients = [
       es: "Mermelada de jengibre",
       it: "Marmellata di zenzero",
       nl: "Gemberjam",
-      pt: "Geleia de gengibre"
+      pt: "Geleia de gengibre",
+      pl: "Dżem imbirowy"
     }
   },
   {
@@ -744,7 +787,8 @@ export const ingredients = [
       es: "Mermelada de papaya y maracuyá",
       it: "Marmellata di papaya e frutto della passione",
       nl: "Papaja-passievruchtjam",
-      pt: "Geleia de papaia e maracujá"
+      pt: "Geleia de papaia e maracujá",
+      pl: "Dżem z papai i marakui"
     }
   },
   {
@@ -761,7 +805,8 @@ export const ingredients = [
       es: "Mermelada de piña",
       it: "Marmellata di ananas",
       nl: "Ananasjam",
-      pt: "Geleia de abacaxi"
+      pt: "Geleia de abacaxi",
+      pl: "Dżem ananasowy"
     }
   },
   {
@@ -778,7 +823,8 @@ export const ingredients = [
       es: "Mermelada de piña y maracuyá",
       it: "Marmellata di ananas e frutto della passione",
       nl: "Ananas-passievruchtjam",
-      pt: "Geleia de abacaxi e maracujá"
+      pt: "Geleia de abacaxi e maracujá",
+      pl: "Dżem ananasowy z marakują"
     }
   },
   {
@@ -795,7 +841,8 @@ export const ingredients = [
       es: "Mermelada de mango",
       it: "Marmellata di mango",
       nl: "Mangojam",
-      pt: "Geleia de manga"
+      pt: "Geleia de manga",
+      pl: "Dżem mango"
     }
   },
   {
@@ -812,7 +859,8 @@ export const ingredients = [
       es: "Mermelada de mango y maracuyá",
       it: "Marmellata di mango e frutto della passione",
       nl: "Mango-passievruchtjam",
-      pt: "Geleia de manga e maracujá"
+      pt: "Geleia de manga e maracujá",
+      pl: "Dżem mango z marakują"
     }
   },
   {
@@ -829,7 +877,8 @@ export const ingredients = [
       es: "Mermelada de mango verde y lima",
       it: "Marmellata di mango verde e lime",
       nl: "Groene mango-limoenjam",
-      pt: "Geleia de manga verde e limão"
+      pt: "Geleia de manga verde e limão",
+      pl: "Dżem z zielonego mango i limonki"
     }
   },
   {
@@ -846,7 +895,8 @@ export const ingredients = [
       es: "Mermelada de maracuyá",
       it: "Marmellata di frutto della passione",
       nl: "Passievruchtjam",
-      pt: "Geleia de maracujá"
+      pt: "Geleia de maracujá",
+      pl: "Dżem z marakui"
     }
   },
   {
@@ -863,7 +913,8 @@ export const ingredients = [
       es: "Mermelada de coco",
       it: "Marmellata di cocco",
       nl: "Kokosjam",
-      pt: "Geleia de coco"
+      pt: "Geleia de coco",
+      pl: "Dżem kokosowy"
     }
   }
   ,
@@ -881,7 +932,8 @@ export const ingredients = [
       es: "Papaya verde",
       it: "Papaya verde",
       nl: "Groene papaja",
-      pt: "Mamão verde"
+      pt: "Mamão verde",
+      pl: "Zielona papaja"
     }
   },
   {
@@ -898,7 +950,8 @@ export const ingredients = [
       es: "Lima",
       it: "Lime",
       nl: "Limoen",
-      pt: "Limão tahiti"
+      pt: "Limão tahiti",
+      pl: "Limonka"
     }
   },
   {
@@ -915,7 +968,8 @@ export const ingredients = [
       es: "Salsa de pescado",
       it: "Salsa di pesce",
       nl: "Vissaus",
-      pt: "Molho de peixe"
+      pt: "Molho de peixe",
+      pl: "Sos rybny"
     }
   },
   {
@@ -932,7 +986,8 @@ export const ingredients = [
       es: "Cacahuetes",
       it: "Arachidi",
       nl: "Pinda's",
-      pt: "Amendoim"
+      pt: "Amendoim",
+      pl: "Orzeszki ziemne"
     }
   },
   {
@@ -949,7 +1004,8 @@ export const ingredients = [
       es: "Azúcar de palma",
       it: "Zucchero di palma",
       nl: "Palmsuiker",
-      pt: "Açúcar de palma"
+      pt: "Açúcar de palma",
+      pl: "Cukier palmowy"
     }
   }
 ];

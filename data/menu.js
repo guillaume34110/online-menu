@@ -15,7 +15,8 @@ export const menuItems = [
         es: "Café",
         it: "Caffè",
         nl: "Koffie",
-        pt: "Café"
+        pt: "Café",
+        pl: "Kawa"
       },
       category: {
         id: "boisson",
@@ -31,7 +32,8 @@ export const menuItems = [
           es: "Bebidas",
           it: "Bevande",
           nl: "Drankjes",
-          pt: "Bebidas"
+          pt: "Bebidas",
+          pl: "Napoje"
         }
       },
       image: "assets/images/cafe.png",
@@ -58,7 +60,8 @@ export const menuItems = [
         es: "Agua",
         it: "Acqua",
         nl: "Water",
-        pt: "Água"
+        pt: "Água",
+        pl: "Woda"
       },
       category: {
         id: "boisson",
@@ -74,7 +77,8 @@ export const menuItems = [
           es: "Bebidas",
           it: "Bevande",
           nl: "Drankjes",
-          pt: "Bebidas"
+          pt: "Bebidas",
+          pl: "Napoje"
         }
       },
       image: "assets/images/water.png?no-webp",
@@ -101,7 +105,8 @@ export const menuItems = [
         es: "Cerveza Leo (pequeña)",
         it: "Birra Leo (piccola)",
         nl: "Leo-bier (klein)",
-        pt: "Cerveja Leo (pequena)"
+        pt: "Cerveja Leo (pequena)",
+        pl: "Piwo Leo (małe)"
       },
       category: {
         id: "boisson",
@@ -117,7 +122,8 @@ export const menuItems = [
           es: "Bebidas",
           it: "Bevande",
           nl: "Drankjes",
-          pt: "Bebidas"
+          pt: "Bebidas",
+          pl: "Napoje"
         }
       },
       image: "assets/images/bierre-leo.png?no-webp",
@@ -144,7 +150,8 @@ export const menuItems = [
         es: "Cerveza Leo (grande)",
         it: "Birra Leo (grande)",
         nl: "Leo-bier (groot)",
-        pt: "Cerveja Leo (grande)"
+        pt: "Cerveja Leo (grande)",
+        pl: "Piwo Leo (duże)"
       },
       category: {
         id: "boisson",
@@ -160,7 +167,8 @@ export const menuItems = [
           es: "Bebidas",
           it: "Bevande",
           nl: "Drankjes",
-          pt: "Bebidas"
+          pt: "Bebidas",
+          pl: "Napoje"
         }
       },
       image: "assets/images/bierre-leo.png?no-webp",
@@ -187,7 +195,8 @@ export const menuItems = [
         es: "Crepe de pollo al curry",
         it: "Crêpe al curry di pollo",
         nl: "Kip-kerriecrêpe",
-        pt: "Crepe de frango ao curry"
+        pt: "Crepe de frango ao curry",
+        pl: "Naleśnik z kurczakiem curry"
       },
       category: {
         id: "sale",
@@ -203,7 +212,8 @@ export const menuItems = [
           es: "Salados",
           it: "Salati",
           nl: "Hartig",
-          pt: "Salgados"
+          pt: "Salgados",
+          pl: "Wytrawne"
         }
       },
       image: "assets/images/crepe_poulet_curry.png",
@@ -224,7 +234,8 @@ export const menuItems = [
         es: "Crêpe dorada y sedosa rellena de tiernas tiras de pollo salteadas en curry tailandés auténtico con especias aromáticas y leche de coco cremosa. Servida con queso derretido y ensalada fresca, esta creación ofrece un equilibrio perfecto entre suavidad y sabor intenso.",
         it: "Crêpe dorata e setosa farcita con teneri filetti di pollo saltati in curry thailandese autentico con spezie profumate e latte di cocco cremoso. Servita con formaggio fuso e insalata fresca, offre un equilibrio perfetto tra morbidezza e intensità aromatica.",
         nl: "Goudkleurige, zijdeachtige crêpe gevuld met malse kippenreepjes gebakken in authentieke Thaise curry met geurige kruiden en romige kokosmelk. Geserveerd met gesmolten kaas en verse salade, brengt deze creatie een perfecte balans tussen zachtheid en kruidige kracht.",
-        pt: "Crepe dourado e sedoso recheado com tenras tiras de frango refogadas em autêntico curry tailandês com especiarias aromáticas e leite de coco cremoso. Servido com queijo derretido e salada fresca, oferece um equilíbrio perfeito entre suavidade e sabor intenso."
+        pt: "Crepe dourado e sedoso recheado com tenras tiras de frango refogadas em autêntico curry tailandês com especiarias aromáticas e leite de coco cremoso. Servido com queijo derretido e salada fresca, oferece um equilíbrio perfeito entre suavidade e sabor intenso.",
+        pl: "Złocisty, jedwabisty naleśnik wypełniony delikatnymi kawałkami kurczaka smażonymi w autentycznym tajskim curry z aromatycznymi przyprawami i kremowym mlekiem kokosowym. Podawany z roztopionym serem i świeżą sałatką, łączy aksamitną delikatność z wyrazistym, aromatycznym smakiem."
       },
       supplements: []
     },
@@ -244,7 +255,8 @@ export const menuItems = [
         es: "Crepe de cerdo picado",
         it: "Crêpe al maiale tritato",
         nl: "Crêpe met gehakt varkensvlees",
-        pt: "Crepe de porco moído"
+        pt: "Crepe de porco moído",
+        pl: "Naleśnik z mieloną wieprzowiną"
       },
       category: {
         id: "sale",
@@ -260,7 +272,8 @@ export const menuItems = [
           es: "Salados",
           it: "Salati",
           nl: "Hartig",
-          pt: "Salgados"
+          pt: "Salgados",
+          pl: "Wytrawne"
         }
       },
       image: "assets/images/crepe_porc_hache.png",
@@ -281,7 +294,8 @@ export const menuItems = [
         es: "Crêpe artesanal dorada generosamente rellena de cerdo picado con sabores tailandeses, perfumado con ajo dorado y cebollas caramelizadas según las tradiciones siamesas. El queso derretido enriquece esta preparación auténtica, acompañada de una ensalada fresca con hierbas asiáticas.",
         it: "Crêpe artigianale dorata generosamente farcita con maiale tritato dai sapori thailandesi, profumato con aglio dorato e cipolle caramellate secondo le tradizioni siamesi. Il formaggio fuso arricchisce questa preparazione autentica, accompagnata da un'insalata fresca con erbe asiatiche.",
         nl: "Goudkleurige ambachtelijke crêpe royaal gevuld met Thais gekruid gehakt varkensvlees, geparfumeerd met gouden knoflook en gekarameliseerde uien volgens Siamese tradities. Gesmolten kaas verrijkt deze authentieke bereiding, vergezeld van een verse salade met Aziatische kruiden.",
-        pt: "Crepe artesanal dourado generosamente recheado com porco moído com sabores tailandeses, perfumado com alho dourado e cebolas caramelizadas segundo as tradições siamesas. O queijo derretido enriquece esta preparação autêntica, acompanhada de uma salada fresca com ervas asiáticas."
+        pt: "Crepe artesanal dourado generosamente recheado com porco moído com sabores tailandeses, perfumado com alho dourado e cebolas caramelizadas segundo as tradições siamesas. O queijo derretido enriquece esta preparação autêntica, acompanhada de uma salada fresca com ervas asiáticas.",
+        pl: "Złocisty, rzemieślniczy naleśnik hojnie wypełniony tajsko przyprawioną mieloną wieprzowiną, pachnącą złocistym czosnkiem i karmelizowaną cebulą w stylu Syjamu. Roztopiony ser wzbogaca to autentyczne danie, podawane ze świeżą sałatką z azjatyckimi ziołami."
       },
       supplements: []
     },
@@ -301,7 +315,8 @@ export const menuItems = [
         es: "Crepe de ensalada",
         it: "Crêpe all'insalata",
         nl: "Saladecrêpe",
-        pt: "Crepe de salada"
+        pt: "Crepe de salada",
+        pl: "Naleśnik z sałatką"
       },
       category: {
         id: "sale",
@@ -317,7 +332,8 @@ export const menuItems = [
           es: "Salados",
           it: "Salati",
           nl: "Hartig",
-          pt: "Salgados"
+          pt: "Salgados",
+          pl: "Wytrawne"
         }
       },
       image: "assets/images/crepe_salade.png",
@@ -338,7 +354,8 @@ export const menuItems = [
         es: "Crêpe fina y sedosa, escenario perfecto para una ensalada tropical inspirada en los jardines tailandeses. Composición de brotes jóvenes crujientes y vegetales exóticos bañados en luz solar, acompañada de queso delicado, todo realzado con una vinagreta de hierbas tailandesas.",
         it: "Crêpe fine e setosa, cornice perfetta per un'insalata tropicale ispirata ai giardini thailandesi. Composizione di giovani germogli croccanti e verdure esotiche bagnate dalla luce del sole, accompagnata da formaggio delicato, il tutto esaltato da una vinaigrette alle erbe thailandesi.",
         nl: "Fijne en zijdeachtige crêpe, perfecte setting voor een tropische salade geïnspireerd door Thaise tuinen. Compositie van knapperige jonge scheuten en exotische groenten badend in zonlicht, vergezeld van delicate kaas, allemaal verhoogd door een Thaise kruiden vinaigrette.",
-        pt: "Crepe fino e sedoso, cenário perfeito para uma salada tropical inspirada nos jardins tailandeses. Composição de brotos jovens crocantes e vegetais exóticos banhados pela luz do sol, acompanhada de queijo delicado, tudo realçado com um vinagrete de ervas tailandesas."
+        pt: "Crepe fino e sedoso, cenário perfeito para uma salada tropical inspirada nos jardins tailandeses. Composição de brotos jovens crocantes e vegetais exóticos banhados pela luz do sol, acompanhada de queijo delicado, tudo realçado com um vinagrete de ervas tailandesas.",
+        pl: "Delikatny, jedwabisty naleśnik stanowi idealną oprawę dla tropikalnej sałatki inspirowanej tajskimi ogrodami. Chrupiące młode listki i egzotyczne warzywa skąpane w słońcu, podane z subtelnym serem i sosem winegret z tajskimi ziołami."
       },
       supplements: []
     },
@@ -358,7 +375,8 @@ export const menuItems = [
         es: "Somtam Thai",
         it: "Somtam Thai",
         nl: "Somtam Thai",
-        pt: "Somtam Thai"
+        pt: "Somtam Thai",
+        pl: "Som tam (tajski)"
       },
       category: {
         id: "somtam",
@@ -374,7 +392,8 @@ export const menuItems = [
           es: "Som Tam",
           it: "Som Tam",
           nl: "Som Tam",
-          pt: "Som Tam"
+          pt: "Som Tam",
+          pl: "Som tam"
         }
       },
       image: "assets/images/somtamthai.png?no-webp",
@@ -385,7 +404,8 @@ export const menuItems = [
       description: {
         fr: "Papaye verte râpée, relevée d'un trait de citron vert, d'ail et de piment, ourlée d’une sauce de poisson soyeuse et d’un voile de sucre de palmier. Un classique thaï au croquant lumineux, ponctué de cacahuètes torréfiées.",
         th: "มะละกอดิบขูด คลุกเคล้าด้วยน้ำมะนาว กระเทียม และพริก เติมกลิ่นนัวด้วยน้ำปลาและความหวานละมุนของน้ำตาลโตนด โรยถั่วลิสง หอม กรอบ สดชื่น",
-        en: "Finely shredded green papaya lifted by lime, garlic and chili, glazed with silky fish sauce and palm sugar. A bright, crunchy Thai classic crowned with toasted peanuts."
+        en: "Finely shredded green papaya lifted by lime, garlic and chili, glazed with silky fish sauce and palm sugar. A bright, crunchy Thai classic crowned with toasted peanuts.",
+        pl: "Drobno poszatkowana zielona papaja z limonką, czosnkiem i chili, zanurzona w aksamitnym sosie rybnym z dodatkiem cukru palmowego. Klasyczne tajskie danie pełne świeżości i chrupkości, zwieńczone prażonymi orzeszkami ziemnymi."
       },
       supplements: []
     },
@@ -405,7 +425,8 @@ export const menuItems = [
         es: "Somtam Isaan",
         it: "Somtam Isaan",
         nl: "Somtam Isaan",
-        pt: "Somtam Isaan"
+        pt: "Somtam Isaan",
+        pl: "Som tam (Isan)"
       },
       category: {
         id: "somtam",
@@ -421,7 +442,8 @@ export const menuItems = [
           es: "Som Tam",
           it: "Som Tam",
           nl: "Som Tam",
-          pt: "Som Tam"
+          pt: "Som Tam",
+          pl: "Som tam"
         }
       },
       image: "assets/images/somtamisaan.png?no-webp",
@@ -432,7 +454,8 @@ export const menuItems = [
       description: {
         fr: "Une interprétation du Nord-Est, plus franche et parfumée : papaye verte ciselée, citron vert éclatant, ail et piment, soutenus par une salinité délicate et une douceur de sucre de palmier. Un relief aromatique intense, d’une belle longueur.",
         th: "ส้มตำสไตล์อีสาน รสชัด หอมฉุนสดใส มะละกอกรอบ น้ำมะนาวเด่น กระเทียม พริก และกลิ่นนัวกลมกล่อม หวานบางๆ จากน้ำตาลโตนด ยาวนานในปลายลิ้น",
-        en: "The bolder, northeastern expression: crisp green papaya, vivid lime, garlic and chili, carried by gentle salinity and a veil of palm sugar. Aromatic depth with lasting finish."
+        en: "The bolder, northeastern expression: crisp green papaya, vivid lime, garlic and chili, carried by gentle salinity and a veil of palm sugar. Aromatic depth with lasting finish.",
+        pl: "Wyrazistsza, północno-wschodnia odsłona: chrupiąca zielona papaja, soczysta limonka, czosnek i chili, podkreślone delikatną słonością i nutą cukru palmowego. Głęboki aromat, który długo pozostaje na podniebieniu."
       },
       supplements: []
     },
@@ -452,7 +475,8 @@ export const menuItems = [
         es: "Plato de pollo al curry",
         it: "Piatto di curry di pollo",
         nl: "Kip-kerrieschotel",
-        pt: "Prato de frango ao curry"
+        pt: "Prato de frango ao curry",
+        pl: "Zestaw z kurczakiem curry"
       },
       category: {
         id: "assiette",
@@ -468,7 +492,8 @@ export const menuItems = [
           es: "Platos",
           it: "Piatti",
           nl: "Schotels",
-          pt: "Pratos"
+          pt: "Pratos",
+          pl: "Zestawy"
         }
       },
       image: "assets/images/assiette-curry.png?no-webp",
@@ -495,7 +520,8 @@ export const menuItems = [
         es: "Plato de cerdo picado",
         it: "Piatto di maiale tritato",
         nl: "Schotel met gehakt varkensvlees",
-        pt: "Prato de porco moído"
+        pt: "Prato de porco moído",
+        pl: "Zestaw z mieloną wieprzowiną"
       },
       category: {
         id: "assiette",
@@ -511,7 +537,8 @@ export const menuItems = [
           es: "Platos",
           it: "Piatti",
           nl: "Schotels",
-          pt: "Pratos"
+          pt: "Pratos",
+          pl: "Zestawy"
         }
       },
       image: "assets/images/assiette-kapao.png?no-webp",
@@ -538,7 +565,8 @@ export const menuItems = [
         es: "Plato de ensalada",
         it: "Piatto di insalata",
         nl: "Saladeschotel",
-        pt: "Prato de salada"
+        pt: "Prato de salada",
+        pl: "Zestaw sałatkowy"
       },
       category: {
         id: "assiette",
@@ -554,7 +582,8 @@ export const menuItems = [
           es: "Platos",
           it: "Piatti",
           nl: "Schotels",
-          pt: "Pratos"
+          pt: "Pratos",
+          pl: "Zestawy"
         }
       },
       image: "assets/images/assiette-salade.png?no-webp",
@@ -581,7 +610,8 @@ export const menuItems = [
         es: "Crepe Chokaju",
         it: "Crêpe Chokaju",
         nl: "Chokaju-crêpe",
-        pt: "Crepe Chokaju"
+        pt: "Crepe Chokaju",
+        pl: "Naleśnik Chokaju"
       },
       category: {
         id: "sucre",
@@ -597,7 +627,8 @@ export const menuItems = [
           es: "Dulces",
           it: "Dolci",
           nl: "Zoet",
-          pt: "Doces"
+          pt: "Doces",
+          pl: "Słodkie"
         }
       },
       image: "assets/images/crepe-chokaju.png",
@@ -626,7 +657,8 @@ export const menuItems = [
   "es": "Crêpe gourmet de textura sedosa, generosamente cubierta con nuestra pasta Chokaju exclusiva, una fusión única entre chocolate europeo y anacardos tailandeses. Espolvoreada con anacardos dorados que aportan un crujiente delicado y aroma tropical.",
   "it": "Crêpe gourmet dalla texture setosa, generosamente ricoperta con la nostra crema spalmabile Chokaju, una fusione unica tra cioccolato europeo e anacardi thailandesi. Cosparsa di anacardi dorati che donano una croccantezza delicata e un profumo tropicale.",
   "nl": "Gourmetcrêpe met een zijdeachtige textuur, royaal bedekt met onze kenmerkende Chokaju-spread – een unieke fusie van Europese chocolade en Thaise cashewnoten. Bestrooid met gouden cashewnoten die een verfijnde crunch en tropisch aroma toevoegen.",
-  "pt": "Crepe gourmet de textura sedosa, generosamente coberto com o nosso creme Chokaju exclusivo — uma fusão única entre chocolate europeu e castanhas de caju tailandesas. Polvilhado com castanhas douradas que proporcionam crocância delicada e aroma tropical."
+  "pt": "Crepe gourmet de textura sedosa, generosamente coberto com o nosso creme Chokaju exclusivo — uma fusão única entre chocolate europeu e castanhas de caju tailandesas. Polvilhado com castanhas douradas que proporcionam crocância delicada e aroma tropical.",
+  "pl": "Wykwintny naleśnik o jedwabistej strukturze, hojnie pokryty naszą autorską pastą Chokaju — unikalnym połączeniem europejskiej czekolady i tajskich nerkowców. Posypany złocistymi nerkowcami, które dodają subtelnej chrupkości i tropikalnego aromatu."
 },
       supplements: []
     },
@@ -646,7 +678,8 @@ export const menuItems = [
         es: "Crepe Caracoco",
         it: "Crêpe Caracoco",
         nl: "Caracoco-crêpe",
-        pt: "Crepe Caracoco"
+        pt: "Crepe Caracoco",
+        pl: "Naleśnik Caracoco"
       },
       category: {
         id: "sucre",
@@ -662,7 +695,8 @@ export const menuItems = [
           es: "Dulces",
           it: "Dolci",
           nl: "Zoet",
-          pt: "Doces"
+          pt: "Doces",
+          pl: "Słodkie"
         }
       },
       image: "assets/images/crepe-caracoco.png",
@@ -691,7 +725,8 @@ export const menuItems = [
   "es": "Crêpe artesanal dorada, realzada con nuestro caramelo casero de notas ámbar profundas, inspirado en las técnicas de caramelización tailandesas. Una armonía perfecta entre la riqueza del caramelo y la dulzura del coco tropical, revelando aromas cautivadores de Tailandia. Un viaje de sabor.",
   "it": "Crêpe artigianale dorata, impreziosita dal nostro caramello fatto in casa dalle note ambrate intense, ispirato alle tecniche di caramellizzazione thailandesi. Un’armonia perfetta tra la ricchezza del caramello e la dolcezza del cocco tropicale, che rivela aromi avvolgenti della Thailandia. Un viaggio di gusto.",
   "nl": "Goudkleurige ambachtelijke crêpe, verrijkt met onze huisgemaakte karamel met diepe amberkleurige tonen, geïnspireerd door Thaise karamelisatietechnieken. Een perfecte harmonie tussen de rijkdom van de karamel en de zoetheid van tropische kokos, met betoverende aroma’s uit Thailand. Een smaakvolle reis.",
-  "pt": "Crepe artesanal dourado, realçado pelo nosso caramelo caseiro com notas âmbar profundas, inspirado nas técnicas tailandesas de caramelização. Uma harmonia perfeita entre a riqueza do caramelo e a doçura do coco tropical, revelando aromas encantadores da Tailândia. Uma viagem de sabor."
+  "pt": "Crepe artesanal dourado, realçado pelo nosso caramelo caseiro com notas âmbar profundas, inspirado nas técnicas tailandesas de caramelização. Uma harmonia perfeita entre a riqueza do caramelo e a doçura do coco tropical, revelando aromas encantadores da Tailândia. Uma viagem de sabor.",
+  "pl": "Złocisty, rzemieślniczy naleśnik wzbogacony naszym domowym karmelem o głębokich bursztynowych nutach, inspirowanym tajskimi technikami karmelizacji. Doskonała harmonia między bogactwem karmelu a słodyczą tropikalnego kokosa, odsłaniająca urzekające aromaty Tajlandii. Prawdziwa podróż smaków."
 },
       supplements: []
     },
@@ -711,7 +746,8 @@ export const menuItems = [
         es: "Crepe de mermelada de fresa",
         it: "Crêpe con marmellata di fragole",
         nl: "Crêpe met aardbeienjam",
-        pt: "Crepe de geleia de morango"
+        pt: "Crepe de geleia de morango",
+        pl: "Naleśnik z dżemem truskawkowym"
       },
       category: {
         id: "confiture",
@@ -727,7 +763,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_fraise.png",
@@ -748,7 +785,8 @@ export const menuItems = [
   "es": "Crêpe delicadamente dorada, cubierta con nuestra mermelada artesanal de fresa. Cada bocado revela la frescura ácida y la dulzura suave de las fresas maduras al sol, en una textura sedosa que se derrite en la boca. Una escapada gourmet dulce y ligera.",
   "it": "Crêpe delicatamente dorata, ricoperta con la nostra marmellata artigianale di fragole. Ogni boccone rivela la freschezza acidula e la dolcezza morbida delle fragole mature al sole, in una consistenza setosa che si scioglie in bocca. Un’evasione golosa dolce e leggera.",
   "nl": "Delicaat goudkleurige crêpe, bedekt met onze ambachtelijke aardbeienjam. Elke hap onthult de frisse zuurheid en zachte zoetheid van zonrijpe aardbeien, in een zijdezachte textuur die smelt in de mond. Een lichte en zoete culinaire ontsnapping.",
-  "pt": "Crepe delicadamente dourado, coberto com nossa geleia artesanal de morango. Cada mordida revela o frescor e a doçura suave dos morangos maduros ao sol, em uma textura sedosa que derrete na boca. Uma escapada gourmet doce e leve."
+  "pt": "Crepe delicadamente dourado, coberto com nossa geleia artesanal de morango. Cada mordida revela o frescor e a doçura suave dos morangos maduros ao sol, em uma textura sedosa que derrete na boca. Uma escapada gourmet doce e leve.",
+  "pl": "Delikatnie złocisty naleśnik pokryty naszym domowym dżemem truskawkowym. Każdy kęs odkrywa rześką kwasowość i miękką słodycz truskawek dojrzewających w słońcu, w jedwabistej konsystencji rozpływającej się w ustach. Słodka, lekka chwila przyjemności."
 },
       supplements: []
     },
@@ -768,7 +806,8 @@ export const menuItems = [
         es: "Crepe de mermelada de mora",
         it: "Crêpe con marmellata di mora",
         nl: "Crêpe met bramenjam",
-        pt: "Crepe de geleia de amora"
+        pt: "Crepe de geleia de amora",
+        pl: "Naleśnik z dżemem jeżynowym"
       },
       category: {
         id: "confiture",
@@ -784,7 +823,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_mure.png",
@@ -805,7 +845,8 @@ export const menuItems = [
   "es": "Crêpe dorada con reflejos ámbar, generosamente cubierta con nuestra mermelada artesanal de mora. Los sabores intensos y ligeramente ácidos de las moras silvestres estallan en la boca, ofreciendo una sinfonía de sabores naturales y profundos. Una escapada gourmet al corazón de los bosques aromáticos.",
   "it": "Crêpe dorata con riflessi ambrati, generosamente ricoperta con la nostra marmellata artigianale di more. I sapori intensi e leggermente aciduli delle more selvatiche esplodono in bocca, offrendo una sinfonia di gusti naturali e autentici. Un’evasione golosa nel cuore delle foreste profumate.",
   "nl": "Goudkleurige crêpe met amberkleurige glans, royaal bedekt met onze ambachtelijke bramenjam. De intense en lichtzure smaken van wilde bramen barsten open in de mond en bieden een symfonie van diepe, natuurlijke smaken. Een culinaire ontsnapping in het hart van geurige bossen.",
-  "pt": "Crepe dourado com reflexos âmbar, generosamente coberto com nossa geleia artesanal de amora. Os sabores intensos e ligeiramente ácidos das amoras silvestres explodem na boca, oferecendo uma sinfonia de sabores profundos e naturais. Uma fuga gourmet ao coração das florestas perfumadas."
+  "pt": "Crepe dourado com reflexos âmbar, generosamente coberto com nossa geleia artesanal de amora. Os sabores intensos e ligeiramente ácidos das amoras silvestres explodem na boca, oferecendo uma sinfonia de sabores profundos e naturais. Uma fuga gourmet ao coração das florestas perfumadas.",
+  "pl": "Złocisty naleśnik z bursztynowymi refleksami, hojnie pokryty domowym dżemem jeżynowym. Intensywne, lekko kwaskowe nuty leśnych jeżyn eksplodują w ustach, oferując symfonię naturalnych smaków. Słodka ucieczka w pachnące lasy."
 },
       supplements: []
     },
@@ -825,7 +866,8 @@ export const menuItems = [
         es: "Crepe de mermelada de morera",
         it: "Crêpe con marmellata di gelso",
         nl: "Crêpe met moerbeienjam",
-        pt: "Crepe de geleia de amoreira"
+        pt: "Crepe de geleia de amoreira",
+        pl: "Naleśnik z dżemem morwowym"
       },
       category: {
         id: "confiture",
@@ -841,7 +883,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_mulberry.png",
@@ -862,7 +905,8 @@ export const menuItems = [
   "es": "Crêpe sedosa de tonos dorados, cubierta con nuestra mermelada artesanal de mora blanca. La dulzura aterciopelada y los aromas sutiles de estas bayas raras crean una armonía natural y delicada. Una invitación a la serenidad, donde la suavidad frutal se une con la elegancia vegetal.",
   "it": "Crêpe setosa dalle sfumature dorate, ricoperta con la nostra marmellata artigianale di gelso. La dolcezza vellutata e i profumi sottili di queste bacche rare creano un’armonia delicata e naturale. Un momento di serenità, dove la morbidezza fruttata incontra l’eleganza vegetale.",
   "nl": "Zijdezachte crêpe met gouden tinten, bedekt met onze ambachtelijke moerbeienjam. De fluweelzachte zoetheid en subtiele geur van deze zeldzame bessen zorgen voor een delicate, natuurlijke harmonie. Een moment van rust waarin fruitige zachtheid en plantaardige elegantie samenkomen.",
-  "pt": "Crepe sedoso com reflexos dourados, coberto com nossa geleia artesanal de amoreira. A doçura aveludada e os aromas sutis dessas bagas raras criam uma harmonia delicada e natural. Um convite à serenidade, onde a suavidade frutada encontra a elegância vegetal."
+  "pt": "Crepe sedoso com reflexos dourados, coberto com nossa geleia artesanal de amoreira. A doçura aveludada e os aromas sutis dessas bagas raras criam uma harmonia delicada e natural. Um convite à serenidade, onde a suavidade frutada encontra a elegância vegetal.",
+  "pl": "Jedwabisty, złocisty naleśnik pokryty naszym domowym dżemem z morwy. Aksamitna słodycz i subtelny aromat tych rzadkich owoców tworzą delikatną, naturalną harmonię na podniebieniu. Chwila spokoju, w której owocowa delikatność łączy się z roślinną elegancją."
 },
       supplements: []
     },
@@ -882,7 +926,8 @@ export const menuItems = [
         es: "Crepe de mermelada de jengibre",
         it: "Crêpe con marmellata di zenzero",
         nl: "Crêpe met gemberjam",
-        pt: "Crepe de geleia de gengibre"
+        pt: "Crepe de geleia de gengibre",
+        pl: "Naleśnik z dżemem imbirowym"
       },
       category: {
         id: "confiture",
@@ -898,7 +943,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_gingembre.png",
@@ -919,7 +965,8 @@ export const menuItems = [
   "es": "Crêpe dorada y refinada, cubierta con nuestra mermelada artesanal de jengibre elaborada con raíces frescas de jardines tailandeses. El calor especiado y las notas picantes del jengibre real crean una sensación única que despierta las papilas gustativas. Una fusión audaz entre la dulzura suave y la intensidad aromática de las especias del reino de Siam.",
   "it": "Crêpe dorata e raffinata, ricoperta con la nostra marmellata artigianale di zenzero preparata con radici fresche dei giardini thailandesi. Il calore speziato e le note pungenti dello zenzero reale creano una sensazione unica che risveglia le papille gustative. Un’audace fusione tra la dolcezza delicata e l’intensità aromatica delle spezie del regno del Siam.",
   "nl": "Goudkleurige en verfijnde crêpe, bedekt met onze ambachtelijke gemberjam gemaakt van verse wortels uit Thaise tuinen. De kruidige warmte en pittige tonen van koninklijke gember creëren een unieke sensatie die de smaakpapillen wekt. Een gedurfde fusie tussen zachte zoetheid en de aromatische intensiteit van kruiden uit het Koninkrijk Siam.",
-  "pt": "Crepe dourado e refinado, coberto com nossa geleia artesanal de gengibre feita com raízes frescas de jardins tailandeses. O calor picante e as notas intensas do gengibre real criam uma sensação única que desperta o paladar. Uma fusão ousada entre a doçura suave e a intensidade aromática das especiarias do Reino de Sião."
+  "pt": "Crepe dourado e refinado, coberto com nossa geleia artesanal de gengibre feita com raízes frescas de jardins tailandeses. O calor picante e as notas intensas do gengibre real criam uma sensação única que desperta o paladar. Uma fusão ousada entre a doçura suave e a intensidade aromática das especiarias do Reino de Sião.",
+  "pl": "Złocisty i wyrafinowany naleśnik zwieńczony naszym rzemieślniczym dżemem z imbiru przygotowanym ze świeżych korzeni z tajskich ogrodów. Pikantne ciepło i żywe nuty królewskiego imbiru budzą kubki smakowe. Odważne połączenie delikatnej słodyczy z aromatyczną mocą przypraw Królestwa Syjamu."
 },
       supplements: []
     },
@@ -939,7 +986,8 @@ export const menuItems = [
         es: "Crepe de mermelada de papaya y maracuyá",
         it: "Crêpe con marmellata di papaya e frutto della passione",
         nl: "Crêpe met papaja-passievruchtjam",
-        pt: "Crepe de geleia de papaia e maracujá"
+        pt: "Crepe de geleia de papaia e maracujá",
+        pl: "Naleśnik z dżemem papaja-marakuja"
       },
       category: {
         id: "confiture",
@@ -955,7 +1003,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_papaye_passion.png",
@@ -976,7 +1025,8 @@ export const menuItems = [
   "es": "Crêpe solar y exótica, rellena con nuestra mermelada artesanal de papaya y maracuyá, elaborada con frutas maduras bajo el sol tailandés. La dulzura suave de la papaya se une a la acidez envolvente de la maracuyá en una danza tropical llena de frescura. Una creación luminosa que evoca los jardines y mercados perfumados del reino de Siam.",
   "it": "Crêpe solare ed esotica, farcita con la nostra marmellata artigianale di papaya e frutto della passione, preparata con frutti maturati sotto il sole thailandese. La dolcezza vellutata della papaya incontra l’acidità avvolgente del frutto della passione in una danza tropicale piena di freschezza. Una creazione luminosa che richiama i giardini e i mercati profumati del regno del Siam.",
   "nl": "Zonnige, exotische crêpe gevuld met onze ambachtelijke papaja-passievruchtjam, bereid met vruchten die onder de Thaise zon zijn gerijpt. De zachte zoetheid van papaja vermengt zich met de betoverende frisheid van passievrucht in een tropische dans van vernieuwing. Een stralende creatie die doet denken aan de geurige tuinen en markten van het Koninkrijk Siam.",
-  "pt": "Crepe solar e exótico, recheado com nossa geleia artesanal de mamão e maracujá, feita com frutas amadurecidas sob o sol tailandês. A doçura aveludada do mamão combina com a acidez envolvente do maracujá em uma dança tropical cheia de frescor. Uma criação luminosa que evoca os jardins e mercados perfumados do Reino de Sião."
+  "pt": "Crepe solar e exótico, recheado com nossa geleia artesanal de mamão e maracujá, feita com frutas amadurecidas sob o sol tailandês. A doçura aveludada do mamão combina com a acidez envolvente do maracujá em uma dança tropical cheia de frescor. Uma criação luminosa que evoca os jardins e mercados perfumados do Reino de Sião.",
+  "pl": "Słoneczny, egzotyczny naleśnik wypełniony naszym domowym dżemem z papai i marakui, przygotowanym z owoców dojrzewających w tajskim słońcu. Kremowa słodycz papai splata się z urzekającą kwasowością marakui w tropikalnym tańcu świeżości. Jasna kompozycja przywołująca pachnące ogrody i targi Królestwa Syjamu."
 },
       supplements: []
     },
@@ -996,7 +1046,8 @@ export const menuItems = [
         es: "Crepe de mermelada de piña",
         it: "Crêpe con marmellata di ananas",
         nl: "Crêpe met ananasjam",
-        pt: "Crepe de geleia de abacaxi"
+        pt: "Crepe de geleia de abacaxi",
+        pl: "Naleśnik z dżemem ananasowym"
       },
       category: {
         id: "confiture",
@@ -1012,7 +1063,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_ananas.png",
@@ -1033,7 +1085,8 @@ export const menuItems = [
   "es": "Crêpe dorada de acento tropical, rellena con nuestra mermelada artesanal de piña cocinada lentamente para conservar toda su frescura y aroma. La acidez brillante de la piña tailandesa se equilibra con una suave dulzura acaramelada, evocando el sol y la brisa de las islas. Una escapada gourmet entre ternura frutal y chispa exótica.",
   "it": "Crêpe dorata dai toni tropicali, farcita con la nostra marmellata artigianale di ananas cotta lentamente per conservarne la freschezza e il profumo naturale. La vivace acidità dell’ananas thailandese si equilibra con una dolcezza caramellata, evocando il sole e la brezza delle isole. Un viaggio gourmet tra morbidezza fruttata e fascino esotico.",
   "nl": "Goudkleurige tropische crêpe, gevuld met onze ambachtelijke ananasjam die langzaam is gekookt om haar frisheid en aroma te behouden. De levendige zuurgraad van Thaise ananas mengt zich met een zachte karamelsmaak en roept zon en eilandbries op. Een culinaire ontsnapping tussen fruitige zachtheid en exotische sprankeling.",
-  "pt": "Crepe dourado de inspiração tropical, recheado com nossa geleia artesanal de abacaxi, cozida lentamente para preservar sua frescura e aroma natural. A acidez vibrante do abacaxi tailandês equilibra-se com uma delicada doçura caramelizada, evocando o sol e a brisa das ilhas. Uma viagem gourmet entre a ternura frutada e o brilho exótico."
+  "pt": "Crepe dourado de inspiração tropical, recheado com nossa geleia artesanal de abacaxi, cozida lentamente para preservar sua frescura e aroma natural. A acidez vibrante do abacaxi tailandês equilibra-se com uma delicada doçura caramelizada, evocando o sol e a brisa das ilhas. Uma viagem gourmet entre a ternura frutada e o brilho exótico.",
+  "pl": "Złocisty tropikalny naleśnik wypełniony naszym domowym dżemem ananasowym, powoli gotowanym, by zachować świeżość i naturalny aromat. Soczysta kwasowość tajskiego ananasa spotyka delikatnie karmelową słodycz, przywołując słońce i powiew wysp. Słodka ucieczka między owocową delikatnością a egzotycznym blaskiem."
 },
       supplements: []
     },
@@ -1053,7 +1106,8 @@ export const menuItems = [
         es: "Crepe de mermelada de piña y maracuyá",
         it: "Crêpe con marmellata di ananas e frutto della passione",
         nl: "Crêpe met ananas-passievruchtjam",
-        pt: "Crepe de geleia de abacaxi e maracujá"
+        pt: "Crepe de geleia de abacaxi e maracujá",
+        pl: "Naleśnik z dżemem ananas-marakuja"
       },
       category: {
         id: "confiture",
@@ -1069,7 +1123,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_ananas_passion.png",
@@ -1090,7 +1145,8 @@ export const menuItems = [
   "es": "Crêpe dorada de esencia veraniega, rellena con nuestra mermelada artesanal de piña y maracuyá, cocinada lentamente para conservar toda la frescura tropical. La piña tailandesa, brillante y soleada, se une a la acidez intensa de la maracuyá en una armonía radiante. Una escapada gustativa donde dulzura y energía se encuentran.",
   "it": "Crêpe dorata dal profumo d’estate, farcita con la nostra marmellata artigianale di ananas e frutto della passione, cotta lentamente per conservare tutta la freschezza dei tropici. L’ananas thailandese, vivace e solare, si unisce all’intensità acidula del frutto della passione in un’armonia luminosa. Un viaggio di gusto dove dolcezza ed energia si incontrano.",
   "nl": "Goudkleurige zomercrêpe, gevuld met onze ambachtelijke ananas-passievruchtjam, langzaam gekookt om de pure frisheid van de tropen vast te leggen. Heldere Thaise ananas vermengt zich met de pittige intensiteit van passievrucht tot een stralende harmonie. Een smaakvolle ontsnapping waar zoetheid en energie samenkomen.",
-  "pt": "Crepe dourado de inspiração tropical, recheado com nossa geleia artesanal de abacaxi e maracujá, cozida lentamente para preservar toda a frescura dos trópicos. O abacaxi tailandês, vibrante e ensolarado, une-se à intensidade ácida do maracujá em uma harmonia luminosa. Uma viagem de sabor onde doçura e energia se encontram."
+  "pt": "Crepe dourado de inspiração tropical, recheado com nossa geleia artesanal de abacaxi e maracujá, cozida lentamente para preservar toda a frescura dos trópicos. O abacaxi tailandês, vibrante e ensolarado, une-se à intensidade ácida do maracujá em uma harmonia luminosa. Uma viagem de sabor onde doçura e energia se encontram.",
+  "pl": "Złocisty letni naleśnik wypełniony naszym domowym dżemem z ananasa i marakui, powoli gotowanym, by uchwycić czystą świeżość tropików. Jasny tajski ananas łączy się z wyrazistą kwasowością marakui w promiennej harmonii. Rozświetlona podróż smaków, gdzie słodycz spotyka pulsującą energię."
 },
       supplements: []
     },
@@ -1110,7 +1166,8 @@ export const menuItems = [
         es: "Crepe de mermelada de mango",
         it: "Crêpe con marmellata di mango",
         nl: "Crêpe met mangojam",
-        pt: "Crepe de geleia de manga"
+        pt: "Crepe de geleia de manga",
+        pl: "Naleśnik z dżemem mango"
       },
       category: {
         id: "confiture",
@@ -1126,7 +1183,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_mangue.png",
@@ -1147,7 +1205,8 @@ export const menuItems = [
   "es": "Crêpe dorada de inspiración tropical, rellena con nuestra mermelada artesanal de mango elaborada con frutas maduras bajo el sol tailandés. La dulzura aterciopelada del mango se mezcla con un toque de acidez para lograr un equilibrio perfecto. Una experiencia exótica llena de luz y delicadeza.",
   "it": "Crêpe dorata dall’eleganza tropicale, farcita con la nostra marmellata artigianale di mango preparata con frutti maturati al sole thailandese. La dolcezza vellutata del mango si unisce a una leggera nota acidula per un equilibrio perfetto. Un’esperienza esotica piena di luce e raffinatezza.",
   "nl": "Goudkleurige tropische crêpe, gevuld met onze ambachtelijke mangojam, gemaakt van onder de Thaise zon gerijpte vruchten. De fluweelzachte zoetheid van mango mengt zich met een vleugje zachte zuurheid tot een perfecte balans. Een exotische ervaring vol licht en elegantie.",
-  "pt": "Crepe dourado de inspiração tropical, recheado com nossa geleia artesanal de manga feita com frutas amadurecidas sob o sol tailandês. A doçura aveludada da manga combina com um leve toque de acidez, criando um equilíbrio perfeito. Uma experiência exótica repleta de luz e delicadeza."
+  "pt": "Crepe dourado de inspiração tropical, recheado com nossa geleia artesanal de manga feita com frutas amadurecidas sob o sol tailandês. A doçura aveludada da manga combina com um leve toque de acidez, criando um equilíbrio perfeito. Uma experiência exótica repleta de luz e delicadeza.",
+  "pl": "Złocisty tropikalny naleśnik wypełniony naszym domowym dżemem mango z tajskich owoców dojrzewających w słońcu. Jedwabista, aksamitna słodycz mango przeplata się z nutą delikatnej kwasowości dla idealnej równowagi. Egzotyczne doświadczenie pełne blasku i elegancji."
 },
       supplements: []
     },
@@ -1167,7 +1226,8 @@ export const menuItems = [
         es: "Crepe de mermelada de mango y maracuyá",
         it: "Crêpe con marmellata di mango e frutto della passione",
         nl: "Crêpe met mango-passievruchtjam",
-        pt: "Crepe de geleia de manga e maracujá"
+        pt: "Crepe de geleia de manga e maracujá",
+        pl: "Naleśnik z dżemem mango-marakuja"
       },
       category: {
         id: "confiture",
@@ -1183,7 +1243,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_mangue_passion.png",
@@ -1210,7 +1271,8 @@ export const menuItems = [
         es: "Crepe de mermelada de mango verde y lima",
         it: "Crêpe con marmellata di mango verde e lime",
         nl: "Crêpe met groene mango-limoenjam",
-        pt: "Crepe de geleia de manga verde e limão"
+        pt: "Crepe de geleia de manga verde e limão",
+        pl: "Naleśnik z dżemem zielone mango-limonka"
       },
       category: {
         id: "confiture",
@@ -1226,7 +1288,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_citron_vert_mangue.png",
@@ -1247,7 +1310,8 @@ export const menuItems = [
   "es": "Crêpe dorada y refrescante, rellena con nuestra mermelada artesanal de mango verde y lima, elaborada con frutas tailandesas recogidas en su punto justo de madurez. El brillo ácido de la lima realza la frescura de la mango verde, creando una experiencia equilibrada y estimulante. Una creación luminosa que combina dulzura exótica y chispa cítrica.",
   "it": "Crêpe dorata e rinfrescante, farcita con la nostra marmellata artigianale di mango verde e lime, preparata con frutti raccolti al giusto punto di maturazione nei frutteti thailandesi. La vivace acidità del lime esalta la freschezza della mango verde, creando un’esperienza tonica ed equilibrata. Una creazione luminosa che unisce dolcezza esotica e brillantezza agrumata.",
   "nl": "Goudkleurige en verfrissende crêpe, gevuld met onze ambachtelijke jam van groene mango en limoen, gemaakt van perfect rijpe Thaise vruchten. De levendige frisheid van limoen versterkt de knapperige tonen van groene mango en zorgt voor een evenwichtige, opwekkende ervaring. Een stralende creatie die exotische zoetheid met citrusfrisheid verenigt.",
-  "pt": "Crepe dourado e refrescante, recheado com nossa geleia artesanal de manga verde e limão, feita com frutas tailandesas colhidas no ponto certo. O toque ácido do limão realça a frescura da manga verde, criando uma experiência equilibrada e revigorante. Uma criação luminosa que une doçura exótica e brilho cítrico."
+  "pt": "Crepe dourado e refrescante, recheado com nossa geleia artesanal de manga verde e limão, feita com frutas tailandesas colhidas no ponto certo. O toque ácido do limão realça a frescura da manga verde, criando uma experiência equilibrada e revigorante. Uma criação luminosa que une doçura exótica e brilho cítrico.",
+  "pl": "Złocisty, orzeźwiający naleśnik wypełniony naszym domowym dżemem z zielonego mango i limonki, przygotowanym z doskonale dojrzałych tajskich owoców. Rześka świeżość limonki podbija chrupiącą nutę zielonego mango, tworząc zrównoważone i pobudzające doznanie. Promienna kompozycja łącząca egzotyczną słodycz z cytrusowym blaskiem."
 },
       supplements: []
     },
@@ -1267,7 +1331,8 @@ export const menuItems = [
         es: "Crepe de mermelada de maracuyá",
         it: "Crêpe con marmellata di frutto della passione",
         nl: "Crêpe met passievruchtjam",
-        pt: "Crepe de geleia de maracujá"
+        pt: "Crepe de geleia de maracujá",
+        pl: "Naleśnik z dżemem z marakui"
       },
       category: {
         id: "confiture",
@@ -1283,7 +1348,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_passion.png",
@@ -1303,7 +1369,8 @@ export const menuItems = [
   "es": "Crêpe sedosa de tonos dorados, realzada con nuestra mermelada artesanal de maracuyá. La intensidad aromática y la acidez delicada de esta fruta exótica ofrecen una explosión de sabores tropicales. Una invitación al viaje donde la elegancia francesa se encuentra con la abundancia tropical.",
   "it": "Crêpe setosa dalle sfumature dorate, esaltata dalla nostra marmellata artigianale di frutto della passione. L’intensità profumata e la delicata acidità di questo frutto esotico regalano un’esplosione di sapori tropicali. Un invito al viaggio dove la raffinatezza francese incontra la generosità dei tropici.",
   "nl": "Zijdezachte crêpe met gouden tinten, verrijkt met onze ambachtelijke passievruchtjam. De geurige intensiteit en subtiele zuurgraad van deze exotische vrucht zorgen voor een explosie van tropische smaken. Een uitnodiging op reis waar Franse finesse samenkomt met tropische overvloed.",
-  "pt": "Crepe sedoso de tons dourados, realçado pela nossa geleia artesanal de maracujá. A intensidade aromática e a acidez delicada desta fruta exótica proporcionam uma explosão de sabores tropicais. Um convite para uma viagem onde a fineza francesa se encontra com a exuberância dos trópicos."
+  "pt": "Crepe sedoso de tons dourados, realçado pela nossa geleia artesanal de maracujá. A intensidade aromática e a acidez delicada desta fruta exótica proporcionam uma explosão de sabores tropicais. Um convite para uma viagem onde a fineza francesa se encontra com a exuberância dos trópicos.",
+  "pl": "Jedwabisty, złocisty naleśnik wzbogacony naszym domowym dżemem z marakui. Intensywny aromat i subtelna kwasowość tego egzotycznego owocu dostarczają eksplozji tropikalnych smaków. Zaproszenie w podróż, gdzie francuska finezja spotyka tropikalną hojność."
 },
       supplements: []
     },
@@ -1323,7 +1390,8 @@ export const menuItems = [
         es: "Crepe de mermelada de coco",
         it: "Crêpe con marmellata di cocco",
         nl: "Crêpe met kokosjam",
-        pt: "Crepe de geleia de coco"
+        pt: "Crepe de geleia de coco",
+        pl: "Naleśnik z dżemem kokosowym"
       },
       category: {
         id: "confiture",
@@ -1339,7 +1407,8 @@ export const menuItems = [
           es: "Mermeladas",
           it: "Confetture",
           nl: "Confituur",
-          pt: "Geleias"
+          pt: "Geleias",
+          pl: "Dżemy"
         }
       },
       image: "assets/images/crepe_confiture_coco.png",
@@ -1360,7 +1429,8 @@ export const menuItems = [
   "es": "Crêpe suave con reflejos nacarados, realzada con nuestra mermelada artesanal de coco. La dulzura cremosa y el aroma cautivador del coco invitan a un viaje sensorial hacia playas y jardines tropicales. Una escapada gourmet donde el sol se mezcla con la suavidad del coco.",
   "it": "Crêpe morbida con riflessi madreperlacei, esaltata dalla nostra marmellata artigianale di cocco. La dolcezza cremosa e il profumo avvolgente del cocco invitano a un viaggio sensoriale tra spiagge e giardini tropicali. Un’evasione golosa dove il sole incontra la tenerezza del cocco.",
   "nl": "Zachte crêpe met parelmoeren glans, verrijkt met onze ambachtelijke kokosjam. De romige zoetheid en betoverende geur van kokosnodigen uit tot een zintuiglijke reis naar tropische stranden en weelderige tuinen. Een culinaire ontsnapping waar zon en kokoszachtheid samenkomen.",
-  "pt": "Crepe macio com reflexos nacarados, realçado pela nossa geleia artesanal de coco. A doçura cremosa e o aroma envolvente do coco convidam a uma viagem sensorial por praias e jardins tropicais. Uma fuga gourmet onde o sol se encontra com a suavidade do coco."
+  "pt": "Crepe macio com reflexos nacarados, realçado pela nossa geleia artesanal de coco. A doçura cremosa e o aroma envolvente do coco convidam a uma viagem sensorial por praias e jardins tropicais. Uma fuga gourmet onde o sol se encontra com a suavidade do coco.",
+  "pl": "Delikatny naleśnik o perłowym blasku, wzbogacony naszym domowym dżemem kokosowym. Kremowa słodycz i uwodzicielski aromat kokosa zapraszają w zmysłową podróż na tropikalne plaże i do bujnych ogrodów. Kulinarna wyprawa, w której słońce spotyka łagodność kokosa."
 },
       supplements: []
     }
