@@ -47,7 +47,7 @@ export const menuItems = [
     {
       id: "water",
       reference: "B3",
-      price: 10,
+      price: 15,
       name: {
         fr: "Eau",
         th: "น้ำ",
@@ -92,7 +92,7 @@ export const menuItems = [
     {
       id: "biereleopetite",
       reference: "B4",
-      price: 60,
+      price: 70,
       name: {
         fr: "Bière Leo (petite)",
         th: "เบียร์ลีโอ (ขวดเล็ก)",
@@ -137,7 +137,7 @@ export const menuItems = [
     {
       id: "biereleogrande",
       reference: "B5",
-      price: 90,
+      price: 110,
       name: {
         fr: "Bière Leo (grande)",
         th: "เบียร์ลีโอ (ขวดใหญ่)",
