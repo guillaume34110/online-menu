@@ -36,7 +36,7 @@ export const menuItems = [
           pl: "Napoje"
         }
       },
-      image: "assets/images/cafe.png",
+      image: "assets/images/cafe.webp",
       quantity: {
         amount: 50,
         infinite: true
@@ -81,7 +81,7 @@ export const menuItems = [
           pl: "Napoje"
         }
       },
-      image: "assets/images/water.png?no-webp",
+      image: "assets/images/water.webp?no-webp",
       quantity: {
         amount: 100,
         infinite: true
@@ -126,7 +126,7 @@ export const menuItems = [
           pl: "Napoje"
         }
       },
-      image: "assets/images/bierre-leo.png?no-webp",
+      image: "assets/images/bierre-leo.webp?no-webp",
       quantity: {
         amount: 40,
         infinite: true
@@ -171,7 +171,7 @@ export const menuItems = [
           pl: "Napoje"
         }
       },
-      image: "assets/images/bierre-leo.png?no-webp",
+      image: "assets/images/bierre-leo.webp?no-webp",
       quantity: {
         amount: 40,
         infinite: true
@@ -216,7 +216,7 @@ export const menuItems = [
           pl: "Wytrawne"
         }
       },
-      image: "assets/images/crepe_poulet_curry.png",
+      image: "assets/images/crepe_poulet_curry.webp",
       quantity: {
         amount: 25,
         infinite: false
@@ -276,7 +276,7 @@ export const menuItems = [
           pl: "Wytrawne"
         }
       },
-      image: "assets/images/crepe_porc_hache.png",
+      image: "assets/images/crepe_porc_hache.webp",
       quantity: {
         amount: 25,
         infinite: false
@@ -336,7 +336,7 @@ export const menuItems = [
           pl: "Wytrawne"
         }
       },
-      image: "assets/images/crepe_salade.png",
+      image: "assets/images/crepe_salade.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -396,7 +396,7 @@ export const menuItems = [
           pl: "Som tam"
         }
       },
-      image: "assets/images/somtamthai.png?no-webp",
+      image: "assets/images/somtamthai.webp?no-webp",
       quantity: { amount: 50, infinite: true },
       ingredients: [
         "papaye_verte", "piment", "ail", "tomates", "citron_vert", "sauce_poisson", "cacahuetes", "sucre_de_palmier"
@@ -446,7 +446,7 @@ export const menuItems = [
           pl: "Som tam"
         }
       },
-      image: "assets/images/somtamisaan.png?no-webp",
+      image: "assets/images/somtamisaan.webp?no-webp",
       quantity: { amount: 50, infinite: true },
       ingredients: [
         "papaye_verte", "piment", "ail", "tomates", "citron_vert", "sauce_poisson", "cacahuetes", "sucre_de_palmier"
@@ -496,7 +496,7 @@ export const menuItems = [
           pl: "Zestawy"
         }
       },
-      image: "assets/images/assiette-curry.png?no-webp",
+      image: "assets/images/assiette-curry.webp?no-webp",
       quantity: {
         amount: 25,
         infinite: false
@@ -541,7 +541,7 @@ export const menuItems = [
           pl: "Zestawy"
         }
       },
-      image: "assets/images/assiette-kapao.png?no-webp",
+      image: "assets/images/assiette-kapao.webp?no-webp",
       quantity: {
         amount: 25,
         infinite: false
@@ -586,7 +586,7 @@ export const menuItems = [
           pl: "Zestawy"
         }
       },
-      image: "assets/images/assiette-salade.png?no-webp",
+      image: "assets/images/assiette-salade.webp?no-webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -631,7 +631,7 @@ export const menuItems = [
           pl: "Słodkie"
         }
       },
-      image: "assets/images/crepe-chokaju.png",
+      image: "assets/images/crepe-chokaju.webp",
       quantity: {
         amount: 20,
         infinite: false
@@ -699,7 +699,7 @@ export const menuItems = [
           pl: "Słodkie"
         }
       },
-      image: "assets/images/crepe-caracoco.png",
+      image: "assets/images/crepe-caracoco.webp",
       quantity: {
         amount: 20,
         infinite: false
@@ -767,7 +767,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_fraise.png",
+      image: "assets/images/crepe_confiture_fraise.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -827,7 +827,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_mure.png",
+      image: "assets/images/crepe_confiture_mure.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -887,7 +887,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_mulberry.png",
+      image: "assets/images/crepe_confiture_mulberry.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -947,7 +947,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_gingembre.png",
+      image: "assets/images/crepe_confiture_gingembre.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1007,7 +1007,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_papaye_passion.png",
+      image: "assets/images/crepe_confiture_papaye_passion.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1067,7 +1067,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_ananas.png",
+      image: "assets/images/crepe_confiture_ananas.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1127,7 +1127,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_ananas_passion.png",
+      image: "assets/images/crepe_confiture_ananas_passion.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1187,7 +1187,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_mangue.png",
+      image: "assets/images/crepe_confiture_mangue.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1247,7 +1247,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_mangue_passion.png",
+      image: "assets/images/crepe_confiture_mangue_passion.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1292,7 +1292,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_citron_vert_mangue.png",
+      image: "assets/images/crepe_confiture_citron_vert_mangue.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1352,7 +1352,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_passion.png",
+      image: "assets/images/crepe_confiture_passion.webp",
       quantity: {
         amount: 30,
         infinite: false
@@ -1411,7 +1411,7 @@ export const menuItems = [
           pl: "Dżemy"
         }
       },
-      image: "assets/images/crepe_confiture_coco.png",
+      image: "assets/images/crepe_confiture_coco.webp",
       quantity: {
         amount: 30,
         infinite: false
