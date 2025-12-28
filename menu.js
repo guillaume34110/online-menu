@@ -549,6 +549,23 @@ const renderDishes = () => {
     return;
   }
 
+  // Si la catégorie actuelle a une notice, l'afficher
+  let categoryNotice = null;
+  const itemWithCategory = menuData.find(item => item.category && item.category.id === currentCategory);
+  if (itemWithCategory && itemWithCategory.category.notice) {
+    categoryNotice = itemWithCategory.category.notice;
+  }
+
+  if (categoryNotice) {
+    const lang = getCurrentLanguage();
+    const noticeText = resolveLocalizedText(categoryNotice, lang);
+    if (noticeText) {
+      const noticeElement = createElement('div', { class: 'category-notice' });
+      noticeElement.innerHTML = `<p>${noticeText}</p>`;
+      container.appendChild(noticeElement);
+    }
+  }
+
   filteredDishes.forEach(dish => {
     const card = createDishCard(dish);
     if (card) container.appendChild(card);

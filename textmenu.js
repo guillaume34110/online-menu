@@ -333,6 +333,23 @@ const createCategory = (category, lang) => {
   title.textContent = resolveLocalizedText(category.name, lang);
   section.appendChild(title);
 
+  // Check for notice in the category (using the first dish's category object)
+  if (category.dishes && category.dishes.length > 0) {
+    const firstDish = category.dishes[0];
+    if (firstDish.category && firstDish.category.notice) {
+      const noticeText = resolveLocalizedText(firstDish.category.notice, lang);
+      if (noticeText) {
+        const noticeDiv = document.createElement('div');
+        noticeDiv.className = 'category-notice';
+        noticeDiv.style.fontStyle = 'italic';
+        noticeDiv.style.marginBottom = '10px';
+        noticeDiv.style.fontSize = '0.9em';
+        noticeDiv.textContent = noticeText;
+        section.appendChild(noticeDiv);
+      }
+    }
+  }
+
   const ul = document.createElement('ul');
   ul.className = 'menu-items';
 
@@ -492,15 +509,6 @@ const renderMenu = () => {
   categories.forEach(cat => {
     const catId = cat.id.toLowerCase();
     if (catId === 'somtam') {
-      const section = createCategory(cat, lang);
-      rightCol.appendChild(section);
-    }
-  });
-
-  // Assiettes (sous le Somtam)
-  categories.forEach(cat => {
-    const catId = cat.id.toLowerCase();
-    if (catId === 'assiette') {
       const section = createCategory(cat, lang);
       rightCol.appendChild(section);
     }
