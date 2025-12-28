@@ -333,23 +333,6 @@ const createCategory = (category, lang) => {
   title.textContent = resolveLocalizedText(category.name, lang);
   section.appendChild(title);
 
-  // Check for notice in the category (using the first dish's category object)
-  if (category.dishes && category.dishes.length > 0) {
-    const firstDish = category.dishes[0];
-    if (firstDish.category && firstDish.category.notice) {
-      const noticeText = resolveLocalizedText(firstDish.category.notice, lang);
-      if (noticeText) {
-        const noticeDiv = document.createElement('div');
-        noticeDiv.className = 'category-notice';
-        noticeDiv.style.fontStyle = 'italic';
-        noticeDiv.style.marginBottom = '10px';
-        noticeDiv.style.fontSize = '0.9em';
-        noticeDiv.textContent = noticeText;
-        section.appendChild(noticeDiv);
-      }
-    }
-  }
-
   const ul = document.createElement('ul');
   ul.className = 'menu-items';
 
@@ -555,6 +538,24 @@ const renderMenu = () => {
   footer.className = 'text-menu-footer';
   footer.innerHTML = `<p>${translate('header.openingHours')}</p>`;
   footer.innerHTML += `<p>${translate('header.closedMonday')}</p>`;
+
+  // Notice about rice/salad (from 'sale' category)
+  const saleCategory = categories.find(cat => cat.id.toLowerCase() === 'sale');
+  // Or check all categories for a notice
+  if (saleCategory && saleCategory.dishes.length > 0) {
+    const firstDish = saleCategory.dishes[0];
+    if (firstDish.category && firstDish.category.notice) {
+      const noticeText = resolveLocalizedText(firstDish.category.notice, lang);
+      if (noticeText) {
+        const noticeP = document.createElement('p');
+        noticeP.style.fontStyle = 'italic';
+        noticeP.style.marginTop = '10px';
+        noticeP.textContent = noticeText;
+        footer.appendChild(noticeP);
+      }
+    }
+  }
+
   contentContainer.appendChild(footer);
 };
 
