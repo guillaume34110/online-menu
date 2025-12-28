@@ -1007,6 +1007,42 @@ export const ingredients = [
       pt: "Açúcar de palma",
       pl: "Cukier palmowy"
     }
+  },
+  {
+    id: "bacon",
+    name: {
+      fr: "Bacon",
+      th: "เบคอน",
+      en: "Bacon",
+      de: "Speck",
+      ja: "ベーコン",
+      zh: "培根",
+      ru: "Бекон",
+      ko: "베이컨",
+      es: "Tocino",
+      it: "Pancetta",
+      nl: "Spek",
+      pt: "Bacon",
+      pl: "Boczek"
+    }
+  },
+  {
+    id: "creme_legere",
+    name: {
+      fr: "Crème légère",
+      th: "ครีมสด",
+      en: "Light cream",
+      de: "Leichte Sahne",
+      ja: "ライトクリーム",
+      zh: "淡奶油",
+      ru: "Легкие сливки",
+      ko: "라이트 크림",
+      es: "Nata ligera",
+      it: "Panna leggera",
+      nl: "Lichte room",
+      pt: "Creme leve",
+      pl: "Lekka śmietana"
+    }
   }
 ];
 

@@ -497,15 +497,6 @@ const renderMenu = () => {
     }
   });
 
-  // Assiettes (sous le Somtam)
-  categories.forEach(cat => {
-    const catId = cat.id.toLowerCase();
-    if (catId === 'assiette') {
-      const section = createCategory(cat, lang);
-      rightCol.appendChild(section);
-    }
-  });
-
   // Boissons
   categories.forEach(cat => {
     const catId = cat.id.toLowerCase();
@@ -547,6 +538,24 @@ const renderMenu = () => {
   footer.className = 'text-menu-footer';
   footer.innerHTML = `<p>${translate('header.openingHours')}</p>`;
   footer.innerHTML += `<p>${translate('header.closedMonday')}</p>`;
+
+  // Notice about rice/salad (from 'sale' category)
+  const saleCategory = categories.find(cat => cat.id.toLowerCase() === 'sale');
+  // Or check all categories for a notice
+  if (saleCategory && saleCategory.dishes.length > 0) {
+    const firstDish = saleCategory.dishes[0];
+    if (firstDish.category && firstDish.category.notice) {
+      const noticeText = resolveLocalizedText(firstDish.category.notice, lang);
+      if (noticeText) {
+        const noticeP = document.createElement('p');
+        noticeP.style.fontStyle = 'italic';
+        noticeP.style.marginTop = '10px';
+        noticeP.textContent = noticeText;
+        footer.appendChild(noticeP);
+      }
+    }
+  }
+
   contentContainer.appendChild(footer);
 };
 
